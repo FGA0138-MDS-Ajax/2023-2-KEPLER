@@ -1,23 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./index.css";
 
 function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="container">
+
+      <div className="container-login">
+
+        <div className="login-left">
+            <div className="signup">
+              <h1>UnB</h1>
+              <span className="signup-title"> Novo Login </span>
+              <div className="signup-button">
+                <button>Criar Conta</button>
+              </div>
+            </div>
+        </div>
+
+          <div className="login-right">
+            <form className="login-form">
+              <span className="login-form-title"> Faça Login </span>
+              <div className="wrap-input">
+                <input
+                  className={email !== "" ? "has-val input" : "input"}
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <span
+                  className="focus-input"
+                  data-placeholder="Matrícula"
+                ></span>
+              </div>
+
+              <div className="wrap-input">
+                <input
+                  className={password !== "" ? "has-val input" : "input"}
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <span className="focus-input" data-placeholder="Senha"></span>
+              </div>
+              <div className="text-center">
+                <span className="txt1">Esqueceu a senha? </span>
+                  <div className="Button-right"> Entrar</div>
+              </div>
+            </form>
+          </div>
+
+
+      </div>
+
     </div>
   );
 }

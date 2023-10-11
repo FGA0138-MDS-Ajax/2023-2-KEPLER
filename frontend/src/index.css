@@ -1,13 +1,239 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  
+  font-family: Nunito, sans-serif;
+  background: linear-gradient(180deg, #0a0e19 0%, rgba(10, 14, 25, 0) 100%);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1221px;
+  height: 600px;
+  border-radius: 30px;
+  /* backdrop-filter: blur(15px); */
+  /* flex-shrink: 0; */
+}
+
+/* left */
+
+.login-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: #7799f0;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login-left * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+
+.signup {
+  text-align: center;
+  width: 100%;
+}
+
+/* h1 */
+
+.signup-title {
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 30px; */
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  color: azure;
+  line-height: 0;
+  text-align: left;
+}
+
+.signup-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  width: 157px;
+  height: 45px;
+  background: rgba(255, 251, 251, 0.35);
+}
+
+.signup-button button {
+  cursor: pointer;
+}
+
+/* right */
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  gap: 500px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #333;
+  height: 100%;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login-right * {
+  display: flex;
+align-items: center;
+  flex-direction: column;
+  gap: 29px;
+}
+.Button-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  width: 157px;
+  height: 45px;
+  background: rgba(255, 251, 251, 0.35);
+  border-radius: 65px;
+  background: #04033d;  
+  text-align: center;
+}
+.txt1 {
+  color: rgb(173, 173, 173);
+  text-align: center;
+
+}
+
+/* login-form */
+
+.login-form-title {
+  /* top: px; */
+  width: 100%;
+  height: 119px;
+  font-family: Inter;
+  font-size: 45px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 13.5px;
+
+}
+
+/* .login-form-title img {
+  width: 90px;
+} */
+
+.wrap-input {
+  width: 100%;
+
+  /* position: relative; */
+  /* margin-bottom: 63px; */
+}
+
+.input {
+  /* margin-top: 62px; */
+  font-size: 15px;
+  color: #fff;
+  line-height: 3;
+  border-radius: 30px 30px 30px 30px;
+  /* display: inline-block; */
+  /* width: 40%; */
+  /* height: 60px; */
+  background-color: transparent;
+  padding: 0 48px;
+  font-family: Nunito, sans-serif;
+}
+
+.focus-input {
+  /* position: absolute; */
+  /* display: inline-block; */
+  width: 100%;
+  height: 100%;
+  /* top: 15px;
+  left: 45%; */
+  /* pointer-events: none; */
+  color: #adadad;
+  font-family: Nunito, sans-serif;
+  text-align: left;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #6a7dfe;
+  background: -webkit-linear-gradient(to left, #21d4fd, #b721ff);
+  background: -o-linear-gradient(to left, #21d4fd, #b721ff);
+  background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.focus-input::after {
+  flex-direction: column;
+  flex-wrap: nowrap; 
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: flex;
+  width: 100%;
+  position: absolute;
+  left: 65%;
+  margin-top: -58px;
+  padding-left: 0px;
+} */
+
+.input:focus {
+  outline: 0;
 }
