@@ -15,6 +15,9 @@ html {
   height: 100vh;
   
   font-family: Nunito, sans-serif;
+}
+
+body {
   background: linear-gradient(180deg, #0a0e19 0%, rgba(10, 14, 25, 0) 100%);
 }
 
@@ -166,18 +169,29 @@ align-items: center;
 } */
 
 .wrap-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-
   /* position: relative; */
   /* margin-bottom: 63px; */
 }
 
+.wrap-input:last-child {
+  flex-direction: column;
+}
+
 .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* margin-top: 62px; */
   font-size: 15px;
   color: #fff;
   line-height: 3;
   border-radius: 30px 30px 30px 30px;
+  text-align: center;
   /* display: inline-block; */
   /* width: 40%; */
   /* height: 60px; */
@@ -199,40 +213,6 @@ align-items: center;
   text-align: left;
 }
 
-.focus-input::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  background: #6a7dfe;
-  background: -webkit-linear-gradient(to left, #21d4fd, #b721ff);
-  background: -o-linear-gradient(to left, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
-  background: linear-gradient(to left, #21d4fd, #b721ff);
-}
-
-.focus-input::after {
-  flex-direction: column;
-  flex-wrap: nowrap; 
-  font-family: Nunito, sans-serif;
-  font-size: 15px;
-  color: #999999;
-  line-height: 1.2;
-  content: attr(data-placeholder);
-  display: flex;
-  width: 100%;
-  position: absolute;
-  left: 65%;
-  margin-top: -58px;
-  padding-left: 0px;
-} */
 
 .input:focus {
   outline: 0;

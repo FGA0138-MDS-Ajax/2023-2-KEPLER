@@ -8,7 +8,6 @@ function App() {
   return (
     
     <div className="container">
-
       <div className="container-login">
 
         <div className="login-left">
@@ -29,12 +28,9 @@ function App() {
                   className={email !== "" ? "has-val input" : "input"}
                   type="email"
                   value={email}
+                  placeholder="Matrícula"
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <span
-                  className="focus-input"
-                  data-placeholder="Matrícula"
-                ></span>
               </div>
 
               <div className="wrap-input">
@@ -42,11 +38,11 @@ function App() {
                   className={password !== "" ? "has-val input" : "input"}
                   type="password"
                   value={password}
+                  placeholder="Senha"
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <span className="focus-input" data-placeholder="Senha"></span>
               </div>
-              <div className="text-center">
+              <div className="wrap-input">
                 <span className="txt1">Esqueceu a senha? </span>
                   <div className="Button-right"> Entrar</div>
               </div>
