@@ -20,34 +20,34 @@ function App() {
             </div>
         </div>
 
-          <div className="login-right">
-            <form className="login-form">
-              <span className="login-form-title"> Faça Login </span>
-              <div className="wrap-input">
-                <input
-                  className={email !== "" ? "has-val input" : "input"}
-                  type="email"
-                  value={email}
-                  placeholder="Matrícula"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
+        <div className="login-right">
+          <form className="login-form">
+            <span className="login-form-title"> Faça Login </span>
+            <div className="wrap-input">
+              <input
+                className={email !== "" ? "has-val input" : "input"}
+                type="email"
+                value={email}
+                placeholder="Matrícula"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
 
-              <div className="wrap-input">
-                <input
-                  className={password !== "" ? "has-val input" : "input"}
-                  type="password"
-                  value={password}
-                  placeholder="Senha"
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              <div className="wrap-input">
-                <span className="txt1">Esqueceu a senha? </span>
-                  <div className="Button-right"> Entrar</div>
-              </div>
-            </form>
-          </div>
+            <div className="wrap-input">
+              <input
+                className={password !== "" ? "has-val input" : "input"}
+                type="password"
+                value={password}
+                placeholder="Senha"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="wrap-input">
+              <span className="txt1">Esqueceu a senha? </span>
+                <div className="Button-right"> Entrar</div>
+            </div>
+          </form>
+        </div>
 
 
       </div>
