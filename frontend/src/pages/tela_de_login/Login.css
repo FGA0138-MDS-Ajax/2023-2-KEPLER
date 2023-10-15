@@ -108,6 +108,10 @@ body {
   cursor: pointer;
 }
 
+.signup-button Link {
+  text-decoration: none;
+}
+
 /* right */
 
 .login-right {
