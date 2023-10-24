@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
+import "../stylesheets/Cadastro.css";
+import {Link} from "react-router-dom";
 
-
-function Login() {
+function Cadastro() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
+
 
   return (
     
@@ -16,22 +17,22 @@ function Login() {
         <div className="login-left">
             <div className="signup">
               <h1>UnB</h1>
-             <span className="signup-title"> Novo Login </span>
+             <span className="signup-cadastro"> Conta já existente </span>
               <div className="signup-button">
-              <Link to="/cadastro" style={{textDecoration: 'none'}}><button>Criar Conta</button> </Link>
+              <Link to="/login" style={{textDecoration: 'none'}}><button>Login</button> </Link>
               </div>
             </div>
         </div>
 
         <div className="login-right">
           <form className="login-form">
-            <span className="login-form-title"> Faça Login </span>
+            <span className="login-form-title"> Cadastro </span>   
             <div className="wrap-input">
               <input
                 className={email !== "" ? "has-val input" : "input"}
                 type="email"
                 value={email}
-                placeholder="Matrícula"
+                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -46,8 +47,16 @@ function Login() {
               />
             </div>
             <div className="wrap-input">
-              <span className="txt1">Esqueceu a senha? </span>
-                <div className="Button-right"> Entrar</div>
+              <input
+                className={password !== "" ? "has-val input" : "input"}
+                type="password"
+                value={passwordConfirm}
+                placeholder="Confirmar Senha"
+                onChange={(e) => setPasswordConfirm(e.target.value)}
+              />
+            </div>
+            <div className="wrap-input">
+                <div className="Button-right"> Confirmar</div>
             </div>
           </form>
         </div>
@@ -59,4 +68,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Cadastro;
