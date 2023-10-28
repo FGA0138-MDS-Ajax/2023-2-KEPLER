@@ -1,0 +1,10 @@
+site_name: Documentação Gerenciador Acadêmico
+nav:
+  - Início: "index.md"
+  - Sobre: "about.md"
+  - Integrantes: "integrantes.md"
+  - Documentação:
+    - Visão do produto e do projeto: "MDS-2023_02-Kepler.pdf"
+    - Declaração de escopo do produto: "Declaração de Escopo do produto-Kepler.pdf"
+theme:
+  name: material
