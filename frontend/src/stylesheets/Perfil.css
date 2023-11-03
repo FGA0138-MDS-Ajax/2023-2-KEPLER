@@ -1,7 +1,44 @@
-.Perfil-top{
-    background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.h1{
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  
+  font-family: Nunito, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0a0e19 0%, rgba(10, 14, 25, 0) 100%);
+}
+
+.fundo-Perfil{
+
+    background-color: white;
+    width: 50%;
+    height: 50%;
+}
+.main-perfil{
+    background-color: green;
+    width: 80%;
+    height: 40%;
+}
+
+.left-Perfil{
+    background-color: red;
+    color: green;
+}
+
+.h3{
+    font-size: 50%;
     color: white;
 }

@@ -4,6 +4,7 @@ import "../stylesheets/Cadastro.css";
 import {Link} from "react-router-dom";
 
 function Cadastro() {
+  const [Matriculas,setMatriculas] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
@@ -27,6 +28,15 @@ function Cadastro() {
         <div className="login-right">
           <form className="login-form">
             <span className="login-form-title"> Cadastro </span>   
+            <div className="wrap-input">
+              <input
+                className={Matriculas !== "" ? "has-val input" : "input"}
+                type="matriculas"
+                value={Matriculas}
+                placeholder="Matricula"
+                onChange={(e) => setMatriculas(e.target.value)}
+              />
+            </div>
             <div className="wrap-input">
               <input
                 className={email !== "" ? "has-val input" : "input"}

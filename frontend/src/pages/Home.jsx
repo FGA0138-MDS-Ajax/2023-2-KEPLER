@@ -12,11 +12,15 @@ function Home(){
                 <div className="left-list">
                     <ul>
                         <li className="left-option">
-                            <Link to="/Perfil" style={{textDecoration:'none'}}>Perfil </Link> <br></br>
-                            Materias<br></br>
-                            Grade
+                            <a href="/Perfil"style={{textDecoration:'none'}}> Perfil </a> <br></br>
+                            <a href="/Materias"style={{textDecoration:'none'}}> Materias</a><br></br>
+                            <a href="/Grade"style={{textDecoration:'none'}}> Grade </a>
                         </li>
                     </ul>
+                    <div className="Bottom-Exit"> 
+                   <Link to="/login" style={{textDecoration:'none'}}><button>Sair</button> </Link>    
+                    </div>
+            
                 </div>
                 </div>
                 <div className="right-screen">
