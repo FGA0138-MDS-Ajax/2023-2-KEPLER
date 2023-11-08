@@ -12,8 +12,8 @@ module.exports = merge(commonConfig, {
     // We need hot=false (Disable HMR) to set liveReload=true
     hot: false,
     liveReload: true,
+    client: {
+      webSocketURL: 'auto://0.0.0.0:0/ws', // note the `:0` after `0.0.0.0`
+    }
   },
-  client: {
-    webSocketURL: 'auto://0.0.0.0:0/ws', // note the `:0` after `0.0.0.0`
-  }
 });
