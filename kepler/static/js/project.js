@@ -1,11 +1,11 @@
 import '../sass/project.scss';
 //import { useState } from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Login from "./pages/Login";
-import Cadastro from "./pages/Cadastro";
-import Home from "./pages/Home";
-import Perfil from "./pages/Perfil";
-import Fluxograma from "./pages/Fluxograma";
+import Login from "../js/Login";
+import Cadastro from "../js/Cadastro";
+import Home from "../js/Home";
+import Perfil from "../js/Perfil";
+import Fluxograma from "../js/Fluxograma";
 
 function project() {
   return (

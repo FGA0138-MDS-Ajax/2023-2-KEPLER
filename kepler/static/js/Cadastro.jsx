@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../stylesheets/Cadastro.css";
+import "../css/Cadastro.css";
 import {Link} from "react-router-dom";
 
 function Cadastro() {

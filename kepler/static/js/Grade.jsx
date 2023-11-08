@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/Grade.css"
+import "../css/Grade.css"
 
 
 function Grade(){

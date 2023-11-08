@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/Fluxograma.css"
+import "../css/Fluxograma.css"
 
 
 function Fluxograma(){

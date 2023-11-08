@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/Materias.css"
+import "../css/Materias.css"
 
 
 function Materias(){
