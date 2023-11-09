@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html; lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style src="/kepler/static/css/Login.css"></style>
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+</head>
+<body>
+    <div className="container">
+        <div className="container-login">
+  
+          <div className="login-left">
+              <div className="signup">
+                <h1>UnB</h1>
+               <span className="signup-title"> Novo Login </span>
+                <div className="signup-button">
+                <Link to="/cadastro"><button>Criar Conta</button> </Link>
+                </div>
+              </div>
+          </div>
+  
+          <div className="login-right">
+            <form className="login-form">
+              <span className="login-form-title"> Faça Login </span>
+              <div className="wrap-input">
+                <input type="text" id="username" placeholder="Matricula">
+                <input type="password" id="password" placeholder="Senha"> 
+                <button hx-post="/login" hx-target="#login-form" hx-swap="outerHTML"> Entrar</button>
+                 />
+              </div>              
+              </div>
+              <div className="wrap-input">
+                <span className="txt1">Esqueceu a senha? </span>    
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
