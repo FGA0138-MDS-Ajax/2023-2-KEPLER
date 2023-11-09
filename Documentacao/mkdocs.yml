@@ -1,0 +1,11 @@
+site_name: Documentação Gerenciador Acadêmico
+nav:
+  - Início: "index.md"
+  - Sobre: "about.md"
+  - Integrantes: "integrantes.md"
+  - Documentação:
+    - Visão do produto e do projeto: "VisaoProdutoeProjeto.pdf"
+    - Declaração de escopo do produto: "Declaração de Escopo do produto-Kepler.pdf"
+    - Documento de Arquitetura: "Documento de Arquitetura.pdf"
+theme:
+  name: material
