@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=kepler
+POSTGRES_USER=dcYthNpGDodIHwoVgHNZDqxmaXOjsEzv
+POSTGRES_PASSWORD=WO6Gh4qjB9mQbNQYhO0iuppWsLI3UKF0vnEK8eiLLjPnFxHPKsUG3GibhZ57Hdp0
