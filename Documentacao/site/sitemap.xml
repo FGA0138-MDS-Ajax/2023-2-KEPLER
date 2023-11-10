@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://fga0138-mds-ajax.github.io/2023-2-KEPLER/</loc>
+         <lastmod>2023-11-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fga0138-mds-ajax.github.io/2023-2-KEPLER/about/</loc>
+         <lastmod>2023-11-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fga0138-mds-ajax.github.io/2023-2-KEPLER/integrantes/</loc>
+         <lastmod>2023-11-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

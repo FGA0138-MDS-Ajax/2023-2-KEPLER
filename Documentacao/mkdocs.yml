@@ -1,4 +1,5 @@
 site_name: Documentação Gerenciador Acadêmico
+site_url: https://fga0138-mds-ajax.github.io/2023-2-KEPLER/
 nav:
   - Início: "index.md"
   - Sobre: "about.md"
