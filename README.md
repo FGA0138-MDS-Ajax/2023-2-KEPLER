@@ -3,6 +3,8 @@
 ## :memo: Descrição
 O Sistema de Gestão Acadêmica foi desenvolvido com o objetivo de proporcionar uma experiência mais eficiente e personalizada para os estudantes da Faculdade do Gama (FGA). Ele oferece funcionalidades que simplificam o planejamento e acompanhamento das disciplinas, permitindo aos alunos focar em seu desenvolvimento acadêmico.
 
+ ## :speech_balloon: Documentação
+  <a href="https://fga0138-mds-ajax.github.io/2023-2-KEPLER/">Git Pages </a>
 
 ## :handshake: Colaboradores
 <table>
@@ -56,5 +58,11 @@ O Sistema de Gestão Acadêmica foi desenvolvido com o objetivo de proporcionar 
       </a>
     </td>
   </tr>
+
+  
+ 	
+ 
+
+  
 </table>
 
