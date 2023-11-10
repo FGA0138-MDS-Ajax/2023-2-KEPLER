@@ -1,4 +1,4 @@
-## :handshake: Colaboradores
+## Equipe do Projeto
 <table>
   <tr>
     <td align="center">
