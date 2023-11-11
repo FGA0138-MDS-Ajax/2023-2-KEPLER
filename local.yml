@@ -65,6 +65,3 @@ services:
     command: npm run dev
     ports:
       - '3000:3000'
-    environment:
-      - VIRTUAL_HOST=my-dev-env.local
-      - VIRTUAL_PORT=3000
