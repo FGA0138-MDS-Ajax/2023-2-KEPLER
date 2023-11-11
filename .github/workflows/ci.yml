@@ -1,70 +1,22 @@
-name: CI
-
-# Enable Buildkit and let compose use it to speed up image building
-env:
-  DOCKER_BUILDKIT: 1
-  COMPOSE_DOCKER_CLI_BUILD: 1
-
+name: Publish docs via GitHub Pages
 on:
-  pull_request:
-    branches: ['master', 'main']
-    paths-ignore: ['docs/**']
-
   push:
-    branches: ['master', 'main']
-    paths-ignore: ['docs/**']
-
-concurrency:
-  group: ${{ github.head_ref || github.run_id }}
-  cancel-in-progress: true
+    branches:
+      - main
 
 jobs:
-  linter:
+  build:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code Repository
-        uses: actions/checkout@v4
+      - name: Checkout main
+        uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      # Consider using pre-commit.ci for open source project
-      - name: Run pre-commit
-        uses: pre-commit/action@v3.0.0
-
-  # With no caching at all the entire ci process takes 4m 30s to complete!
-  pytest:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code Repository
-        uses: actions/checkout@v4
-
-      - name: Build the Stack
-        run: docker compose -f local.yml build
-
-      - name: Run DB Migrations
-        run: docker compose -f local.yml run --rm django python manage.py migrate
-
-      - name: Run Django Tests
-        run: docker compose -f local.yml run django pytest
-
-      - name: Tear down the Stack
-        run: docker compose -f local.yml down
-
-  mkdocs_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - uses: actions/cache@v2
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-      - name: Install dependencies
-        run: pip install mkdocs-material
-      - name: Deploy with MkDocs
-        run: cd Documentacao && mkdocs gh-deploy --force
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: optionaldomain.com
+          CONFIG_FILE: Documentacao/mkdocs.yml
+          REQUIREMENTS: Documentacao/requirements.txt
