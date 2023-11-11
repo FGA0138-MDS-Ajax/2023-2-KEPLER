@@ -64,9 +64,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - name: Change to Documentacao directory
-        run: cd Documentacao/
       - name: Install dependencies
         run: pip install mkdocs-material
       - name: Deploy with MkDocs
-        run: mkdocs gh-deploy --force
+        run: cd Documentacao && mkdocs gh-deploy --force
