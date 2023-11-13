@@ -1,0 +1,11 @@
+services:
+        app:
+            build: .
+            ports:
+                - 8000:8000
+            volumes:
+                - ./controle-falta-django/:/app/
+
+            image: app:projetct
+            container_name: django-docker
+            command: python3 manage.py runserver

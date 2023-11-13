@@ -1,0 +1,32 @@
+{% extends "./base.html"%}
+
+{% block title %}  Controle de Faltas  {% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h2>Edição de Disciplina</h2>
+        <div class="card">
+            <div class="card-body">
+                <form action="/edicaoCurso/" method="POST"> {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" id="txtCodigo" name="txtCodigo"  value="{{curso.codigo}}" class="form-control" hidden readonly required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtNome" name="txtNome" class="form-control" value="{{curso.nome}}" maxLength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numCreditos" name="numCreditos" class="form-control" value = "{{curso.credito}}" min="1" max="9" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Salvar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
