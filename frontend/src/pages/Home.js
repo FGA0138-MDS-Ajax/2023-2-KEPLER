@@ -6,6 +6,8 @@ const Home = () => {
     <Grid container justifyContent="center">
       <Grid item sm={10}>
         <h1>GradeWEB?</h1>
+       
+        <br />
         <hr />
         <p style={{ textAlign: "justify" }}>
           O GradeWeb simplifica sua jornada acadêmica, proporcionando uma gestão

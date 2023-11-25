@@ -1,0 +1,183 @@
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+img {
+    width: 100%;
+}
+:root {
+    --bg: hsl(0, 0%, 98%);
+    --bg-offset: hsl(0, 0%, 100%);
+    --text: hsl(200, 15%, 8%);
+    --gray: hsl(0, 0%, 52%);
+    --border: rgba(0, 0, 0, 0.1);
+   
+}
+ul,
+ol {
+    list-style: none;
+}
+body {
+    background: var(--bg);
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+}
+h1,
+h5 {
+    height: 0px;
+}
+.wrapper {
+    width: 96%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.card-grid {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-gap: 48px;
+}
+.card {
+    background-color: var(--bg-offset);
+    padding: 0px;
+    box-shadow: 0px 2px 4px var(--border);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+}
+
+.card-content {
+    padding: 32px 15px;
+
+    h5 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+.card-list {
+    margin-top: 16px;
+
+    li {
+        color: var(--text);
+        margin-top: 8px;
+
+        span {
+            color: var(--gray);
+        }
+    }
+}
+
+/* search input */
+.search-wrapper {
+    margin: 48px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+    .search-input {
+        width: 100%;
+    }
+    .search-wrapper {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .select {
+        margin-top: 3.5em;
+    }
+}
+
+.search-input {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xNS44NTMgMTYuNTZjLTEuNjgzIDEuNTE3LTMuOTExIDIuNDQtNi4zNTMgMi40NC01LjI0MyAwLTkuNS00LjI1Ny05LjUtOS41czQuMjU3LTkuNSA5LjUtOS41IDkuNSA0LjI1NyA5LjUgOS41YzAgMi40NDItLjkyMyA0LjY3LTIuNDQgNi4zNTNsNy40NCA3LjQ0LS43MDcuNzA3LTcuNDQtNy40NHptLTYuMzUzLTE1LjU2YzQuNjkxIDAgOC41IDMuODA5IDguNSA4LjVzLTMuODA5IDguNS04LjUgOC41LTguNS0zLjgwOS04LjUtOC41IDMuODA5LTguNSA4LjUtOC41eiIvPjwvc3ZnPg==");
+    background-color: var(--bg-offset);
+    background-size: 16px 16px;
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    padding: 1.4em 2em;
+    padding-left: 2.7em;
+    border: 1px solid var(--border);
+    color: var(--gray);
+    box-shadow: 0px 4px 6px var(--border);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+        box-shadow: 0px 0px 0px var(--border);
+    }
+}
+/* select from moderncss.dev */
+select {
+     /*A reset of styles, including removing the default dropdown arrow*/
+    appearance: none !important;
+    /* Additional resets for further consistency*/
+    outline: none;
+    background-color: var(--bg-offset);
+    border-radius: 0.25em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border);
+    padding: 1.4em 2em 1.4em 1em;
+    margin: 0;
+    margin-right: 1em;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    width: 100%;
+    color: var(--gray);
+}
+.select {
+    min-width: 15ch;
+    max-width: 30ch;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 6px var(--border);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+        box-shadow: 0px 0px 0px var(--border);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0.8em;
+        height: 0.5em;
+        background-color: var(--text);
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        justify-self: end;
+        margin-right: 1em;
+    }
+}
+select,
+.select:after {
+    grid-area: select;
+}
+select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--text);
+    border-radius: inherit;
+}

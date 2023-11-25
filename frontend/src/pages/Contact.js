@@ -1,3 +1,4 @@
+import React from "react";
 import { Grid, styled } from "@mui/material";
 
 const AnimatedTableCell = styled('td')({
@@ -5,96 +6,84 @@ const AnimatedTableCell = styled('td')({
   transition: 'transform 0.3s ease-in-out',
 
   '&:hover': {
-    transform: 'scale(1.1)', // Ajuste conforme necessário
+    transform: 'scale(1.1)',
+  },
+
+  '& a': {
+    color: 'black',
+    textDecoration: 'none',
+    textAlign: 'center',
+  },
+
+  '& img': {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+
+  '& sub': {
+    display: 'block',
+    marginTop: '5px',
+    textAlign: 'center',
   },
 });
+
+const profiles = [
+  {
+    name: "Gustavo",
+    github: "https://github.com/gustaallves",
+    avatar: "https://avatars.githubusercontent.com/u/108435814?v=4",
+  },
+  {
+    name: "Fenelas",
+    github: "https://github.com/Fenelas",
+    avatar: "https://avatars.githubusercontent.com/u/101183605?v=4",
+  },
+  {
+    name: "Bessa",
+    github: "https://github.com/Bessazs",
+    avatar: "https://avatars.githubusercontent.com/u/118318004?v=4",
+  },
+  {
+    name: "Johnny",
+    github: "https://github.com/JohnnyLopess",
+    avatar: "https://avatars.githubusercontent.com/u/144946019?v=4",
+  },
+  {
+    name: "Vitor",
+    github: "https://github.com/VituuDias",
+    avatar: "https://avatars.githubusercontent.com/u/58560647?v=4",
+  },
+  {
+    name: "Igor Justino",
+    github: "https://github.com/maquinaAgricula",
+    avatar: "https://avatars.githubusercontent.com/u/103219582?v=4",
+  },
+];
 
 const Contact = () => {
   return (
     <Grid container justifyContent="center">
       <Grid item sm={10}>
         <h1>Integrantes</h1>
+        <br />
         <hr />
         <table>
           <tr>
-            <AnimatedTableCell>
-              <a href="https://github.com/gustaallves">
-                <img
-                  src="https://avatars.githubusercontent.com/u/108435814?v=4"
-                  width="100px"
-                  alt="Foto de Gustavel Alves no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Gustavo</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
-            <AnimatedTableCell>
-              <a href="https://github.com/Fenelas">
-                <img
-                  src="https://avatars.githubusercontent.com/u/101183605?v=4"
-                  width="100px"
-                  alt="Foto de Gabriel Fenelon no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Fenelas</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
-            <AnimatedTableCell>
-              <a href="https://github.com/Bessazs">
-                <img
-                  src="https://avatars.githubusercontent.com/u/118318004?v=4"
-                  width="100px"
-                  alt="Foto de Vitor Bessa no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Bessa</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
-            <AnimatedTableCell>
-              <a href="https://github.com/JohnnyLopess">
-                <img
-                  src="https://avatars.githubusercontent.com/u/144946019?v=4"
-                  width="100px"
-                  alt="Foto de Johnny no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Johnny</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
-            <AnimatedTableCell>
-            <a href="https://github.com/VituuDias">
-                <img
-                  src="https://avatars.githubusercontent.com/u/58560647?v=4"
-                  width="100px"
-                  alt="Foto de Vitor no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Vitor</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
-            <AnimatedTableCell>
-            <a href="https://github.com/maquinaAgricula">
-                <img
-                  src="https://avatars.githubusercontent.com/u/103219582?v=4"
-                  width="100px"
-                  alt="Foto de Igor no GitHub"
-                />
-                <br />
-                <sub>
-                  <b>Igor Justino</b>
-                </sub>
-              </a>
-            </AnimatedTableCell>
+            {profiles.map((profile, index) => (
+              <AnimatedTableCell key={index}>
+                <a href={profile.github}>
+                  <img
+                    src={profile.avatar}
+                    width="100px"
+                    alt={`Foto de ${profile.name} no GitHub`}
+                  />
+                  <br />
+                  <sub>
+                    <b>{profile.name}</b>
+                  </sub>
+                </a>
+              </AnimatedTableCell>
+            ))}
           </tr>
         </table>
       </Grid>

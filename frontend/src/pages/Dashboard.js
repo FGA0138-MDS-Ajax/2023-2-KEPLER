@@ -49,7 +49,9 @@ const Dashboard = () => {
     <Grid container>
       <Grid item sm={4} sx={{ backgroundColor: 'gray', p: 5, color: 'white' }}>
         <h1>Dashboard</h1>
-        <Typography variant='h5'>Email: {userData.email}</Typography>
+        <br />
+        <Typography variant='h6'>Email: {userData.email}</Typography>
+        <br />
         <Typography variant='h6'>Name: {userData.name}</Typography>
         <Button variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
       </Grid>
