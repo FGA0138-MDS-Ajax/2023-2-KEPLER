@@ -1,5 +1,5 @@
 from django.contrib import admin
-from account.models import User
+from account.models import User, Materia, Turma
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 class UserModelAdmin(BaseUserAdmin):
@@ -25,6 +25,17 @@ class UserModelAdmin(BaseUserAdmin):
   ordering = ('email', 'id')
   filter_horizontal = ()
 
+class MateriaAdmin(admin.ModelAdmin):
+    list_display = ('id', 'codigo', 'disciplina')
+  
+    ordering = ('id',)
 
+class TurmaAdmin(admin.ModelAdmin):
+    list_display = ('id', 'professor', 'turma', 'horario', 'horas')
+
+   # ordering = ('id',)
+  
 # Now register the new UserModelAdmin...
 admin.site.register(User, UserModelAdmin)
+admin.site.register(Materia, MateriaAdmin)
+admin.site.register(Turma, TurmaAdmin)
