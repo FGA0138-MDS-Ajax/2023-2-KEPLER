@@ -238,8 +238,8 @@ Quadro: 2
 | Sprint 3 | Configurar o ambiente                | 16/08/2023  | 29/09/2023 |                                         | Todos        | 100%        |
 | Sprint 4 | Visão do projeto/produto             | 30/10/2023  | 01/10/2023 | Documentação                           | Todos        | 100%        |
 | Sprint 5 | Slide                                | 02/10/2023  | 02/10/2023 | Slides de apresentação                 | Matheus / Caio| 100%        |
-| Sprint 6 | Desenvolvimento do protótipo 1       | 04/10/2023  | 20/11/2023 || Front-end                              |              | 100%        |
-| Sprint 7 | Desenvolvimento inicial de 4 telas   | 16/10/2023  | 12/11/2023 | Código |Front-end                       |              | 90%         |
+| Sprint 6 | Desenvolvimento do protótipo 1       | 04/10/2023  | 20/11/2023 || Front-end                              |            100%        |
+| Sprint 7 | Desenvolvimento inicial de 4 telas   | 16/10/2023  | 12/11/2023 | Código |Front-end                       |   90%         |
 | Sprint 8 | Declaração de escopo do software     | 21/10/2023  | 25/10/2023 | Documentação/Arquivo no GitHub         | Todos        | 100%        |
 | Sprint 9 | Documento de arquitetura             | 26/10/2023  | 03/11/2023 | Documentação/Arquivo no GitHub         | Todos        | 100%        |
 
@@ -273,52 +273,44 @@ reuniões com a equipe de desenvolvedores.
 
  **Riscos Críticos Realizados:** Se um risco crítico, identificado
  anteriormente no plano
-
  de gerenciamento de riscos, se materializar e tiver um impacto
  significativo no projeto,
-
  será necessário um replanejamento. Isso inclui riscos que afetam o
  escopo, prazo ou
-
  qualidade do projeto. Os planos de mitigação e contingência serão
  acionados conforme
-
  necessário.
 
-*Página 9 de 14*
 
- •**Mudanças nas Necessidades dos Usuários:** Se houver mudanças
+
+ - **Mudanças nas Necessidades dos Usuários:** Se houver mudanças
  significativas nas necessidades ou requisitos do produto, que não
  possam ser acomodadas dentro dos limites do escopo e cronograma
  existentes, um replanejamento será considerado.
 
- •**Mudanças Legais ou Regulatórias:** Alterações nas regulamentações
+ - **Mudanças Legais ou Regulatórias:** Alterações nas regulamentações
  que afetem direta ou indiretamente o projeto podem exigir um
  replanejamento para garantir a conformidade.
 
- •**Recursos Insuficientes ou Disponibilidade Limitada:** Se recursos
+ - **Recursos Insuficientes ou Disponibilidade Limitada:** Se recursos
  essenciais, como os integrantes do grupo, hardware ou software, se
  tornarem insuficientes ou limitados além do que foi inicialmente
  previsto, um replanejamento será necessário para ajustar o escopo ou
  prazo do projeto.
 
- •**Desvios Significativos do Cronograma:** Se o projeto começar a
+ - **Desvios Significativos do Cronograma:** Se o projeto começar a
  desviar significativamente do cronograma planejado, seja devido a
  atrasos na entrega, problemas de integração ou outros fatores, um
  replanejamento será necessário para recuperar o atraso ou ajustar as
  metas.
 
- •**Mudanças nas Tecnologias ou Ferramentas:** Se mudanças
+ - **Mudanças nas Tecnologias ou Ferramentas:** Se mudanças
  significativas nas tecnologias ou ferramentas utilizadas no projeto
  afetarem o desenvolvimento ou a funcionalidade do sistema, um
  replanejamento será considerado.
 
- **3PROCESSO DE DESENVOLVIMENTO DE SOFTWARE**
-
-Imagem: 2
-
-![](vertopal_faffe6ee0b154fdd8685a4a6b5bf847e/media/image3.png){width="5.0in"
-height="2.3958333333333335in"}
+ **3 PROCESSO DE DESENVOLVIMENTO DE SOFTWARE**
+![imagen2](assets\Scrum.png)
 
  **Metodologia de Desenvolvimento de Software -- Scrum e XP**
 
@@ -330,68 +322,32 @@ height="2.3958333333333335in"}
  **Decisões:**
 
 
-| •                                 |  **Adoção do Scrum:** A equipe   |
-|                                   |  optou por adotar o framework    |
-|                                   |  Scrum como uma das metodologia  |
-|                                   |  de desenvolvimento de software  |
-|                                   |  para este projeto. O Scrum é    |
-|                                   |  escolhido                       |
+ - **Adoção do Scrum:** A equipe optou por adotar o framework Scrum como uma das metodologia de desenvolvimento de software para este projeto. O Scrum é escolhido devido à sua abordagem ágil e flexível, que se adequa bem ao ambiente acadêmico em constante evolução. 
 
+- **Papéis Scrum:** 
 
+- -  **Scrum Master:** O projeto contará com um Scrum Master, cuja responsabilidade é garantir que a equipe siga as práticas e princípios do Scrum, remover impedimentos e facilitar as reuniões do Scrum. 
 
-*Página 10 de 14*
+- - **Product Owner:** Um Product Owner será designado para definir e priorizar os requisitos do Gerenciador Acadêmico com base nas necessidades dos usuários e dos stakeholders. 
 
+- **Sprints:** O desenvolvimento será dividido em sprints mensais, cada um com duração de quatro semanas. Essa abordagem permitirá entregas regulares de funcionalidades e ajustes com base no feedback.
 
-| •                                 |  devido à sua abordagem ágil e   |
-|                                   |  flexível, que se adequa bem ao  |
-| •                                 |  ambiente acadêmico em constante |
-|                                   |  evolução.                       |
-|                                   |                                  |
-|                                   |  **Papéis Scrum:**\              |
-|                                   |  o**Scrum Master:** O projeto    |
-|                                   |  contará com um Scrum Master,    |
-|                                   |  cuja responsabilidade é         |
-|                                   |  garantir que a equipe siga as   |
-|                                   |  práticas e princípios do Scrum, |
-|                                   |  remover impedimentos e          |
-|                                   |  facilitar as reuniões do Scrum. |
-|                                   |                                  |
-|                                   |  o**Product Owner:** Um Product  |
-|                                   |  Owner será designado para       |
-|                                   |  definir e priorizar os          |
-|                                   |  requisitos do Gerenciador       |
-|                                   |  Acadêmico com base nas          |
-|                                   |  necessidades dos usuários e dos |
-|                                   |  stakeholders.                   |
-|                                   |                                  |
-|                                   |  **Sprints:** O desenvolvimento  |
-|                                   |  será dividido em sprints        |
-|                                   |  mensais, cada um com duração de |
-|                                   |  quatro semanas. Essa abordagem  |
-|                                   |  permitirá entregas regulares de |
-|                                   |  funcionalidades e ajustes com   |
-|                                   |  base no feedback.               |
+- **Reuniões Scrum:** A equipe realizará as seguintes reuniões do Scrum:
+- - **Reuniões Periódicas:** 3 Reuniões por semana para acompanhar o progresso, compartilhar atualizações e identificar impedimentos.
 
-
-
- •**Reuniões Scrum:** A equipe realizará as seguintes reuniões do
- Scrum:\
- o**Reuniões Periódicas:** 3 Reuniões por semana para acompanhar o
- progresso, compartilhar atualizações e identificar impedimentos.
-
- o**Planejamento de Sprint:** Reunião de planejamento de sprint no
+- - **Planejamento de Sprint:** Reunião de planejamento de sprint no
  início de cada sprint para definir os objetivos e selecionar as
  tarefas a serem realizadas durante o sprint.
 
- o**Revisão de Sprint:** Reunião de revisão de sprint ao final de cada
+- - **Revisão de Sprint:** Reunião de revisão de sprint ao final de cada
  sprint para revisar o trabalho concluído e obter feedback dos
  stakeholders.
 
- o**Retrospectiva de Sprint:** Reunião de retrospectiva de sprint para
+- - **Retrospectiva de Sprint:** Reunião de retrospectiva de sprint para
  avaliar o desempenho da equipe e identificar oportunidades de
  melhoria.
 
- •**Priorização de Requisitos:** O Product Owner será responsável por
+- **Priorização de Requisitos:** O Product Owner será responsável por
  priorizar os requisitos com base nas necessidades dos usuários e nos
  objetivos do projeto. Isso garantirá que as funcionalidades mais
  importantes sejam entregues primeiro.
@@ -400,142 +356,64 @@ height="2.3958333333333335in"}
  principais etapas do processo de desenvolvimento dentro do framework
  Scrum:
 
-*Página 11 de 14*
-
- ![](vertopal_faffe6ee0b154fdd8685a4a6b5bf847e/media/image4.png){width="5.0in"
- height="3.6777777777777776in"}
-
-Imagem: 3
+![imagen3](assets\Diagrama.JPG)
 
  Este diagrama serve como um guia visual para as atividades e
  interações da equipe durante o desenvolvimento do Gerenciador
  Acadêmico, de acordo com a metodologia Scrum escolhida.
 
- •**Adoção do XP:** A equipe optou por adotar o framework XP como uma
+ - **Adoção do XP:** A equipe optou por adotar o framework XP como uma
  das metodologias de desenvolvimento de software para este projeto. O
  XP é escolhido devido às suas práticas que visam adaptabilidade,
  flexibilidade e colaboração., que se irão melhorar a qualidade do
  software e a satisfação do cliente.
 
- •**Práticas do XP**\
- o**Integração Contínua:** As alterações no código são integradas
+ - **Práticas do XP**
+ - - **Integração Contínua:** As alterações no código são integradas
  continuamente ao repositório principal, permitindo a detecção precoce
  de conflitos e a manutenção de um código sempre funcional.
 
- o**Programação em Pares:** Os desenvolvedores trabalham em pares, onde
+ - - **Programação em Pares:** Os desenvolvedores trabalham em pares, onde
  um escreve o código enquanto o outro revisa. Isso promove a
  colaboração, compartilhamento de conhecimento e melhoria da qualidade
  do código.
 
- o**Padronização do código:** Ao adotar práticas de padronização de
+ - - **Padronização do código:** Ao adotar práticas de padronização de
  código, a equipe na XP fortalece sua coesão, favorece a eficiência
  colaborativa e sustenta a manutenção de um código fonte que é coeso e
  claro, mesmo quando produzido por diversos membros da equipe.
 
-*Página 12 de 14*
+
+ **4 Detalhamento de atividades do projeto** 
+ 
+ **4.1** **Atividade 1**
+| Atividade             | Método | Ferramenta | Entrega     |
+|-----------------------|--------|------------|-------------|
+| Planejamento de Sprint | Scrum  | Quadro     | 28/09/2023  |
+
+**4.1** **Atividade 2**
+
+| Atividade              | Método      | Ferramenta | Entrega     |
+|------------------------|-------------|------------|-------------|
+| Definição de Objetivos | Brainstorm  | Quadro     | 18/09/2023  |
+
+**4.1** **Atividade 3**
+
+| Atividade           | Método      | Ferramenta | Entrega     |
+|---------------------|-------------|------------|-------------|
+| Seleção de Tarefas  | Priorização | Quadro     | 18/09/2023  |
+
+**4.1** **Atividade 4**
+
+| Atividade         | Método | Ferramenta | Entrega     |
+|-------------------|--------|------------|-------------|
+| Desenvolvimento   | Agile  | IDE (VSCode)| 19/11/2023  |
 
 
-| **4**                             |  **Detalhamento de atividades do |
-|                                   |  projeto**                       |
-| **4.1**                           |                                  |
-|                                   |  **Atividade 1**                 |
-
-
-
-+-----------------+-----------------+-----------------+-----------------+
-| ***Atividade*** | ***Método***    | *               | ***Entrega***   |
-|                 |                 | **Ferramenta*** |                 |
-+=================+=================+=================+=================+
-|  *Planejamento |  *Scrum*       |  *Quadro*      |  *28/09/2023*  |
-|  de Sprint*    |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-
-
-| **4.2**                           |  **Atividade 2**                 |
-
-
-
-+-----------------+-----------------+-----------------+-----------------+
-| ***Atividade*** | ***Método***    | *               | ***Entrega***   |
-|                 |                 | **Ferramenta*** |                 |
-+=================+=================+=================+=================+
-|  Definição de  |  Brainstorm    |  *Quadro*      |  *18/09/2023*  |
-|  Objetivos     |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-
-
-| **4.3**                           |  **Atividade 3**                 |
-
-
-
-+-----------------+-----------------+-----------------+-----------------+
-| ***Atividade*** | ***Método***    | *               | ***Entrega***   |
-|                 |                 | **Ferramenta*** |                 |
-+=================+=================+=================+=================+
-|  Seleção de    |  Priorização   |  Quadro        |  18/09/2023    |
-|  Tarefas       |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-
-
-| **4.4**                           |  **Atividade 4**                 |
-
-
-
-+-----------------+-----------------+-----------------+-----------------+
-| ***Atividade*** | ***Método***    | *               | ***Entrega***   |
-|                 |                 | **Ferramenta*** |                 |
-+=================+=================+=================+=================+
-|                |  *Agile*       |  IDE (VSCode)  |  19/11/2023    |
-| Desenvolvimento |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-
-*Página 13 de 14*
-
- **5LIÇÕES APRENDIDAS**\
+ **5 LIÇÕES APRENDIDAS**\
  **5.1** **Unidade 1**\
  **Comunicação e Transparência:** Identificamos a necessidade de
  melhorar a comunicação entre os membros da equipe.
 
  **Ação:** Implementar reuniões periódicas mais estruturadas para
  compartilhar atualizações e impedimentos.
-
- **6PRÓXIMOS PASSOS1**
-
-
-|  •\                              |  *Iniciem a preparação do        |
-|  •\                              |  backlog do produto, redigindo   |
-|  •\                              |  requisitos funcionais e não     |
-|  •                               |  funcionais (se existirem);*     |
-|                                   |                                  |
-|                                   |  *Revejam definições de Sprints  |
-|                                   |  e releases para acomodar os     |
-|                                   |  requisitos dentro das           |
-|                                   |  capacidades de cada equipe;*    |
-|                                   |                                  |
-|                                   |  *Priorize requisitos de acordo  |
-|                                   |  com as entregas de valores      |
-|                                   |  determinadas nas releases e as  |
-|                                   |  sprints planejadas;*            |
-|                                   |                                  |
-|                                   |  *Estudem o que é um MVP --      |
-|                                   |  Minimum Viable Product. Pensem  |
-|                                   |  assim: O cliente quer ver       |
-|                                   |  funcionando uma demonstração do |
-|                                   |  produto. Além disso, as         |
-|                                   |  tecnologias adotadas são        |
-|                                   |  suficientes para o              |
-|                                   |  desenvolvimento do produto?*    |
-
-
-
- **7REFERÊNCIAS BIBLIOGRÁFICAS**
-
- • 06/01/2023.
-
-  -----------------------------------------------------------------------
-  •                                   
-  ----------------------------------- -----------------------------------
-
-  -----------------------------------------------------------------------
-
-*Página 14 de 14*
