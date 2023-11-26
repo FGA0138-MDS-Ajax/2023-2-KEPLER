@@ -89,7 +89,7 @@ function Materias() {
                             <option value="All">Filter By Region</option>
                             <option value="Aero">Aeroespacial</option>
                             <option value="Auto">Automotiva</option>
-                            <option value="Elet">Eletroinica</option>
+                            <option value="Elet">Eletrônica</option>
                             <option value="Soft">Software</option>
                             <option value="Ener">Energia</option>
                         </select>

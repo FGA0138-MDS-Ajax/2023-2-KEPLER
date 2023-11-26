@@ -19,12 +19,20 @@ const Home = () => {
           mais produtivo e organizado com o GradeWeb, sua ferramenta completa para
           uma trajetória acadêmica de sucesso.
         </p>
+        
+        <h1>Documentação completa do projeto</h1>
+        <p> 
+          <br/>
+          <a href="https://fga0138-mds-ajax.github.io/2023-2-KEPLER/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>
+            https://fga0138-mds-ajax.github.io/2023-2-KEPLER/
+          </a>
+        </p>
+
         <img
           src={Pic2}
           alt="imagem"
           style={{ width: "36%", maxWidth: "1000px", margin: "0 auto", display: "block" }}
         />
-        {/* Defina o maxWidth com o valor desejado para ajustar o tamanho da imagem */}
       </Grid>
     </Grid>
   );

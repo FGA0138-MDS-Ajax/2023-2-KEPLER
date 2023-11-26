@@ -1,8 +1,26 @@
+import { Button, CssBaseline, Grid, Typography } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { unSetUserToken } from '../features/authSlice';
+import { getToken, removeToken } from '../services/LocalStorageService';
+import ChangePassword from './auth/ChangePassword';
+import { useGetLoggedUserQuery } from '../services/userAuthApi';
+import { useEffect, useState } from 'react';
+import { setUserInfo, unsetUserInfo } from '../features/userSlice';
 import React from "react";
 import principal from '../styleheets/Principal.css';
 import { Link } from "react-router-dom";
 
 function Principal(){
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        dispatch(unsetUserInfo({ name: "", email: "" }))
+        dispatch(unSetUserToken({ access_token: null }))
+        removeToken()
+        navigate('/login')
+      }
     return(
         <><div className="background-bottom">
             <div className="main-screen">
@@ -18,7 +36,7 @@ function Principal(){
                         </li>
                     </ul>
                     <div className="Bottom-Exit"> 
-                   <Link to="/login" style={{textDecoration:'none'}}><button>Sair</button> </Link>    
+                    <Button variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>    
                     </div>
             
                 </div>
