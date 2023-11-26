@@ -1,5 +1,6 @@
 [
   {
+    "idTurmaProfessor": 0,
     "idProfessor": 0,
     "nomeProfessor": "EDSON ALVES DA COSTA JUNIOR",
     "numeroTurma": 1,
@@ -16,6 +17,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 1,
     "idProfessor": 1,
     "nomeProfessor": "LUIS FILOMENO DE JESUS FERNANDES",
     "numeroTurma": 2,
@@ -32,6 +34,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 2,
     "idProfessor": 2,
     "nomeProfessor": "RONNE TOLEDO",
     "numeroTurma": 1,
@@ -48,6 +51,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 3,
     "idProfessor": 3,
     "nomeProfessor": "WELLINGTON AVELINO DO AMARAL",
     "numeroTurma": 1,
@@ -64,6 +68,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 4,
     "idProfessor": 4,
     "nomeProfessor": "RITA DE CASSIA SILVA",
     "numeroTurma": 1,
@@ -80,6 +85,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 5,
     "idProfessor": 5,
     "nomeProfessor": "ALEX REIS e JORGE ANDRES CORMANE ANGARITA",
     "numeroTurma": 1,
@@ -96,6 +102,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 6,
     "idProfessor": 6,
     "nomeProfessor": "JOHN LENON CARDOSO GARDENGHI",
     "numeroTurma": 1,
@@ -112,6 +119,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 7,
     "idProfessor": 7,
     "nomeProfessor": "BRUNO CESAR RIBAS",
     "numeroTurma": 2,
@@ -128,6 +136,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 8,
     "idProfessor": 8,
     "nomeProfessor": "RODRIGO ANDRES MIRANDA CERDA",
     "numeroTurma": 3,
@@ -144,6 +153,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 9,
     "idProfessor": 9,
     "nomeProfessor": "PAOLO GESSINI",
     "numeroTurma": 6,
@@ -160,6 +170,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 10,
     "idProfessor": 10,
     "nomeProfessor": "OLEXIY SHYNKARENKO",
     "numeroTurma": 1,
@@ -176,6 +187,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 11,
     "idProfessor": 11,
     "nomeProfessor": "ARTEM ANDRIANOV",
     "numeroTurma": 1,
@@ -192,6 +204,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 12,
     "idProfessor": 12,
     "nomeProfessor": "RAFAEL RODRIGUES DA SILVA",
     "numeroTurma": 1,
@@ -208,6 +221,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 13,
     "idProfessor": 13,
     "nomeProfessor": "OLEXIY SHYNKARENKO",
     "numeroTurma": 1,
@@ -224,6 +238,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 14,
     "idProfessor": 14,
     "nomeProfessor": "POLLIANA CANDIDA OLIVEIRA MARTINS",
     "numeroTurma": 1,
@@ -240,6 +255,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 15,
     "idProfessor": 15,
     "nomeProfessor": "ANDREIA ALVES COSTA LINDINGER",
     "numeroTurma": 1,
@@ -256,6 +272,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 16,
     "idProfessor": 16,
     "nomeProfessor": "WILLIAM REIS SILVA",
     "numeroTurma": 1,
@@ -272,6 +289,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 17,
     "idProfessor": 17,
     "nomeProfessor": "SERGIO HENRIQUE DA SILVA CARNEIRO",
     "numeroTurma": 1,
@@ -288,6 +306,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 18,
     "idProfessor": 18,
     "nomeProfessor": "JUNGPYO LEE e RODRIGO ANDRES MIRANDA CERDA",
     "numeroTurma": 1,
@@ -304,6 +323,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 19,
     "idProfessor": 19,
     "nomeProfessor": "EDSON ALVES DA COSTA JUNIOR",
     "numeroTurma": 1,
@@ -320,6 +340,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 20,
     "idProfessor": 20,
     "nomeProfessor": "EDSON ALVES DA COSTA JUNIOR",
     "numeroTurma": 2,
@@ -336,6 +357,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 21,
     "idProfessor": 21,
     "nomeProfessor": "WANDER CLEBER MARIA PEREIRA DA SILVA",
     "numeroTurma": 1,
@@ -352,6 +374,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 22,
     "idProfessor": 22,
     "nomeProfessor": "RHANDER VIANA",
     "numeroTurma": 1,
@@ -368,6 +391,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 23,
     "idProfessor": 23,
     "nomeProfessor": "EDISON GUSTAVO CUEVA GALARRAGA",
     "numeroTurma": 1,
@@ -384,6 +408,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 24,
     "idProfessor": 24,
     "nomeProfessor": "MARCUS VINICIUS BATISTUTA",
     "numeroTurma": 1,
@@ -400,6 +425,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 25,
     "idProfessor": 25,
     "nomeProfessor": "VANDOR ROBERTO VILARDI RISSOLI",
     "numeroTurma": 1,
@@ -416,6 +442,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 26,
     "idProfessor": 26,
     "nomeProfessor": "LUIS FILOMENO DE JESUS FERNANDES",
     "numeroTurma": 1,
@@ -432,6 +459,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 27,
     "idProfessor": 27,
     "nomeProfessor": "EULER DE VILHENA GARCIA",
     "numeroTurma": 2,
@@ -448,6 +476,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 28,
     "idProfessor": 28,
     "nomeProfessor": "GILMAR SILVA BESERRA",
     "numeroTurma": 1,
@@ -464,6 +493,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 29,
     "idProfessor": 29,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 1,
@@ -480,6 +510,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 30,
     "idProfessor": 30,
     "nomeProfessor": "SUELIA DE SIQUEIRA RODRIGUES FLEURY ROSA",
     "numeroTurma": 2,
@@ -496,6 +527,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 31,
     "idProfessor": 31,
     "nomeProfessor": "LUIS FILOMENO DE JESUS FERNANDES",
     "numeroTurma": 3,
@@ -512,6 +544,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 32,
     "idProfessor": 32,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 1,
@@ -528,6 +561,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 33,
     "idProfessor": 33,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 2,
@@ -544,6 +578,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 34,
     "idProfessor": 34,
     "nomeProfessor": "HENRIQUE MARRA TAIRA MENEGAZ",
     "numeroTurma": 1,
@@ -560,6 +595,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 35,
     "idProfessor": 35,
     "nomeProfessor": "HENRIQUE MARRA TAIRA MENEGAZ",
     "numeroTurma": 2,
@@ -576,6 +612,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 36,
     "idProfessor": 36,
     "nomeProfessor": "HENRIQUE MARRA TAIRA MENEGAZ",
     "numeroTurma": 3,
@@ -592,6 +629,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 37,
     "idProfessor": 37,
     "nomeProfessor": "HENRIQUE MARRA TAIRA MENEGAZ",
     "numeroTurma": 4,
@@ -608,6 +646,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 38,
     "idProfessor": 38,
     "nomeProfessor": "CLAUDIA PATRICIA OCHOA DIAZ",
     "numeroTurma": 5,
@@ -624,6 +663,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 39,
     "idProfessor": 39,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 6,
@@ -640,6 +680,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 40,
     "idProfessor": 40,
     "nomeProfessor": "MARCELINO MONTEIRO DE ANDRADE",
     "numeroTurma": 7,
@@ -656,6 +697,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 41,
     "idProfessor": 41,
     "nomeProfessor": "MARCELINO MONTEIRO DE ANDRADE",
     "numeroTurma": 8,
@@ -672,6 +714,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 42,
     "idProfessor": 42,
     "nomeProfessor": "MARCELINO MONTEIRO DE ANDRADE",
     "numeroTurma": 9,
@@ -688,6 +731,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 43,
     "idProfessor": 43,
     "nomeProfessor": "MARCELINO MONTEIRO DE ANDRADE",
     "numeroTurma": 10,
@@ -704,6 +748,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 44,
     "idProfessor": 44,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 11,
@@ -720,6 +765,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 45,
     "idProfessor": 45,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 12,
@@ -736,6 +782,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 46,
     "idProfessor": 46,
     "nomeProfessor": "CLAUDIA PATRICIA OCHOA DIAZ",
     "numeroTurma": 13,
@@ -752,6 +799,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 47,
     "idProfessor": 47,
     "nomeProfessor": "HENRIQUE MARRA TAIRA MENEGAZ",
     "numeroTurma": 14,
@@ -768,6 +816,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 48,
     "idProfessor": 48,
     "nomeProfessor": "DANIEL MAURICIO MUNOZ ARBOLEDA",
     "numeroTurma": 1,
@@ -784,6 +833,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 49,
     "idProfessor": 49,
     "nomeProfessor": "RENATO VILELA LOPES",
     "numeroTurma": 1,
@@ -800,6 +850,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 50,
     "idProfessor": 50,
     "nomeProfessor": "RENATO VILELA LOPES",
     "numeroTurma": 2,
@@ -816,6 +867,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 51,
     "idProfessor": 51,
     "nomeProfessor": "DANIEL MAURICIO MUNOZ ARBOLEDA",
     "numeroTurma": 1,
@@ -832,6 +884,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 52,
     "idProfessor": 52,
     "nomeProfessor": "EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 1,
@@ -848,6 +901,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 53,
     "idProfessor": 53,
     "nomeProfessor": "EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 2,
@@ -864,6 +918,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 54,
     "idProfessor": 54,
     "nomeProfessor": "EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 3,
@@ -880,6 +935,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 55,
     "idProfessor": 55,
     "nomeProfessor": "SANDRA MARIA DA LUZ",
     "numeroTurma": 4,
@@ -896,6 +952,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 56,
     "idProfessor": 56,
     "nomeProfessor": "SANDRA MARIA DA LUZ",
     "numeroTurma": 5,
@@ -912,6 +969,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 57,
     "idProfessor": 57,
     "nomeProfessor": "RODRIGO ARBEY MUNOZ MENESES",
     "numeroTurma": 6,
@@ -928,6 +986,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 58,
     "idProfessor": 58,
     "nomeProfessor": "RODRIGO ARBEY MUNOZ MENESES",
     "numeroTurma": 7,
@@ -944,6 +1003,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 59,
     "idProfessor": 59,
     "nomeProfessor": "EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 10,
@@ -960,6 +1020,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 60,
     "idProfessor": 60,
     "nomeProfessor": "ALESSANDRO BORGES DE SOUSA OLIVEIRA e FABIO ALFAIA DA CUNHA",
     "numeroTurma": 1,
@@ -976,6 +1037,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 61,
     "idProfessor": 61,
     "nomeProfessor": "EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 1,
@@ -992,6 +1054,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 62,
     "idProfessor": 62,
     "nomeProfessor": "RODRIGO ARBEY MUNOZ MENESES",
     "numeroTurma": 2,
@@ -1008,6 +1071,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 63,
     "idProfessor": 63,
     "nomeProfessor": "FABRICIO ATAIDES BRAZ",
     "numeroTurma": 1,
@@ -1024,6 +1088,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 64,
     "idProfessor": 64,
     "nomeProfessor": "SERGIO ANTONIO ANDRADE DE FREITAS",
     "numeroTurma": 1,
@@ -1040,6 +1105,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 65,
     "idProfessor": 65,
     "nomeProfessor": "GLAUCO VITOR PEDROSA",
     "numeroTurma": 1,
@@ -1056,6 +1122,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 66,
     "idProfessor": 66,
     "nomeProfessor": "GLAUCO VITOR PEDROSA",
     "numeroTurma": 2,
@@ -1072,6 +1139,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 67,
     "idProfessor": 67,
     "nomeProfessor": "JORGE ANDRES CORMANE ANGARITA",
     "numeroTurma": 1,
@@ -1088,6 +1156,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 68,
     "idProfessor": 68,
     "nomeProfessor": "FLAVIO HENRIQUE JUSTINIANO RIBEIRO DA SILVA",
     "numeroTurma": 2,
@@ -1104,6 +1173,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 69,
     "idProfessor": 69,
     "nomeProfessor": "LOANA NUNES VELASCO",
     "numeroTurma": 2,
@@ -1120,6 +1190,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 70,
     "idProfessor": 70,
     "nomeProfessor": "JORGE ANDRES CORMANE ANGARITA",
     "numeroTurma": 3,
@@ -1136,6 +1207,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 71,
     "idProfessor": 71,
     "nomeProfessor": "RUDI HENRI VAN ELS",
     "numeroTurma": 4,
@@ -1152,6 +1224,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 72,
     "idProfessor": 72,
     "nomeProfessor": "RUDI HENRI VAN ELS",
     "numeroTurma": 5,
@@ -1168,6 +1241,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 73,
     "idProfessor": 73,
     "nomeProfessor": "FLAVIO HENRIQUE JUSTINIANO RIBEIRO DA SILVA",
     "numeroTurma": 1,
@@ -1184,6 +1258,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 74,
     "idProfessor": 74,
     "nomeProfessor": "RUDI HENRI VAN ELS",
     "numeroTurma": 1,
@@ -1200,6 +1275,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 75,
     "idProfessor": 75,
     "nomeProfessor": "RUDI HENRI VAN ELS",
     "numeroTurma": 2,
@@ -1216,6 +1292,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 76,
     "idProfessor": 76,
     "nomeProfessor": "EBERTH DE ALMEIDA CORREA",
     "numeroTurma": 1,
@@ -1232,6 +1309,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 77,
     "idProfessor": 77,
     "nomeProfessor": "JHON NERO VAZ GOULART",
     "numeroTurma": 2,
@@ -1248,6 +1326,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 78,
     "idProfessor": 78,
     "nomeProfessor": "DANIEL COSTA ARAUJO",
     "numeroTurma": 1,
@@ -1264,6 +1343,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 79,
     "idProfessor": 79,
     "nomeProfessor": "LUIS FILOMENO DE JESUS FERNANDES",
     "numeroTurma": 1,
@@ -1280,6 +1360,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 80,
     "idProfessor": 80,
     "nomeProfessor": "WILLIAM REIS SILVA",
     "numeroTurma": 3,
@@ -1296,6 +1377,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 81,
     "idProfessor": 81,
     "nomeProfessor": "LUIS FILOMENO DE JESUS FERNANDES",
     "numeroTurma": 4,
@@ -1312,6 +1394,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 82,
     "idProfessor": 82,
     "nomeProfessor": "MARCUS VINICIUS CHAFFIM COSTA",
     "numeroTurma": 1,
@@ -1328,6 +1411,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 83,
     "idProfessor": 83,
     "nomeProfessor": "GUILLERMO ALVAREZ BESTARD",
     "numeroTurma": 1,
@@ -1344,6 +1428,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 84,
     "idProfessor": 84,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 1,
@@ -1360,6 +1445,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 85,
     "idProfessor": 85,
     "nomeProfessor": "DIOGO DE OLIVEIRA COSTA",
     "numeroTurma": 2,
@@ -1376,6 +1462,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 86,
     "idProfessor": 86,
     "nomeProfessor": "WELLINGTON AVELINO DO AMARAL",
     "numeroTurma": 1,
@@ -1392,6 +1479,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 87,
     "idProfessor": 87,
     "nomeProfessor": "GERARDO ANTONIO IDROBO PIZO",
     "numeroTurma": 1,
@@ -1408,6 +1496,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 88,
     "idProfessor": 88,
     "nomeProfessor": "GERARDO ANTONIO IDROBO PIZO",
     "numeroTurma": 2,
@@ -1424,6 +1513,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 89,
     "idProfessor": 89,
     "nomeProfessor": "MARCUS VINICIUS BATISTUTA",
     "numeroTurma": 1,
@@ -1440,6 +1530,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 90,
     "idProfessor": 90,
     "nomeProfessor": "ROBERTO DE SOUZA BAPTISTA",
     "numeroTurma": 1,
@@ -1456,6 +1547,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 91,
     "idProfessor": 91,
     "nomeProfessor": "MARCUS VINICIUS CHAFFIM COSTA",
     "numeroTurma": 2,
@@ -1472,6 +1564,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 92,
     "idProfessor": 92,
     "nomeProfessor": "DIOGO CAETANO GARCIA",
     "numeroTurma": 1,
@@ -1488,6 +1581,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 93,
     "idProfessor": 93,
     "nomeProfessor": "MARCELO BENTO DA SILVA",
     "numeroTurma": 1,
@@ -1504,6 +1598,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 94,
     "idProfessor": 94,
     "nomeProfessor": "JUNGPYO LEE",
     "numeroTurma": 3,
@@ -1520,6 +1615,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 95,
     "idProfessor": 95,
     "nomeProfessor": "PAOLO GESSINI",
     "numeroTurma": 4,
@@ -1536,6 +1632,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 96,
     "idProfessor": 96,
     "nomeProfessor": "RAFAEL CASTILHO FARIA MENDES",
     "numeroTurma": 2,
@@ -1552,6 +1649,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 97,
     "idProfessor": 97,
     "nomeProfessor": "EBERTH DE ALMEIDA CORREA",
     "numeroTurma": 1,
@@ -1568,6 +1666,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 98,
     "idProfessor": 98,
     "nomeProfessor": "MATHEUS BERNARDINI DE SOUZA",
     "numeroTurma": 1,
@@ -1584,6 +1683,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 99,
     "idProfessor": 99,
     "nomeProfessor": "RENATO CORAL SAMPAIO",
     "numeroTurma": 1,
@@ -1600,6 +1700,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 100,
     "idProfessor": 100,
     "nomeProfessor": "RENATO CORAL SAMPAIO",
     "numeroTurma": 3,
@@ -1616,6 +1717,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 101,
     "idProfessor": 101,
     "nomeProfessor": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
     "numeroTurma": 1,
@@ -1632,6 +1734,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 102,
     "idProfessor": 102,
     "nomeProfessor": "LEANDRO XAVIER CARDOSO e RONNI GERALDO GOMES DE AMORIM",
     "numeroTurma": 1,
@@ -1648,6 +1751,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 103,
     "idProfessor": 103,
     "nomeProfessor": "JOSIANE DO SOCORRO AGUIAR DE SOUZA DE OLIVEIRA CAMPOS",
     "numeroTurma": 1,
@@ -1664,6 +1768,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 104,
     "idProfessor": 104,
     "nomeProfessor": "ANDRE LUIZ ALMEIDA PENNA",
     "numeroTurma": 1,
@@ -1680,6 +1785,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 105,
     "idProfessor": 105,
     "nomeProfessor": "ANDRE LUIZ ALMEIDA PENNA",
     "numeroTurma": 2,
@@ -1696,6 +1802,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 106,
     "idProfessor": 106,
     "nomeProfessor": "GERARDO ANTONIO IDROBO PIZO",
     "numeroTurma": 1,
@@ -1712,6 +1819,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 107,
     "idProfessor": 107,
     "nomeProfessor": "GERARDO ANTONIO IDROBO PIZO",
     "numeroTurma": 2,
@@ -1728,6 +1836,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 108,
     "idProfessor": 108,
     "nomeProfessor": "Fernando Merege",
     "numeroTurma": 2,
@@ -1744,6 +1853,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 109,
     "idProfessor": 109,
     "nomeProfessor": "LOANA NUNES VELASCO",
     "numeroTurma": 1,
@@ -1760,6 +1870,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 110,
     "idProfessor": 110,
     "nomeProfessor": "MAURICIO SERRANO",
     "numeroTurma": 1,
@@ -1776,6 +1887,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 111,
     "idProfessor": 111,
     "nomeProfessor": "VINICIUS DE CARVALHO RISPOLI",
     "numeroTurma": 1,
@@ -1792,6 +1904,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 112,
     "idProfessor": 112,
     "nomeProfessor": "LINDOMAR BOMFIM DE CARVALHO DE JESUS",
     "numeroTurma": 2,
@@ -1808,6 +1921,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 113,
     "idProfessor": 113,
     "nomeProfessor": "FERNANDO PAIVA SCARDUA",
     "numeroTurma": 1,
@@ -1824,6 +1938,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 114,
     "idProfessor": 114,
     "nomeProfessor": "EVANDRO LEONARDO SILVA TEIXEIRA",
     "numeroTurma": 1,
@@ -1840,6 +1955,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 115,
     "idProfessor": 115,
     "nomeProfessor": "CLAUDIA PATRICIA OCHOA DIAZ",
     "numeroTurma": 1,
@@ -1856,6 +1972,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 116,
     "idProfessor": 116,
     "nomeProfessor": "PAULA MEYER SOARES",
     "numeroTurma": 1,
@@ -1872,6 +1989,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 117,
     "idProfessor": 117,
     "nomeProfessor": "GLAUCENY CIRNE DE MEDEIROS",
     "numeroTurma": 2,
@@ -1888,6 +2006,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 118,
     "idProfessor": 118,
     "nomeProfessor": "RICARDO MATOS CHAIM",
     "numeroTurma": 3,
@@ -1904,6 +2023,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 119,
     "idProfessor": 119,
     "nomeProfessor": "WANDER CLEBER MARIA PEREIRA DA SILVA",
     "numeroTurma": 1,
@@ -1920,6 +2040,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 120,
     "idProfessor": 120,
     "nomeProfessor": "BRUNO CESAR RIBAS",
     "numeroTurma": 3,
@@ -1936,6 +2057,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 121,
     "idProfessor": 121,
     "nomeProfessor": "VANDOR ROBERTO VILARDI RISSOLI",
     "numeroTurma": 1,
@@ -1952,6 +2074,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 122,
     "idProfessor": 122,
     "nomeProfessor": "MAURICIO SERRANO",
     "numeroTurma": 2,
@@ -1968,6 +2091,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 123,
     "idProfessor": 123,
     "nomeProfessor": "HILMER RODRIGUES NERI",
     "numeroTurma": 1,
@@ -1984,6 +2108,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 124,
     "idProfessor": 124,
     "nomeProfessor": "GEORGE MARSICANO CORREA",
     "numeroTurma": 2,
@@ -2000,6 +2125,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 125,
     "idProfessor": 125,
     "nomeProfessor": "CARLA SILVA ROCHA AGUIAR",
     "numeroTurma": 3,
@@ -2016,6 +2142,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 126,
     "idProfessor": 126,
     "nomeProfessor": "RICARDO AJAX DIAS KOSLOSKI",
     "numeroTurma": 4,
@@ -2032,6 +2159,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 127,
     "idProfessor": 127,
     "nomeProfessor": "MARIA VITORIA DUARTE FERRARI",
     "numeroTurma": 1,
@@ -2048,6 +2176,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 128,
     "idProfessor": 128,
     "nomeProfessor": "TIAGO ALVES DA FONSECA",
     "numeroTurma": 1,
@@ -2064,6 +2193,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 129,
     "idProfessor": 129,
     "nomeProfessor": "JOHN LENON CARDOSO GARDENGHI",
     "numeroTurma": 2,
@@ -2080,6 +2210,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 130,
     "idProfessor": 130,
     "nomeProfessor": "NILTON CORREIA DA SILVA",
     "numeroTurma": 1,
@@ -2096,6 +2227,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 131,
     "idProfessor": 131,
     "nomeProfessor": "ROSE YURI SHIMIZU",
     "numeroTurma": 2,
@@ -2112,6 +2244,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 132,
     "idProfessor": 132,
     "nomeProfessor": "ROSE YURI SHIMIZU",
     "numeroTurma": 3,
@@ -2128,6 +2261,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 133,
     "idProfessor": 133,
     "nomeProfessor": "MARIA ALZIRA DE ARAUJO NUNES",
     "numeroTurma": 1,
@@ -2144,6 +2278,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 134,
     "idProfessor": 134,
     "nomeProfessor": "MARIA ALZIRA DE ARAUJO NUNES",
     "numeroTurma": 2,
@@ -2160,6 +2295,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 135,
     "idProfessor": 135,
     "nomeProfessor": "DIOGO CAETANO GARCIA",
     "numeroTurma": 4,
@@ -2176,6 +2312,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 136,
     "idProfessor": 136,
     "nomeProfessor": "RAFAEL RODRIGUES DA SILVA",
     "numeroTurma": 6,
@@ -2192,6 +2329,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 137,
     "idProfessor": 137,
     "nomeProfessor": "ARTUR ELIAS DE MORAIS BERTOLDI",
     "numeroTurma": 7,
@@ -2208,6 +2346,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 138,
     "idProfessor": 138,
     "nomeProfessor": "JULIANA PETROCCHI RODRIGUES",
     "numeroTurma": 8,
@@ -2224,6 +2363,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 139,
     "idProfessor": 139,
     "nomeProfessor": "RICARDO AJAX DIAS KOSLOSKI",
     "numeroTurma": 9,
@@ -2240,6 +2380,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 140,
     "idProfessor": 140,
     "nomeProfessor": "MATEUS RODRIGUES MIRANDA",
     "numeroTurma": 1,
@@ -2256,6 +2397,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 141,
     "idProfessor": 141,
     "nomeProfessor": "SERGIO HENRIQUE DA SILVA CARNEIRO",
     "numeroTurma": 1,
@@ -2272,6 +2414,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 142,
     "idProfessor": 142,
     "nomeProfessor": "SUZANA MOREIRA AVILA",
     "numeroTurma": 2,
@@ -2288,6 +2431,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 143,
     "idProfessor": 143,
     "nomeProfessor": "GLAUCENY CIRNE DE MEDEIROS",
     "numeroTurma": 3,
@@ -2304,6 +2448,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 144,
     "idProfessor": 144,
     "nomeProfessor": "ENEIDA GONZALEZ VALDES",
     "numeroTurma": 1,
@@ -2320,6 +2465,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 145,
     "idProfessor": 145,
     "nomeProfessor": "ROSEANY DE VASCONCELOS VIEIRA LOPES",
     "numeroTurma": 1,
@@ -2336,6 +2482,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 146,
     "idProfessor": 146,
     "nomeProfessor": "MARILIA MIRANDA FORTE GOMES",
     "numeroTurma": 1,
@@ -2352,6 +2499,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 147,
     "idProfessor": 147,
     "nomeProfessor": "RODRIGO ANDRES MIRANDA CERDA",
     "numeroTurma": 2,
@@ -2368,6 +2516,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 148,
     "idProfessor": 148,
     "nomeProfessor": "ANDRE LUIZ PERON MARTINS LANNA",
     "numeroTurma": 1,
@@ -2384,6 +2533,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 149,
     "idProfessor": 149,
     "nomeProfessor": "FABIANA FREITAS MENDES",
     "numeroTurma": 2,
@@ -2400,6 +2550,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 150,
     "idProfessor": 150,
     "nomeProfessor": "FABIANA FREITAS MENDES",
     "numeroTurma": 3,
@@ -2416,6 +2567,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 151,
     "idProfessor": 151,
     "nomeProfessor": "HENRIQUE GOMES DE MOURA",
     "numeroTurma": 4,
@@ -2432,6 +2584,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 152,
     "idProfessor": 152,
     "nomeProfessor": "MANUEL NASCIMENTO DIAS BARCELOS JUNIOR",
     "numeroTurma": 1,
@@ -2448,6 +2601,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 153,
     "idProfessor": 153,
     "nomeProfessor": "RODRIGO ANDRES MIRANDA CERDA",
     "numeroTurma": 2,
@@ -2464,6 +2618,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 154,
     "idProfessor": 154,
     "nomeProfessor": "LINDOMAR BOMFIM DE CARVALHO DE JESUS",
     "numeroTurma": 3,
@@ -2480,6 +2635,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 155,
     "idProfessor": 155,
     "nomeProfessor": "FERNANDO PAIVA SCARDUA",
     "numeroTurma": 1,
@@ -2496,6 +2652,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 156,
     "idProfessor": 156,
     "nomeProfessor": "MARIA VITORIA DUARTE FERRARI",
     "numeroTurma": 2,
@@ -2512,6 +2669,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 157,
     "idProfessor": 157,
     "nomeProfessor": "JOSIANE DO SOCORRO AGUIAR DE SOUZA DE OLIVEIRA CAMPOS",
     "numeroTurma": 3,
@@ -2528,6 +2686,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 158,
     "idProfessor": 158,
     "nomeProfessor": "LUCIANO GONCALVES NOLETO",
     "numeroTurma": 1,
@@ -2544,6 +2703,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 159,
     "idProfessor": 159,
     "nomeProfessor": "RICARDO RAMOS FRAGELLI",
     "numeroTurma": 2,
@@ -2560,6 +2720,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 160,
     "idProfessor": 160,
     "nomeProfessor": "AUGUSTO CESAR DE MENDONCA BRASIL",
     "numeroTurma": 3,
@@ -2576,6 +2737,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 161,
     "idProfessor": 161,
     "nomeProfessor": "SANDRA MARIA FALEIROS LIMA",
     "numeroTurma": 1,
@@ -2592,6 +2754,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 162,
     "idProfessor": 162,
     "nomeProfessor": "SANDRA MARIA FALEIROS LIMA",
     "numeroTurma": 2,
@@ -2608,6 +2771,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 163,
     "idProfessor": 163,
     "nomeProfessor": "VANESSA MARIA DE CASTRO",
     "numeroTurma": 3,
@@ -2624,6 +2788,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 164,
     "idProfessor": 164,
     "nomeProfessor": "VANESSA MARIA DE CASTRO",
     "numeroTurma": 4,
@@ -2640,6 +2805,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 165,
     "idProfessor": 165,
     "nomeProfessor": "FABIANO ARAUJO SOARES",
     "numeroTurma": 1,
@@ -2656,6 +2822,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 166,
     "idProfessor": 166,
     "nomeProfessor": "SALEH BARBOSA KHALIL",
     "numeroTurma": 1,
@@ -2672,6 +2839,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 167,
     "idProfessor": 167,
     "nomeProfessor": "HIMILSYS HERNANDEZ GONZALEZ",
     "numeroTurma": 1,
@@ -2688,6 +2856,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 168,
     "idProfessor": 168,
     "nomeProfessor": "SALEH BARBOSA KHALIL",
     "numeroTurma": 2,
@@ -2704,6 +2873,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 169,
     "idProfessor": 169,
     "nomeProfessor": "HIMILSYS HERNANDEZ GONZALEZ",
     "numeroTurma": 3,
@@ -2720,6 +2890,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 170,
     "idProfessor": 170,
     "nomeProfessor": "MATEUS RODRIGUES MIRANDA",
     "numeroTurma": 4,
@@ -2736,6 +2907,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 171,
     "idProfessor": 171,
     "nomeProfessor": "ENEIDA GONZALEZ VALDES",
     "numeroTurma": 5,
@@ -2752,6 +2924,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 172,
     "idProfessor": 172,
     "nomeProfessor": "EUCLIDES DELGADO MARQUES SANT ANNA",
     "numeroTurma": 6,
@@ -2768,6 +2941,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 173,
     "idProfessor": 173,
     "nomeProfessor": "AUGUSTO CESAR DE MENDONCA BRASIL",
     "numeroTurma": 1,
@@ -2784,6 +2958,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 174,
     "idProfessor": 174,
     "nomeProfessor": "TIAGO ALVES DA FONSECA",
     "numeroTurma": 1,
@@ -2800,6 +2975,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 175,
     "idProfessor": 175,
     "nomeProfessor": "DANIEL SUNDFELD LIMA",
     "numeroTurma": 2,
@@ -2816,6 +2992,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 176,
     "idProfessor": 176,
     "nomeProfessor": "ANDRE BARROS DE SALES",
     "numeroTurma": 2,
@@ -2832,6 +3009,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 177,
     "idProfessor": 177,
     "nomeProfessor": "GEORGE MARSICANO CORREA",
     "numeroTurma": 3,
@@ -2848,6 +3026,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 178,
     "idProfessor": 178,
     "nomeProfessor": "GEORGE MARSICANO CORREA",
     "numeroTurma": 4,
@@ -2864,6 +3043,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 179,
     "idProfessor": 179,
     "nomeProfessor": "SERGIO ANTONIO ANDRADE DE FREITAS",
     "numeroTurma": 1,
@@ -2880,6 +3060,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 180,
     "idProfessor": 180,
     "nomeProfessor": "ANDRE BARROS DE SALES",
     "numeroTurma": 2,
@@ -2896,6 +3077,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 181,
     "idProfessor": 181,
     "nomeProfessor": "FELIPE CHAGAS STORTI",
     "numeroTurma": 1,
@@ -2912,6 +3094,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 182,
     "idProfessor": 182,
     "nomeProfessor": "PATRICIA REGINA SOBRAL BRAGA",
     "numeroTurma": 1,
@@ -2928,6 +3111,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 183,
     "idProfessor": 183,
     "nomeProfessor": "RITA DE CASSIA SILVA",
     "numeroTurma": 1,
@@ -2944,6 +3128,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 184,
     "idProfessor": 184,
     "nomeProfessor": "EULER DE VILHENA GARCIA",
     "numeroTurma": 1,
@@ -2960,6 +3145,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 185,
     "idProfessor": 185,
     "nomeProfessor": "REJANE MARIA DA COSTA FIGUEIREDO",
     "numeroTurma": 1,
@@ -2976,6 +3162,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 186,
     "idProfessor": 186,
     "nomeProfessor": "MARIO DE OLIVEIRA ANDRADE",
     "numeroTurma": 2,
@@ -2992,6 +3179,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 187,
     "idProfessor": 187,
     "nomeProfessor": "RODRIGO ARBEY MUNOZ MENESES",
     "numeroTurma": 1,
@@ -3008,6 +3196,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 188,
     "idProfessor": 188,
     "nomeProfessor": "ALESSANDRO BORGES DE SOUSA OLIVEIRA",
     "numeroTurma": 1,
@@ -3024,6 +3213,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 189,
     "idProfessor": 189,
     "nomeProfessor": "SANDRA MARIA DA LUZ e EMMANUEL PACHECO ROCHA LIMA",
     "numeroTurma": 1,
@@ -3040,6 +3230,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 190,
     "idProfessor": 190,
     "nomeProfessor": "FABIO CORDEIRO DE LISBOA",
     "numeroTurma": 1,
@@ -3056,6 +3247,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 191,
     "idProfessor": 191,
     "nomeProfessor": "MARIO DE OLIVEIRA ANDRADE",
     "numeroTurma": 1,
@@ -3072,6 +3264,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 192,
     "idProfessor": 192,
     "nomeProfessor": "GILMAR SILVA BESERRA",
     "numeroTurma": 1,
@@ -3088,6 +3281,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 193,
     "idProfessor": 193,
     "nomeProfessor": "AUGUSTO CESAR DE MENDONCA BRASIL e LUCIANO GONCALVES NOLETO",
     "numeroTurma": 1,
@@ -3104,6 +3298,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 194,
     "idProfessor": 194,
     "nomeProfessor": "AUGUSTO CESAR DE MENDONCA BRASIL e LUCIANO GONCALVES NOLETO",
     "numeroTurma": 2,
@@ -3120,6 +3315,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 195,
     "idProfessor": 195,
     "nomeProfessor": "HILMER RODRIGUES NERI",
     "numeroTurma": 1,
@@ -3136,6 +3332,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 196,
     "idProfessor": 196,
     "nomeProfessor": "MILENE SERRANO",
     "numeroTurma": 1,
@@ -3152,6 +3349,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 197,
     "idProfessor": 197,
     "nomeProfessor": "MILENE SERRANO",
     "numeroTurma": 1,
@@ -3168,6 +3366,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 198,
     "idProfessor": 198,
     "nomeProfessor": "FERNANDO WILLIAM CRUZ",
     "numeroTurma": 1,
@@ -3184,6 +3383,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 199,
     "idProfessor": 199,
     "nomeProfessor": "BRUNO LUIZ PEREIRA",
     "numeroTurma": 1,
@@ -3200,6 +3400,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 200,
     "idProfessor": 200,
     "nomeProfessor": "SANDRA MARIA DA LUZ",
     "numeroTurma": 2,
@@ -3216,6 +3417,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 201,
     "idProfessor": 201,
     "nomeProfessor": "CRISTIANO JACQUES MIOSSO RODRIGUES MENDES",
     "numeroTurma": 1,
@@ -3232,6 +3434,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 202,
     "idProfessor": 202,
     "nomeProfessor": "FABIANO ARAUJO SOARES",
     "numeroTurma": 1,
@@ -3248,6 +3451,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 203,
     "idProfessor": 203,
     "nomeProfessor": "EULER DE VILHENA GARCIA e ROBERTO DE SOUZA BAPTISTA",
     "numeroTurma": 1,
@@ -3264,6 +3468,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 204,
     "idProfessor": 204,
     "nomeProfessor": "EVANDRO LEONARDO SILVA TEIXEIRA",
     "numeroTurma": 1,
@@ -3280,6 +3485,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 205,
     "idProfessor": 205,
     "nomeProfessor": "CARLA TATIANA MOTA ANFLOR",
     "numeroTurma": 1,
@@ -3296,6 +3502,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 206,
     "idProfessor": 206,
     "nomeProfessor": "EUCLIDES DELGADO MARQUES SANT ANNA",
     "numeroTurma": 1,
@@ -3312,6 +3519,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 207,
     "idProfessor": 207,
     "nomeProfessor": "SUZANA MOREIRA AVILA",
     "numeroTurma": 1,
@@ -3328,6 +3536,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 208,
     "idProfessor": 208,
     "nomeProfessor": "HENRIQUE GOMES DE MOURA",
     "numeroTurma": 1,
@@ -3344,6 +3553,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 209,
     "idProfessor": 209,
     "nomeProfessor": "LUCIANO GONCALVES NOLETO",
     "numeroTurma": 1,
@@ -3360,6 +3570,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 210,
     "idProfessor": 210,
     "nomeProfessor": "MARIA DEL PILAR HIDALGO FALLA",
     "numeroTurma": 1,
@@ -3376,6 +3587,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 211,
     "idProfessor": 211,
     "nomeProfessor": "ELAINE VENSON",
     "numeroTurma": 1,
@@ -3392,6 +3604,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 212,
     "idProfessor": 212,
     "nomeProfessor": "ELAINE VENSON",
     "numeroTurma": 2,
@@ -3408,6 +3621,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 213,
     "idProfessor": 213,
     "nomeProfessor": "RENATO CORAL SAMPAIO",
     "numeroTurma": 1,
@@ -3424,6 +3638,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 214,
     "idProfessor": 214,
     "nomeProfessor": "ANDRE LUIZ PERON MARTINS LANNA",
     "numeroTurma": 1,
@@ -3440,6 +3655,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 215,
     "idProfessor": 215,
     "nomeProfessor": "FERNANDO WILLIAM CRUZ",
     "numeroTurma": 1,
@@ -3456,6 +3672,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 216,
     "idProfessor": 216,
     "nomeProfessor": "ALEX REIS",
     "numeroTurma": 4,
@@ -3472,6 +3689,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 217,
     "idProfessor": 217,
     "nomeProfessor": "SUELIA DE SIQUEIRA RODRIGUES FLEURY ROSA",
     "numeroTurma": 6,
@@ -3488,6 +3706,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 218,
     "idProfessor": 218,
     "nomeProfessor": "CARLA SILVA ROCHA AGUIAR",
     "numeroTurma": 7,
@@ -3504,6 +3723,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 219,
     "idProfessor": 219,
     "nomeProfessor": "RAFAEL CASTILHO FARIA MENDES",
     "numeroTurma": 8,
@@ -3520,6 +3740,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 220,
     "idProfessor": 220,
     "nomeProfessor": "RHANDER VIANA",
     "numeroTurma": 9,
@@ -3536,6 +3757,7 @@
     "curso5": "Energia"
   },
   {
+    "idTurmaProfessor": 221,
     "idProfessor": 221,
     "nomeProfessor": "RUDI HENRI VAN ELS e LUCIANO GONCALVES NOLETO",
     "numeroTurma": 1,
@@ -3552,6 +3774,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 222,
     "idProfessor": 222,
     "nomeProfessor": "GABRIELA CUNHA POSSA",
     "numeroTurma": 1,
@@ -3568,6 +3791,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 223,
     "idProfessor": 223,
     "nomeProfessor": "CRISTIANO JACQUES MIOSSO RODRIGUES MENDES",
     "numeroTurma": 1,
@@ -3584,6 +3808,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 224,
     "idProfessor": 224,
     "nomeProfessor": "GUILLERMO ALVAREZ BESTARD",
     "numeroTurma": 3,
@@ -3600,6 +3825,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 225,
     "idProfessor": 225,
     "nomeProfessor": "SANDRO AUGUSTO PAVLIK HADDAD",
     "numeroTurma": 5,
@@ -3616,6 +3842,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 226,
     "idProfessor": 226,
     "nomeProfessor": "LOANA NUNES VELASCO",
     "numeroTurma": 1,
@@ -3632,6 +3859,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 227,
     "idProfessor": 227,
     "nomeProfessor": "PAULA MEYER SOARES",
     "numeroTurma": 1,
@@ -3648,6 +3876,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 228,
     "idProfessor": 228,
     "nomeProfessor": "MARIA ALZIRA DE ARAUJO NUNES",
     "numeroTurma": 1,
@@ -3664,6 +3893,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 229,
     "idProfessor": 229,
     "nomeProfessor": "HENRIQUE GOMES DE MOURA",
     "numeroTurma": 1,
@@ -3680,6 +3910,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 230,
     "idProfessor": 230,
     "nomeProfessor": "BRUNO LUIZ PEREIRA",
     "numeroTurma": 1,
@@ -3696,6 +3927,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 231,
     "idProfessor": 231,
     "nomeProfessor": "REJANE MARIA DA COSTA FIGUEIREDO",
     "numeroTurma": 1,
@@ -3712,6 +3944,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 232,
     "idProfessor": 232,
     "nomeProfessor": "CRISTIANE SOARES RAMOS",
     "numeroTurma": 1,
@@ -3728,6 +3961,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 233,
     "idProfessor": 233,
     "nomeProfessor": "CRISTIANE SOARES RAMOS",
     "numeroTurma": 2,
@@ -3744,6 +3978,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 234,
     "idProfessor": 234,
     "nomeProfessor": "ARTUR ELIAS DE MORAIS BERTOLDI",
     "numeroTurma": 1,
@@ -3760,6 +3995,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 235,
     "idProfessor": 235,
     "nomeProfessor": "POLLIANA CANDIDA OLIVEIRA MARTINS",
     "numeroTurma": 1,
@@ -3776,6 +4012,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 236,
     "idProfessor": 236,
     "nomeProfessor": "ARTEM ANDRIANOV",
     "numeroTurma": 1,
@@ -3792,10 +4029,11 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 237,
     "idProfessor": 237,
     "nomeProfessor": "FABIO CORDEIRO DE LISBOA",
     "numeroTurma": 1,
-    "horario": "46T45",
+    "horario": "46T45 (25/",
     "carga": "60h",
     "idmateria": 142,
     "codMateria": "FGA0284",
@@ -3808,10 +4046,11 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 238,
     "idProfessor": 238,
     "nomeProfessor": "CARLA TATIANA MOTA ANFLOR",
     "numeroTurma": 1,
-    "horario": "24M34",
+    "horario": "24M34 (25/",
     "carga": "60h",
     "idmateria": 143,
     "codMateria": "FGA0285",
@@ -3824,6 +4063,7 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 239,
     "idProfessor": 239,
     "nomeProfessor": "DANIEL MAURICIO MUNOZ ARBOLEDA",
     "numeroTurma": 1,
@@ -3840,10 +4080,11 @@
     "curso5": ""
   },
   {
+    "idTurmaProfessor": 240,
     "idProfessor": 240,
     "nomeProfessor": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
     "numeroTurma": 1,
-    "horario": "46M34",
+    "horario": "46M34 (25/",
     "carga": "60h",
     "idmateria": 145,
     "codMateria": "FGA0300",
