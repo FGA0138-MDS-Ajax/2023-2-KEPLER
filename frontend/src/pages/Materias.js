@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import turmasData from '../data/TurmasJson.json';
+import turmasData from '../data/turmas-professores.json';
 import materia from '../styleheets/Materias.css';
 
 function Materias() {
@@ -8,7 +8,7 @@ function Materias() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
     const [q, setQ] = useState("");
-    const [searchParam] = useState(["PROFESSOR", "HORARIO", "60h"]);
+    const [searchParam] = useState(["idTurmaProfessor", "nomeProfessor", "numeroTurma", "horario", "carga", "nomeMateria"]);
     const [filterParam, setFilterParam] = useState("All");
 
     useEffect(() => {
@@ -87,15 +87,24 @@ function Materias() {
                         <li key={item["0"]}>
                             <article className="card">
                                 <div className="card-content">
-                                    <h5 className="card-name">{item["PROFESSOR"]}</h5>
+                                    <h5 className="card-name">{item["nomeMateria"]}</h5>
                                     <ol className="card-list">
                                         <li>
-                                            Horário: <span>{item["HORARIO"]}</span>
+                                            Professor: <span>{item["nomeProfessor"]}</span>
                                         </li>
                                         <li>
-                                            Carga horária: <span>{item["CARGA"]}</span>
+                                            Nº Turma: <span>{item["numeroTurma"]}</span>
                                         </li>
-                                        {/* Adicione mais itens conforme necessário */}
+                                        <li>
+                                            Horário: <span>{item["horario"]}</span>
+                                        </li>
+                                        <li>
+                                            Carga horária: <span>{item["carga"]}</span>
+                                        </li>
+                                        <li>
+                                            Código Matéria: <span>{item["codMateria"]}</span>
+                                        </li>
+                                        
                                     </ol>
                                 </div>
                             </article>
