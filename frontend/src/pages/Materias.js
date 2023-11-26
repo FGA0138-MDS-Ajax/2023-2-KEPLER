@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import turmasData from '../data/turmas-professores.json';
 import { Grid } from "@mui/material";
 import materia from '../styleheets/Materias.css';
+import Navbar from "../components/NavLogin.js";
 
 function Materias() {
     const [error, setError] = useState(null);
@@ -11,9 +12,8 @@ function Materias() {
     const [q, setQ] = useState("");
     const [searchParam] = useState(["idTurmaProfessor", "nomeProfessor", "numeroTurma", "horario", "carga", "nomeMateria"]);
     const [filterParam, setFilterParam] = useState("All");
-
+    
     useEffect(() => {
-        // Substitua a linha abaixo para carregar os dados do seu arquivo JSON
         setItems(turmasData);
         setIsLoaded(true);
     }, []);
@@ -50,69 +50,73 @@ function Materias() {
         return <>loading...</>;
     } else {
         return (
-            <div className="wrapper">
-                <div className="search-wrapper">
-                    <label htmlFor="search-form">
-                        <input
-                            type="search"
-                            name="search-form"
-                            id="search-form"
-                            className="search-input"
-                            placeholder="Procurar turma..."
-                            value={q}
-                            onChange={(e) => setQ(e.target.value)}
-                        />
-                        <span className="sr-only">Search countries here</span>
-                    </label>
+            <>
+            <Navbar />
+                <div className="wrapper">
+                    <div className="search-wrapper">
+                        <label htmlFor="search-form">
+                            <input
+                                type="search"
+                                name="search-form"
+                                id="search-form"
+                                className="search-input"
+                                placeholder="Procurar turma..."
+                                value={q}
+                                onChange={(e) => setQ(e.target.value)}
+                            />
+                            <span className="sr-only">Search countries here</span>
+                        </label>
 
-                    <div className="select">
-                        <select
-                            onChange={(e) => {
-                                setFilterParam(e.target.value);
-                            }}
-                            className="custom-select"
-                            aria-label="Filter Professores By Curso"
-                        >
-                            <option value="All">Curso</option>
-                            <option value="Aero">Aeroespacial</option>
-                            <option value="Auto">Automotiva</option>
-                            <option value="Elet">Eletrônica</option>
-                            <option value="Soft">Software</option>
-                            <option value="Ener">Energia</option>
-                        </select>
-                        <span className="focus"></span>
+                        <div className="select">
+                            <select
+                                onChange={(e) => {
+                                    setFilterParam(e.target.value);
+                                }}
+                                className="custom-select"
+                                aria-label="Filter Professores By Curso"
+                            >
+                                <option value="All">Curso</option>
+                                <option value="Aero">Aeroespacial</option>
+                                <option value="Auto">Automotiva</option>
+                                <option value="Elet">Eletrônica</option>
+                                <option value="Soft">Software</option>
+                                <option value="Ener">Energia</option>
+                            </select>
+                            <span className="focus"></span>
+                        </div>
                     </div>
-                </div>
-                <ul className="card-grid">
-                    {search(items).map((item) => (
-                        <li key={item["0"]}>
-                            <article className="card">
-                                <div className="card-content">
-                                    <h5 className="card-name">{item["nomeMateria"]}</h5>
-                                    <ol className="card-list">
-                                        <li>
-                                            Professor: <span>{item["nomeProfessor"]}</span>
-                                        </li>
-                                        <li>
-                                            Nº Turma: <span>{item["numeroTurma"]}</span>
-                                        </li>
-                                        <li>
-                                            Horário: <span>{item["horario"]}</span>
-                                        </li>
-                                        <li>
-                                            Carga horária: <span>{item["carga"]}</span>
-                                        </li>
-                                        <li>
-                                            Código Matéria: <span>{item["codMateria"]}</span>
-                                        </li>
-                                        
-                                    </ol>
+                    <ul className="card-grid">
+                        {search(items).map((item) => (
+                            <li key={item["0"]}>
+                                <div className="card-wrapper">
+                                    <article className="card">
+                                        <div className="card-content">
+                                            <h5 className="card-name">{item["nomeMateria"]}</h5>
+                                            <ol className="card-list">
+                                                <li>
+                                                    Professor: <span>{item["nomeProfessor"]}</span>
+                                                </li>
+                                                <li>
+                                                    Nº Turma: <span>{item["numeroTurma"]}</span>
+                                                </li>
+                                                <li>
+                                                    Horário: <span>{item["horario"]}</span>
+                                                </li>
+                                                <li>
+                                                    Carga horária: <span>{item["carga"]}</span>
+                                                </li>
+                                                <li>
+                                                    Código Matéria: <span>{item["codMateria"]}</span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </article>
                                 </div>
-                            </article>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </>
         );
     }
 }
