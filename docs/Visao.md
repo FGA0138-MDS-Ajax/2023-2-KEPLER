@@ -1,6 +1,7 @@
 
- GradeWeb\
- **VISÃO DO PRODUTO E DO PROJETO** Versão \[1.1\]
+ **VISÃO DO PRODUTO E DO PROJETO**
+ 
+ Versão [1.1]
 
  **Histórico de Revisão**
 
@@ -357,7 +358,7 @@ reuniões com a equipe de desenvolvedores.
  A seguir, está um diagrama de fluxo de trabalho que ilustra as
  principais etapas do processo de desenvolvimento dentro do framework
  Scrum:
- 
+
 ![imagen3](assets\Diagrama.JPG)
 
  Este diagrama serve como um guia visual para as atividades e
