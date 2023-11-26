@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import turmasData from '../data/turmas-professores.json';
+import { Grid } from "@mui/material";
 import materia from '../styleheets/Materias.css';
 
 function Materias() {
