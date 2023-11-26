@@ -57,7 +57,7 @@ function Materias() {
                             name="search-form"
                             id="search-form"
                             className="search-input"
-                            placeholder="Search for..."
+                            placeholder="Procurar turma..."
                             value={q}
                             onChange={(e) => setQ(e.target.value)}
                         />
