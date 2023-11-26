@@ -1,35 +1,21 @@
-import materia from '../styleheets/Materias.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import Table from "react-bootstrap/Table"; 
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import turmasData from '../data/TurmasJson.json';
+import materia from '../styleheets/Materias.css';
 
 function Materias() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
     const [q, setQ] = useState("");
-    const [searchParam] = useState(["capital", "name", "numericCode"]);
+    const [searchParam] = useState(["PROFESSOR", "HORARIO", "60h"]);
     const [filterParam, setFilterParam] = useState("All");
 
     useEffect(() => {
-        fetch(
-            "https://raw.githubusercontent.com/iamspruce/search-filter-painate-reactjs/main/data/countries.json"
-        )
-            .then((res) => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setItems(result);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
+        // Substitua a linha abaixo para carregar os dados do seu arquivo JSON
+        setItems(turmasData);
+        setIsLoaded(true);
     }, []);
-
-    const data = Object.values(items);
 
     function search(items) {
         return items.filter((item) => {
@@ -84,9 +70,9 @@ function Materias() {
                                 setFilterParam(e.target.value);
                             }}
                             className="custom-select"
-                            aria-label="Filter Countries By Region"
+                            aria-label="Filter Professores By Curso"
                         >
-                            <option value="All">Filter By Region</option>
+                            <option value="All">Curso</option>
                             <option value="Aero">Aeroespacial</option>
                             <option value="Auto">Automotiva</option>
                             <option value="Elet">Eletrônica</option>
@@ -97,28 +83,19 @@ function Materias() {
                     </div>
                 </div>
                 <ul className="card-grid">
-                    {search(data).map((item) => (
-                        <li key={item.alpha3Code}>
+                    {search(items).map((item) => (
+                        <li key={item["0"]}>
                             <article className="card">
-                                <div className="card-image">
-                                    <img
-                                        src={item.flag.large}
-                                        alt={item.name}
-                                    />
-                                </div>
                                 <div className="card-content">
-                                    <h5 className="card-name">{item.name}</h5>
+                                    <h5 className="card-name">{item["PROFESSOR"]}</h5>
                                     <ol className="card-list">
                                         <li>
-                                            population:{" "}
-                                            <span>{item.population}</span>
+                                            Horário: <span>{item["HORARIO"]}</span>
                                         </li>
                                         <li>
-                                            Region: <span>{item.region}</span>
+                                            Carga horária: <span>{item["CARGA"]}</span>
                                         </li>
-                                        <li>
-                                            Capital: <span>{item.capital}</span>
-                                        </li>
+                                        {/* Adicione mais itens conforme necessário */}
                                     </ol>
                                 </div>
                             </article>

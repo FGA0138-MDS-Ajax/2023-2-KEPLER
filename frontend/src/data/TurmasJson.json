@@ -1,0 +1,1682 @@
+[
+  {
+    "0": 1,
+    "1": 2,
+    "PROFESSOR": "LUIS FILOMENO DE JESUS FERNANDES",
+    "HORARIO": "46M34",
+    "CARGA": "60h"
+  },
+  {
+    "0": 2,
+    "1": 1,
+    "PROFESSOR": "RONNE TOLEDO",
+    "HORARIO": "24M34",
+    "CARGA": "60h"
+  },
+  {
+    "0": 3,
+    "1": 1,
+    "PROFESSOR": "WELLINGTON AVELINO DO AMARAL",
+    "HORARIO": "HORARIO",
+    "CARGA": "60h"
+  },
+  {
+    "0": 4,
+    "1": 1,
+    "PROFESSOR": "RITA DE CASSIA SILVA",
+    "HORARIO": "35M12",
+    "CARGA": "60h"
+  },
+  {
+    "0": 5,
+    "1": 1,
+    "PROFESSOR": "ALEX REIS e JORGE ANDRES CORMANE ANGARITA",
+    "HORARIO": "46T23",
+    "CARGA": "60h"
+  },
+  {
+    "0": 6,
+    "1": 1,
+    "PROFESSOR": "JOHN LENON CARDOSO GARDENGHI",
+    "HORARIO": "46M34",
+    "CARGA": "60h"
+  },
+  {
+    "0": 7,
+    "1": 2,
+    "PROFESSOR": "BRUNO CESAR RIBAS",
+    "HORARIO": "35M34",
+    "CARGA": "60h"
+  },
+  {
+    "0": 8,
+    "1": 3,
+    "PROFESSOR": "RODRIGO ANDRES MIRANDA CERDA",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 9,
+    "1": 6,
+    "PROFESSOR": "PAOLO GESSINI",
+    "HORARIO": "24T6  24N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 10,
+    "1": 1,
+    "PROFESSOR": "OLEXIY SHYNKARENKO",
+    "HORARIO": "35T45 6T4",
+    "CARGA": "75h"
+  },
+  {
+    "0": 11,
+    "1": 1,
+    "PROFESSOR": "ARTEM ANDRIANOV",
+    "HORARIO": "2M5 35M12",
+    "CARGA": "75h"
+  },
+  {
+    "0": 12,
+    "1": 1,
+    "PROFESSOR": "RAFAEL RODRIGUES DA SILVA",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 13,
+    "1": 1,
+    "PROFESSOR": "OLEXIY SHYNKARENKO",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 14,
+    "1": 1,
+    "PROFESSOR": "POLLIANA CANDIDA OLIVEIRA MARTINS",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 15,
+    "1": 1,
+    "PROFESSOR": "ANDREIA ALVES COSTA LINDINGER",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 16,
+    "1": 1,
+    "PROFESSOR": "WILLIAM REIS SILVA",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 17,
+    "1": 1,
+    "PROFESSOR": "SERGIO HENRIQUE DA SILVA CARNEIRO",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 18,
+    "1": 1,
+    "PROFESSOR": "JUNGPYO LEE e RODRIGO ANDRES MIRANDA CERDA",
+    "HORARIO": "235M12",
+    "CARGA": "90h"
+  },
+  {
+    "0": 19,
+    "1": 1,
+    "PROFESSOR": "PROFESSOR",
+    "HORARIO": "35T6  35N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 20,
+    "1": 2,
+    "PROFESSOR": "PROFESSOR",
+    "HORARIO": "6T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 21,
+    "1": 1,
+    "PROFESSOR": "WANDER CLEBER MARIA PEREIRA DA SILVA",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 22,
+    "1": 1,
+    "PROFESSOR": "RHANDER VIANA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 23,
+    "1": 1,
+    "PROFESSOR": "EDISON GUSTAVO CUEVA GALARRAGA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 24,
+    "1": 1,
+    "PROFESSOR": "MARCUS VINICIUS BATISTUTA",
+    "HORARIO": "4T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 25,
+    "1": 1,
+    "PROFESSOR": "VANDOR ROBERTO VILARDI RISSOLI",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 26,
+    "1": 1,
+    "PROFESSOR": "LUIS FILOMENO DE JESUS FERNANDES",
+    "HORARIO": "24M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 27,
+    "1": 2,
+    "PROFESSOR": "EULER DE VILHENA GARCIA",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 28,
+    "1": 1,
+    "PROFESSOR": "GILMAR SILVA BESERRA",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 29,
+    "1": 1,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "3T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 30,
+    "1": 2,
+    "PROFESSOR": "SUELIA DE SIQUEIRA RODRIGUES FLEURY ROSA",
+    "HORARIO": "4T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 31,
+    "1": 3,
+    "PROFESSOR": "LUIS FILOMENO DE JESUS FERNANDES",
+    "HORARIO": "6M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 32,
+    "1": 1,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "6M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 33,
+    "1": 2,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "6T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 34,
+    "1": 1,
+    "PROFESSOR": "HENRIQUE MARRA TAIRA MENEGAZ",
+    "HORARIO": "3M5  3T1",
+    "CARGA": "30h"
+  },
+  {
+    "0": 35,
+    "1": 2,
+    "PROFESSOR": "HENRIQUE MARRA TAIRA MENEGAZ",
+    "HORARIO": "4M5  4T1",
+    "CARGA": "30h"
+  },
+  {
+    "0": 36,
+    "1": 3,
+    "PROFESSOR": "HENRIQUE MARRA TAIRA MENEGAZ",
+    "HORARIO": "3M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 37,
+    "1": 4,
+    "PROFESSOR": "HENRIQUE MARRA TAIRA MENEGAZ",
+    "HORARIO": "3M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 38,
+    "1": 5,
+    "PROFESSOR": "CLAUDIA PATRICIA OCHOA DIAZ",
+    "HORARIO": "3T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 39,
+    "1": 6,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "3T45",
+    "CARGA": "30h"
+  },
+  {
+    "0": 40,
+    "1": 7,
+    "PROFESSOR": "MARCELINO MONTEIRO DE ANDRADE",
+    "HORARIO": "4M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 41,
+    "1": 8,
+    "PROFESSOR": "MARCELINO MONTEIRO DE ANDRADE",
+    "HORARIO": "4M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 42,
+    "1": 9,
+    "PROFESSOR": "MARCELINO MONTEIRO DE ANDRADE",
+    "HORARIO": "4T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 43,
+    "1": 10,
+    "PROFESSOR": "MARCELINO MONTEIRO DE ANDRADE",
+    "HORARIO": "4T45",
+    "CARGA": "30h"
+  },
+  {
+    "0": 44,
+    "1": 11,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "5M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 45,
+    "1": 12,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "5M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 46,
+    "1": 13,
+    "PROFESSOR": "CLAUDIA PATRICIA OCHOA DIAZ",
+    "HORARIO": "5T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 47,
+    "1": 14,
+    "PROFESSOR": "HENRIQUE MARRA TAIRA MENEGAZ",
+    "HORARIO": "6T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 48,
+    "1": 1,
+    "PROFESSOR": "DANIEL MAURICIO MUNOZ ARBOLEDA",
+    "HORARIO": "6M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 49,
+    "1": 1,
+    "PROFESSOR": "RENATO VILELA LOPES",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 50,
+    "1": 2,
+    "PROFESSOR": "RENATO VILELA LOPES",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 51,
+    "1": 1,
+    "PROFESSOR": "DANIEL MAURICIO MUNOZ ARBOLEDA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 52,
+    "1": 1,
+    "PROFESSOR": "EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "2T4",
+    "CARGA": "15h"
+  },
+  {
+    "0": 53,
+    "1": 2,
+    "PROFESSOR": "EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "4T4",
+    "CARGA": "15h"
+  },
+  {
+    "0": 54,
+    "1": 3,
+    "PROFESSOR": "EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "2T5",
+    "CARGA": "15h"
+  },
+  {
+    "0": 55,
+    "1": 4,
+    "PROFESSOR": "SANDRA MARIA DA LUZ",
+    "HORARIO": "4M1",
+    "CARGA": "15h"
+  },
+  {
+    "0": 56,
+    "1": 5,
+    "PROFESSOR": "SANDRA MARIA DA LUZ",
+    "HORARIO": "4M2",
+    "CARGA": "15h"
+  },
+  {
+    "0": 57,
+    "1": 6,
+    "PROFESSOR": "RODRIGO ARBEY MUNOZ MENESES",
+    "HORARIO": "3M1",
+    "CARGA": "15h"
+  },
+  {
+    "0": 58,
+    "1": 7,
+    "PROFESSOR": "RODRIGO ARBEY MUNOZ MENESES",
+    "HORARIO": "3M2",
+    "CARGA": "15h"
+  },
+  {
+    "0": 59,
+    "1": 10,
+    "PROFESSOR": "EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "4T5",
+    "CARGA": "15h"
+  },
+  {
+    "0": 60,
+    "1": 1,
+    "PROFESSOR": "ALESSANDRO BORGES DE SOUSA OLIVEIRA e FABIO ALFAIA DA CUNHA",
+    "HORARIO": "24M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 61,
+    "1": 1,
+    "PROFESSOR": "EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "2T23 4T1",
+    "CARGA": "45h"
+  },
+  {
+    "0": 62,
+    "1": 2,
+    "PROFESSOR": "RODRIGO ARBEY MUNOZ MENESES",
+    "HORARIO": "3T23 5T2",
+    "CARGA": "45h"
+  },
+  {
+    "0": 63,
+    "1": 1,
+    "PROFESSOR": "FABRICIO ATAIDES BRAZ",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 64,
+    "1": 1,
+    "PROFESSOR": "SERGIO ANTONIO ANDRADE DE FREITAS",
+    "HORARIO": "26T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 65,
+    "1": 1,
+    "PROFESSOR": "GLAUCO VITOR PEDROSA",
+    "HORARIO": "26M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 66,
+    "1": 2,
+    "PROFESSOR": "GLAUCO VITOR PEDROSA",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 67,
+    "1": 1,
+    "PROFESSOR": "JORGE ANDRES CORMANE ANGARITA",
+    "HORARIO": "24M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 68,
+    "1": 2,
+    "PROFESSOR": "FLAVIO HENRIQUE JUSTINIANO RIBEIRO DA SILVA",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 69,
+    "1": 2,
+    "PROFESSOR": "LOANA NUNES VELASCO",
+    "HORARIO": "2M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 70,
+    "1": 3,
+    "PROFESSOR": "JORGE ANDRES CORMANE ANGARITA",
+    "HORARIO": "4M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 71,
+    "1": 4,
+    "PROFESSOR": "RUDI HENRI VAN ELS",
+    "HORARIO": "2T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 72,
+    "1": 5,
+    "PROFESSOR": "RUDI HENRI VAN ELS",
+    "HORARIO": "3T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 73,
+    "1": 1,
+    "PROFESSOR": "FLAVIO HENRIQUE JUSTINIANO RIBEIRO DA SILVA",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 74,
+    "1": 1,
+    "PROFESSOR": "RUDI HENRI VAN ELS",
+    "HORARIO": "4T45",
+    "CARGA": "30h"
+  },
+  {
+    "0": 75,
+    "1": 2,
+    "PROFESSOR": "RUDI HENRI VAN ELS",
+    "HORARIO": "4T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 76,
+    "1": 1,
+    "PROFESSOR": "EBERTH DE ALMEIDA CORREA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 77,
+    "1": 2,
+    "PROFESSOR": "JHON NERO VAZ GOULART",
+    "HORARIO": "24M12  3T2",
+    "CARGA": "90h"
+  },
+  {
+    "0": 78,
+    "1": 1,
+    "PROFESSOR": "DANIEL COSTA ARAUJO",
+    "HORARIO": "3M125 5M12",
+    "CARGA": "75h"
+  },
+  {
+    "0": 79,
+    "1": 1,
+    "PROFESSOR": "LUIS FILOMENO DE JESUS FERNANDES",
+    "HORARIO": "4T123 6T23",
+    "CARGA": "75h"
+  },
+  {
+    "0": 80,
+    "1": 3,
+    "PROFESSOR": "WILLIAM REIS SILVA",
+    "HORARIO": "4T123 6T23",
+    "CARGA": "75h"
+  },
+  {
+    "0": 81,
+    "1": 4,
+    "PROFESSOR": "LUIS FILOMENO DE JESUS FERNANDES",
+    "HORARIO": "7T12345",
+    "CARGA": "75h"
+  },
+  {
+    "0": 82,
+    "1": 1,
+    "PROFESSOR": "MARCUS VINICIUS CHAFFIM COSTA",
+    "HORARIO": "46M5  46T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 83,
+    "1": 1,
+    "PROFESSOR": "GUILLERMO ALVAREZ BESTARD",
+    "HORARIO": "246T45",
+    "CARGA": "90h"
+  },
+  {
+    "0": 84,
+    "1": 1,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "4M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 85,
+    "1": 2,
+    "PROFESSOR": "DIOGO DE OLIVEIRA COSTA",
+    "HORARIO": "2T45",
+    "CARGA": "30h"
+  },
+  {
+    "0": 86,
+    "1": 1,
+    "PROFESSOR": "WELLINGTON AVELINO DO AMARAL",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 87,
+    "1": 1,
+    "PROFESSOR": "GERARDO ANTONIO IDROBO PIZO",
+    "HORARIO": "3M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 88,
+    "1": 2,
+    "PROFESSOR": "GERARDO ANTONIO IDROBO PIZO",
+    "HORARIO": "3M5  3T1",
+    "CARGA": "30h"
+  },
+  {
+    "0": 89,
+    "1": 1,
+    "PROFESSOR": "MARCUS VINICIUS BATISTUTA",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 90,
+    "1": 1,
+    "PROFESSOR": "ROBERTO DE SOUZA BAPTISTA",
+    "HORARIO": "356M12",
+    "CARGA": "90h"
+  },
+  {
+    "0": 91,
+    "1": 2,
+    "PROFESSOR": "MARCUS VINICIUS CHAFFIM COSTA",
+    "HORARIO": "246M34",
+    "CARGA": "90h"
+  },
+  {
+    "0": 92,
+    "1": 1,
+    "PROFESSOR": "DIOGO CAETANO GARCIA",
+    "HORARIO": "246T23",
+    "CARGA": "90h"
+  },
+  {
+    "0": 93,
+    "1": 1,
+    "PROFESSOR": "MARCELO BENTO DA SILVA",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 94,
+    "1": 3,
+    "PROFESSOR": "JUNGPYO LEE",
+    "HORARIO": "25T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 95,
+    "1": 4,
+    "PROFESSOR": "PAOLO GESSINI",
+    "HORARIO": "35T6  35N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 96,
+    "1": 2,
+    "PROFESSOR": "RAFAEL CASTILHO FARIA MENDES",
+    "HORARIO": "2T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 97,
+    "1": 1,
+    "PROFESSOR": "EBERTH DE ALMEIDA CORREA",
+    "HORARIO": "3M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 98,
+    "1": 1,
+    "PROFESSOR": "MATHEUS BERNARDINI DE SOUZA",
+    "HORARIO": "26T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 99,
+    "1": 1,
+    "PROFESSOR": "RENATO CORAL SAMPAIO",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 100,
+    "1": 3,
+    "PROFESSOR": "RENATO CORAL SAMPAIO",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 101,
+    "1": 1,
+    "PROFESSOR": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 102,
+    "1": 1,
+    "PROFESSOR": "LEANDRO XAVIER CARDOSO e RONNI GERALDO GOMES DE AMORIM",
+    "HORARIO": "26M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 103,
+    "1": 1,
+    "PROFESSOR": "JOSIANE DO SOCORRO AGUIAR DE SOUZA DE OLIVEIRA CAMPOS",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 104,
+    "1": 1,
+    "PROFESSOR": "ANDRE LUIZ ALMEIDA PENNA",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 105,
+    "1": 2,
+    "PROFESSOR": "ANDRE LUIZ ALMEIDA PENNA",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 106,
+    "1": 1,
+    "PROFESSOR": "GERARDO ANTONIO IDROBO PIZO",
+    "HORARIO": "6T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 107,
+    "1": 2,
+    "PROFESSOR": "GERARDO ANTONIO IDROBO PIZO",
+    "HORARIO": "3T45",
+    "CARGA": "30h"
+  },
+  {
+    "0": 108,
+    "1": 2,
+    "PROFESSOR": "Fernando Merege",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 109,
+    "1": 1,
+    "PROFESSOR": "LOANA NUNES VELASCO",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 110,
+    "1": 1,
+    "PROFESSOR": "MAURICIO SERRANO",
+    "HORARIO": "26M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 111,
+    "1": 1,
+    "PROFESSOR": "VINICIUS DE CARVALHO RISPOLI",
+    "HORARIO": "2M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 112,
+    "1": 2,
+    "PROFESSOR": "LINDOMAR BOMFIM DE CARVALHO DE JESUS",
+    "HORARIO": "4M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 113,
+    "1": 1,
+    "PROFESSOR": "FERNANDO PAIVA SCARDUA",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 114,
+    "1": 1,
+    "PROFESSOR": "EVANDRO LEONARDO SILVA TEIXEIRA",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 115,
+    "1": 1,
+    "PROFESSOR": "CLAUDIA PATRICIA OCHOA DIAZ",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 116,
+    "1": 1,
+    "PROFESSOR": "PAULA MEYER SOARES",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 117,
+    "1": 2,
+    "PROFESSOR": "GLAUCENY CIRNE DE MEDEIROS",
+    "HORARIO": "46T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 118,
+    "1": 3,
+    "PROFESSOR": "RICARDO MATOS CHAIM",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 119,
+    "1": 1,
+    "PROFESSOR": "WANDER CLEBER MARIA PEREIRA DA SILVA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 120,
+    "1": 3,
+    "PROFESSOR": "BRUNO CESAR RIBAS",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 121,
+    "1": 1,
+    "PROFESSOR": "VANDOR ROBERTO VILARDI RISSOLI",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 122,
+    "1": 2,
+    "PROFESSOR": "MAURICIO SERRANO",
+    "HORARIO": "26M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 123,
+    "1": 1,
+    "PROFESSOR": "HILMER RODRIGUES NERI",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 124,
+    "1": 2,
+    "PROFESSOR": "GEORGE MARSICANO CORREA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 125,
+    "1": 3,
+    "PROFESSOR": "CARLA SILVA ROCHA AGUIAR",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 126,
+    "1": 4,
+    "PROFESSOR": "RICARDO AJAX DIAS KOSLOSKI",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 127,
+    "1": 1,
+    "PROFESSOR": "MARIA VITORIA DUARTE FERRARI",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 128,
+    "1": 1,
+    "PROFESSOR": "TIAGO ALVES DA FONSECA",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 129,
+    "1": 2,
+    "PROFESSOR": "JOHN LENON CARDOSO GARDENGHI",
+    "HORARIO": "46T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 130,
+    "1": 1,
+    "PROFESSOR": "NILTON CORREIA DA SILVA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 131,
+    "1": 2,
+    "PROFESSOR": "ROSE YURI SHIMIZU",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 132,
+    "1": 3,
+    "PROFESSOR": "ROSE YURI SHIMIZU",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 133,
+    "1": 1,
+    "PROFESSOR": "MARIA ALZIRA DE ARAUJO NUNES",
+    "HORARIO": "2M34",
+    "CARGA": "30h"
+  },
+  {
+    "0": 134,
+    "1": 2,
+    "PROFESSOR": "MARIA ALZIRA DE ARAUJO NUNES",
+    "HORARIO": "2M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 135,
+    "1": 4,
+    "PROFESSOR": "DIOGO CAETANO GARCIA",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 136,
+    "1": 6,
+    "PROFESSOR": "RAFAEL RODRIGUES DA SILVA",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 137,
+    "1": 7,
+    "PROFESSOR": "ARTUR ELIAS DE MORAIS BERTOLDI",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 138,
+    "1": 8,
+    "PROFESSOR": "JULIANA PETROCCHI RODRIGUES",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 139,
+    "1": 9,
+    "PROFESSOR": "RICARDO AJAX DIAS KOSLOSKI",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 140,
+    "1": 1,
+    "PROFESSOR": "MATEUS RODRIGUES MIRANDA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 141,
+    "1": 1,
+    "PROFESSOR": "SERGIO HENRIQUE DA SILVA CARNEIRO",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 142,
+    "1": 2,
+    "PROFESSOR": "SUZANA MOREIRA AVILA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 143,
+    "1": 3,
+    "PROFESSOR": "GLAUCENY CIRNE DE MEDEIROS",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 144,
+    "1": 1,
+    "PROFESSOR": "ENEIDA GONZALEZ VALDES",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 145,
+    "1": 1,
+    "PROFESSOR": "ROSEANY DE VASCONCELOS VIEIRA LOPES",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 146,
+    "1": 1,
+    "PROFESSOR": "MARILIA MIRANDA FORTE GOMES",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 147,
+    "1": 2,
+    "PROFESSOR": "RODRIGO ANDRES MIRANDA CERDA",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 148,
+    "1": 1,
+    "PROFESSOR": "ANDRE LUIZ PERON MARTINS LANNA",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 149,
+    "1": 2,
+    "PROFESSOR": "FABIANA FREITAS MENDES",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 150,
+    "1": 3,
+    "PROFESSOR": "FABIANA FREITAS MENDES",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 151,
+    "1": 4,
+    "PROFESSOR": "HENRIQUE GOMES DE MOURA",
+    "HORARIO": "35M5  35T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 152,
+    "1": 1,
+    "PROFESSOR": "MANUEL NASCIMENTO DIAS BARCELOS JUNIOR",
+    "HORARIO": "35M5  35T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 153,
+    "1": 2,
+    "PROFESSOR": "RODRIGO ANDRES MIRANDA CERDA",
+    "HORARIO": "46T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 154,
+    "1": 3,
+    "PROFESSOR": "LINDOMAR BOMFIM DE CARVALHO DE JESUS",
+    "HORARIO": "24M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 155,
+    "1": 1,
+    "PROFESSOR": "FERNANDO PAIVA SCARDUA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 156,
+    "1": 2,
+    "PROFESSOR": "MARIA VITORIA DUARTE FERRARI",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 157,
+    "1": 3,
+    "PROFESSOR": "JOSIANE DO SOCORRO AGUIAR DE SOUZA DE OLIVEIRA CAMPOS",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 158,
+    "1": 1,
+    "PROFESSOR": "LUCIANO GONCALVES NOLETO",
+    "HORARIO": "4T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 159,
+    "1": 2,
+    "PROFESSOR": "RICARDO RAMOS FRAGELLI",
+    "HORARIO": "2T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 160,
+    "1": 3,
+    "PROFESSOR": "AUGUSTO CESAR DE MENDONCA BRASIL",
+    "HORARIO": "2M12",
+    "CARGA": "30h"
+  },
+  {
+    "0": 161,
+    "1": 1,
+    "PROFESSOR": "SANDRA MARIA FALEIROS LIMA",
+    "HORARIO": "46M5  46T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 162,
+    "1": 2,
+    "PROFESSOR": "SANDRA MARIA FALEIROS LIMA",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 163,
+    "1": 3,
+    "PROFESSOR": "VANESSA MARIA DE CASTRO",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 164,
+    "1": 4,
+    "PROFESSOR": "VANESSA MARIA DE CASTRO",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 165,
+    "1": 1,
+    "PROFESSOR": "FABIANO ARAUJO SOARES",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 166,
+    "1": 1,
+    "PROFESSOR": "SALEH BARBOSA KHALIL",
+    "HORARIO": "46M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 167,
+    "1": 1,
+    "PROFESSOR": "HIMILSYS HERNANDEZ GONZALEZ",
+    "HORARIO": "246M12",
+    "CARGA": "90h"
+  },
+  {
+    "0": 168,
+    "1": 2,
+    "PROFESSOR": "SALEH BARBOSA KHALIL",
+    "HORARIO": "235M34",
+    "CARGA": "90h"
+  },
+  {
+    "0": 169,
+    "1": 3,
+    "PROFESSOR": "HIMILSYS HERNANDEZ GONZALEZ",
+    "HORARIO": "235M34",
+    "CARGA": "90h"
+  },
+  {
+    "0": 170,
+    "1": 4,
+    "PROFESSOR": "MATEUS RODRIGUES MIRANDA",
+    "HORARIO": "356T45",
+    "CARGA": "90h"
+  },
+  {
+    "0": 171,
+    "1": 5,
+    "PROFESSOR": "ENEIDA GONZALEZ VALDES",
+    "HORARIO": "246M12",
+    "CARGA": "90h"
+  },
+  {
+    "0": 172,
+    "1": 6,
+    "PROFESSOR": "MATEUS RODRIGUES MIRANDA",
+    "HORARIO": "235M5  235",
+    "CARGA": "90h"
+  },
+  {
+    "0": 173,
+    "1": 1,
+    "PROFESSOR": "AUGUSTO CESAR DE MENDONCA BRASIL",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 174,
+    "1": 1,
+    "PROFESSOR": "TIAGO ALVES DA FONSECA",
+    "HORARIO": "26M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 175,
+    "1": 2,
+    "PROFESSOR": "DANIEL SUNDFELD LIMA",
+    "HORARIO": "24M5  24T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 176,
+    "1": 2,
+    "PROFESSOR": "ANDRE BARROS DE SALES",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 177,
+    "1": 3,
+    "PROFESSOR": "GEORGE MARSICANO CORREA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 178,
+    "1": 4,
+    "PROFESSOR": "GEORGE MARSICANO CORREA",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 179,
+    "1": 1,
+    "PROFESSOR": "SERGIO ANTONIO ANDRADE DE FREITAS",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 180,
+    "1": 2,
+    "PROFESSOR": "ANDRE BARROS DE SALES",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 181,
+    "1": 1,
+    "PROFESSOR": "FELIPE CHAGAS STORTI",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 182,
+    "1": 1,
+    "PROFESSOR": "PATRICIA REGINA SOBRAL BRAGA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 183,
+    "1": 1,
+    "PROFESSOR": "RITA DE CASSIA SILVA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 184,
+    "1": 1,
+    "PROFESSOR": "EULER DE VILHENA GARCIA",
+    "HORARIO": "3T23",
+    "CARGA": "30h"
+  },
+  {
+    "0": 185,
+    "1": 1,
+    "PROFESSOR": "REJANE MARIA DA COSTA FIGUEIREDO",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 186,
+    "1": 2,
+    "PROFESSOR": "MARIO DE OLIVEIRA ANDRADE",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 187,
+    "1": 1,
+    "PROFESSOR": "RODRIGO ARBEY MUNOZ MENESES",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 188,
+    "1": 1,
+    "PROFESSOR": "ALESSANDRO BORGES DE SOUSA OLIVEIRA",
+    "HORARIO": "246M34",
+    "CARGA": "90h"
+  },
+  {
+    "0": 189,
+    "1": 1,
+    "PROFESSOR": "SANDRA MARIA DA LUZ e EMMANUEL PACHECO ROCHA LIMA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 190,
+    "1": 1,
+    "PROFESSOR": "FABIO CORDEIRO DE LISBOA",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 191,
+    "1": 1,
+    "PROFESSOR": "MARIO DE OLIVEIRA ANDRADE",
+    "HORARIO": "35T6  35N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 192,
+    "1": 1,
+    "PROFESSOR": "GILMAR SILVA BESERRA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 193,
+    "1": 1,
+    "PROFESSOR": "AUGUSTO CESAR DE MENDONCA BRASIL e LUCIANO GONCALVES NOLETO",
+    "HORARIO": "26M34 4M4",
+    "CARGA": "75h"
+  },
+  {
+    "0": 194,
+    "1": 2,
+    "PROFESSOR": "AUGUSTO CESAR DE MENDONCA BRASIL e LUCIANO GONCALVES NOLETO",
+    "HORARIO": "26M34 4M3",
+    "CARGA": "75h"
+  },
+  {
+    "0": 195,
+    "1": 1,
+    "PROFESSOR": "HILMER RODRIGUES NERI",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 196,
+    "1": 1,
+    "PROFESSOR": "MILENE SERRANO",
+    "HORARIO": "26M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 197,
+    "1": 1,
+    "PROFESSOR": "MILENE SERRANO",
+    "HORARIO": "26M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 198,
+    "1": 1,
+    "PROFESSOR": "FERNANDO WILLIAM CRUZ",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 199,
+    "1": 1,
+    "PROFESSOR": "BRUNO LUIZ PEREIRA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 200,
+    "1": 2,
+    "PROFESSOR": "SANDRA MARIA DA LUZ",
+    "HORARIO": "6T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 201,
+    "1": 1,
+    "PROFESSOR": "CRISTIANO JACQUES MIOSSO RODRIGUES MENDES",
+    "HORARIO": "46M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 202,
+    "1": 1,
+    "PROFESSOR": "FABIANO ARAUJO SOARES",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 203,
+    "1": 1,
+    "PROFESSOR": "EULER DE VILHENA GARCIA e ROBERTO DE SOUZA BAPTISTA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 204,
+    "1": 1,
+    "PROFESSOR": "EVANDRO LEONARDO SILVA TEIXEIRA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 205,
+    "1": 1,
+    "PROFESSOR": "CARLA TATIANA MOTA ANFLOR",
+    "HORARIO": "24M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 206,
+    "1": 1,
+    "PROFESSOR": "CARLA TATIANA MOTA ANFLOR",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 207,
+    "1": 1,
+    "PROFESSOR": "SUZANA MOREIRA AVILA",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 208,
+    "1": 1,
+    "PROFESSOR": "HENRIQUE GOMES DE MOURA",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 209,
+    "1": 1,
+    "PROFESSOR": "LUCIANO GONCALVES NOLETO",
+    "HORARIO": "2T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 210,
+    "1": 1,
+    "PROFESSOR": "MARIA DEL PILAR HIDALGO FALLA",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 211,
+    "1": 1,
+    "PROFESSOR": "ELAINE VENSON",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 212,
+    "1": 2,
+    "PROFESSOR": "ELAINE VENSON",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 213,
+    "1": 1,
+    "PROFESSOR": "RENATO CORAL SAMPAIO",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 214,
+    "1": 1,
+    "PROFESSOR": "ANDRE LUIZ PERON MARTINS LANNA",
+    "HORARIO": "24T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 215,
+    "1": 1,
+    "PROFESSOR": "FERNANDO WILLIAM CRUZ",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 216,
+    "1": 4,
+    "PROFESSOR": "ALEX REIS",
+    "HORARIO": "4T45 6T234",
+    "CARGA": "90h"
+  },
+  {
+    "0": 217,
+    "1": 6,
+    "PROFESSOR": "SUELIA DE SIQUEIRA RODRIGUES FLEURY ROSA",
+    "HORARIO": "4T45 6T234",
+    "CARGA": "90h"
+  },
+  {
+    "0": 218,
+    "1": 7,
+    "PROFESSOR": "CARLA SILVA ROCHA AGUIAR",
+    "HORARIO": "4T45 6T234",
+    "CARGA": "90h"
+  },
+  {
+    "0": 219,
+    "1": 8,
+    "PROFESSOR": "RAFAEL CASTILHO FARIA MENDES",
+    "HORARIO": "4T45 6T234",
+    "CARGA": "90h"
+  },
+  {
+    "0": 220,
+    "1": 9,
+    "PROFESSOR": "RHANDER VIANA",
+    "HORARIO": "4T45 6T234",
+    "CARGA": "90h"
+  },
+  {
+    "0": 221,
+    "1": 1,
+    "PROFESSOR": "RUDI HENRI VAN ELS e LUCIANO GONCALVES NOLETO",
+    "HORARIO": "46M12  2T4",
+    "CARGA": "75h"
+  },
+  {
+    "0": 222,
+    "1": 1,
+    "PROFESSOR": "GABRIELA CUNHA POSSA",
+    "HORARIO": "35M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 223,
+    "1": 1,
+    "PROFESSOR": "CRISTIANO JACQUES MIOSSO RODRIGUES MENDES",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 224,
+    "1": 3,
+    "PROFESSOR": "GUILLERMO ALVAREZ BESTARD",
+    "HORARIO": "24T6  24N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 225,
+    "1": 5,
+    "PROFESSOR": "SANDRO AUGUSTO PAVLIK HADDAD",
+    "HORARIO": "35T6  35N1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 226,
+    "1": 1,
+    "PROFESSOR": "LOANA NUNES VELASCO",
+    "HORARIO": "4M345 6M34",
+    "CARGA": "75h"
+  },
+  {
+    "0": 227,
+    "1": 1,
+    "PROFESSOR": "PAULA MEYER SOARES",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 228,
+    "1": 1,
+    "PROFESSOR": "MARIA ALZIRA DE ARAUJO NUNES",
+    "HORARIO": "35M12",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 229,
+    "1": 1,
+    "PROFESSOR": "HENRIQUE GOMES DE MOURA",
+    "HORARIO": "24M5  24T1",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 230,
+    "1": 1,
+    "PROFESSOR": "BRUNO LUIZ PEREIRA",
+    "HORARIO": "HORARIO",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 231,
+    "1": 1,
+    "PROFESSOR": "REJANE MARIA DA COSTA FIGUEIREDO",
+    "HORARIO": "35T45",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 232,
+    "1": 1,
+    "PROFESSOR": "CRISTIANE SOARES RAMOS",
+    "HORARIO": "24M34",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 233,
+    "1": 2,
+    "PROFESSOR": "CRISTIANE SOARES RAMOS",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 234,
+    "1": 1,
+    "PROFESSOR": "ARTUR ELIAS DE MORAIS BERTOLDI",
+    "HORARIO": "24T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 235,
+    "1": 1,
+    "PROFESSOR": "POLLIANA CANDIDA OLIVEIRA MARTINS",
+    "HORARIO": "46T23",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 236,
+    "1": 1,
+    "PROFESSOR": "ARTEM ANDRIANOV",
+    "HORARIO": "35M34 (25/",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 237,
+    "1": 1,
+    "PROFESSOR": "FABIO CORDEIRO DE LISBOA",
+    "HORARIO": "46T45 (25/",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 238,
+    "1": 1,
+    "PROFESSOR": "CARLA TATIANA MOTA ANFLOR",
+    "HORARIO": "24M34 (25/",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 239,
+    "1": 1,
+    "PROFESSOR": "DANIEL MAURICIO MUNOZ ARBOLEDA",
+    "HORARIO": "6T2345",
+    "CARGA": "CARGA"
+  },
+  {
+    "0": 240,
+    "1": 1,
+    "PROFESSOR": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
+    "HORARIO": "46M34 (25/",
+    "CARGA": "CARGA"
+  }
+]

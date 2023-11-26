@@ -20,7 +20,7 @@ img {
     --bg-offset: hsl(0, 0%, 100%);
     --text: hsl(200, 15%, 8%);
     --gray: hsl(0, 0%, 52%);
-    --border: rgba(0, 0, 0, 0.1);
+    --border: rgba(16, 8, 231, 0.952);
    
 }
 ul,
@@ -36,7 +36,7 @@ body {
 }
 h1,
 h5 {
-    height: 0px;
+    height: 10px;
 }
 .wrapper {
     width: 96%;
@@ -60,6 +60,7 @@ h5 {
 
 .card-content {
     padding: 32px 15px;
+    
 
     h5 {
         display: -webkit-box;
