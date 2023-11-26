@@ -355,7 +355,6 @@ reuniões com a equipe de desenvolvedores.
  A seguir, está um diagrama de fluxo de trabalho que ilustra as
  principais etapas do processo de desenvolvimento dentro do framework
  Scrum:
-
 ![imagen3](assets\Diagrama.JPG)
 
  Este diagrama serve como um guia visual para as atividades e
@@ -387,6 +386,7 @@ reuniões com a equipe de desenvolvedores.
  **4 Detalhamento de atividades do projeto** 
  
  **4.1** **Atividade 1**
+
 | Atividade             | Método | Ferramenta | Entrega     |
 |-----------------------|--------|------------|-------------|
 | Planejamento de Sprint | Scrum  | Quadro     | 28/09/2023  |
@@ -409,9 +409,10 @@ reuniões com a equipe de desenvolvedores.
 |-------------------|--------|------------|-------------|
 | Desenvolvimento   | Agile  | IDE (VSCode)| 19/11/2023  |
 
+ **5 LIÇÕES APRENDIDAS**
 
- **5 LIÇÕES APRENDIDAS**\
- **5.1** **Unidade 1**\
+ **5.1** **Unidade 1**
+
  **Comunicação e Transparência:** Identificamos a necessidade de
  melhorar a comunicação entre os membros da equipe.
 
