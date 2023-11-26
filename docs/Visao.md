@@ -201,314 +201,77 @@ Quadro: 2
 
  **5. Ferramentas:**
 
- •Contexto: Ferramentas são essenciais para apoiar atividades como
+ - Contexto: Ferramentas são essenciais para apoiar atividades como
  desenvolvimento de código, gerenciamento de banco de dados e controle
  de versão.
 
- •Objetivos: Aumentar a produtividade da equipe e garantir a
+ - Objetivos: Aumentar a produtividade da equipe e garantir a
  confiabilidade do sistema. •Solução Proposta: Uso de ferramentas como
  IDEs (Ambiente de Desenvolvimento Integrado), bancos de dados
  PostgreSQL, Git para controle de versão e Trello para gerenciamento de
  tarefas.
 
- •Justificação: Essas ferramentas facilitam o desenvolvimento, o teste
+ - Justificação: Essas ferramentas facilitam o desenvolvimento, o teste
  e o gerenciamento de tarefas, garantindo a qualidade e a eficiência do
  projeto.
 
-+-----------------------------------+-----------------------------------+
-| **2.2**                           |  **Organização do Projeto**      |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
 
-+-----------------+-----------------+-----------------+-----------------+
-|  ***Papel***   |  **            |  **            |  ***P          |
-|                 | *Atribuições*** | *Responsável*** | articipantes*** |
-+=================+=================+=================+=================+
-|  Front-end     |  Responsável   |  Gabriel       |                 |
-|                 |  por criar a   |  Fenelon       |                 |
-|                 |  interface do  |                |                 |
-|                 |  produto e a   |  Igor de Sousa |                 |
-|                 |  interação e   |                 |                 |
-|                 |  usabilidade   |                 |                 |
-|                 |  do usuário.   |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  Back -end     |  Responsável   |  Gustavo Alves |                 |
-|                 |  pelo          |  Vitor Gabriel |                 |
-|                 |                |                 |                 |
-|                 | desenvolvimento |                 |                 |
-|                 |  do servidor e |                 |                 |
-|                 |  da conexão    |                 |                 |
-|                 |  entre o       |                 |                 |
-|                 |  front-end e o |                 |                 |
-|                 |  banco de      |                 |                 |
-|                 |  Dados.        |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  Banco de      |  Responsável   |  Johnny da     |                 |
-|  Dados         |  por agrupar   |  ponte Vitor   |                 |
-|                 |  os dados,     |  Bessa         |                 |
-|                 |  documentos e  |                 |                 |
-|                 |  informações   |                 |                 |
-|                 |  que serão     |                 |                 |
-|                 |  usados        |                 |                 |
-|                 |  durante o     |                 |                 |
-|                 |  processo de   |                 |                 |
-|                 |  d             |                 |                 |
-|                 | esenvolvimento. |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  Cliente       |  Criar grade,  |  \...          | <table         |
-|                 |  visualizar    |                 | <colgroup      |
-|                 |  disciplinas e |                 | <col            |
-|                 |  acompanhar    |                 | style=          |
-|                 |  frequência.   |                 | "width: 50%" / |
-|                 |                 |                 | <col            |
-|                 |                 |                 | style=          |
-|                 |                 |                 | "width: 50%" / |
-|                 |                 |                 | </colgroup     |
-|                 |                 |                 | <thead         |
-|                 |                 |                 | <tr             |
-|                 |                 |                 | class="header" |
-|                 |                 |                 | <               |
-|                 |                 |                 | th<blockquote |
-|                 |                 |                 | <pAlunos<br / |
-|                 |                 |                 | Uni             |
-|                 |                 |                 | versidade<br / |
-|                 |                 |                 | Brasília -      |
-|                 |                 |                 | FGA.</p        |
-|                 |                 |                 | </b             |
-|                 |                 |                 | lockquote</th |
-|                 |                 |                 | <thda          |
-|                 |                 |                 | de</th         |
-|                 |                 |                 | </tr           |
-|                 |                 |                 | </thead        |
-|                 |                 |                 | <tbody         |
-|                 |                 |                 | </tbody        |
-|                 |                 |                 | </table        |
-+-----------------+-----------------+-----------------+-----------------+
+ **2.2 Organização do Projeto**
 
-Quadro: 3
 
-+-----------------------------------+-----------------------------------+
-| **2.3**                           |  **Planejamento das Fases e/ou   |
-|                                   |  Iterações do Projeto**          |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
 
-+---------+---------+---------+---------+---------+---------+---------+
-| ***Sp   |        | ***Data | ***Data | ***Entr | ***R    |  *     |
-| rint*** | ***Prod | In      | Fim***  | egável( | esponsá | **%***\ |
-|         | uto***\ | ício*** |         | eis)*** | veis*** |  *     |
-|         |  *     |         |         |         |         | **concl |
-|         | **(Entr |         |         |         |         | usão*** |
-|         | ega)*** |         |         |         |         |         |
-+=========+=========+=========+=========+=========+=========+=========+
-| Sprint  |  De    | 28/     | 01/     | **      |  Todos |  100%  |
-| 1       | finição | 08/2023 | 09/2023 | Documen |         |         |
-|         |  do    |         |         | tação** |         |         |
-|         |        |         |         |         |         |         |
-|         | Produto |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  F     | 01/     | 15/     |        |  Todos |  100%  |
-| 2       | unciona | 09/2023 | 09/2023 | Arquivo |         |         |
-|         | lidades |         |         |  no    |         |         |
-|         |  do    |         |         |        |         |         |
-|         |        |         |         |  GitHub |         |         |
-|         |  GitHub |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  Con   | 16/     | 29/     |         |  Todos |  100%  |
-| 3       | figurar | 08/2023 | 09/2023 |         |         |         |
-|         |  o     |         |         |         |         |         |
-|         |  a     |         |         |         |         |         |
-|         | mbiente |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  Visão | 30/     | 01/     | Docum   |  Todos |  100%  |
-| 4       |  do\   | 10/2023 | 10/2023 | entação |         |         |
-|         |  p     |         |         |         |         |         |
-|         | rojeto/ |         |         |         |         |         |
-|         | produto |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  Slide | 02/     | 02/     |        |        |  100%  |
-| 5       |         | 10/2023 | 10/2023 |  Slides | Matheus |         |
-|         |         |         |         |  de\   |  /     |         |
-|         |         |         |         |  apres |  Caio  |         |
-|         |         |         |         | entação |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  D     | 04/     | 20/     |         |  Fr    |  100%  |
-| 6       | esenvol | 10/2023 | 11/2023 |         | ont-end |         |
-|         | vimento |         |         |         |         |         |
-|         |  do    |         |         |         |         |         |
-|         |  pr    |         |         |         |         |         |
-|         | otótipo |         |         |         |         |         |
-|         |  1     |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  D     | 16/     | 12/     |        |  Fr    |  90%   |
-| 7       | esenvol | 10/2023 | 11/2023 |  Codigo | ont-end |         |
-|         | vimento |         |         |         |         |         |
-|         |        |         |         |         |         |         |
-|         | inicial |         |         |         |         |         |
-|         |  de 4  |         |         |         |         |         |
-|         |  telas |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  Dec   | 21/     | 25/     |        |  Todos |  100%  |
-| 8       | laração | 10/2023 | 10/2023 |  Docume |         |         |
-|         |  de    |         |         | ntação/ |         |         |
-|         |        |         |         |        |         |         |
-|         |  escopo |         |         | Arquivo |         |         |
-|         |  do\   |         |         |  no\   |         |         |
-|         |  s     |         |         |        |         |         |
-|         | oftware |         |         |  GitHub |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
 
-*Página 8 de 14*
+|  ***Papel***| ***Atribuições*** |***Responsável***|  ***Participantes***|
+|-|-|-|-|
+|  Front-end  | Responsável por criar a interface do produto e a interação e usabilidade do usuário. | Gabriel Fenelon Igor de Sousa|
+|  Back -end| Responsável pelo desenvolvimento do servidor e da conexão entre o front-end e o banco de Dados.| Gustavo Alves Vitor Gabriel| | 
+|Banco de Dados|Responsável por agrupar os dados, documentos e informações que serão usados durante o processo de desenvolvimento.|Johnny da ponte|
+|Cliente|Criar grade, visualizar disciplinas e acompanhar frequência.|...|Alunos da Universidade de Brasília - FGA.|   
 
-+---------+---------+---------+---------+---------+---------+---------+
-| Sprint  |  do    | 26/     | 03/     |        |  Todos |  100%  |
-| 9       | cumento | 10/2023 | 11/2023 |  Docume |         |         |
-|         |  de    |         |         | ntação/ |         |         |
-|         |  arqu  |         |         |        |         |         |
-|         | itetura |         |         | Arquivo |         |         |
-|         |         |         |         |  no\   |         |         |
-|         |         |         |         |        |         |         |
-|         |         |         |         |  GitHub |         |         |
-+=========+=========+=========+=========+=========+=========+=========+
-+---------+---------+---------+---------+---------+---------+---------+
 
-+-----------------------------------+-----------------------------------+
-| **2.4**                           |  **Matriz de Comunicação**       |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+ **2.3** **Planejamento das Fases e/ou Iterações do Projeto**          
 
-+-----------------+-----------------+-----------------+-----------------+
-|                |  ***Área/***\  |  ***P          |  ***Produtos   |
-| ***Descrição*** |  *             | eriodicidade*** |  Gerados***    |
-|                 | **Envolvidos*** |                 |                 |
-+=================+=================+=================+=================+
-| •Reuniões sobre | <table         |  •Semanal (Até |  •Ata de       |
-| o andamento do  | <colgroup      |  3 vezes)      |  reunião\      |
-| projeto.        | <col            |                 |  •Relatório de |
-| •Acompanhamento | style=          |                 |  situação do   |
-| dos integrantes | "width: 50%" / |                 |  projeto       |
-| e suas devidas  | <col            |                 |  •             |
-| funções         | style=          |                 | Funcionalidades |
-|                 | "width: 50%" / |                 |  do produto    |
-|                 | </colgroup     |                 |                 |
-|                 | <thead         |                 |                 |
-|                 | <tr             |                 |                 |
-|                 | class="header" |                 |                 |
-|                 | <               |                 |                 |
-|                 | th<blockquote |                 |                 |
-|                 | <p•Equipe      |                 |                 |
-|                 | Projeto</p     |                 |                 |
-|                 | </b             |                 |                 |
-|                 | lockquote</th |                 |                 |
-|                 | <thdo</th     |                 |                 |
-|                 | </tr           |                 |                 |
-|                 | </thead        |                 |                 |
-|                 | <tbody         |                 |                 |
-|                 | </tbody        |                 |                 |
-|                 | </table        |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|                 | <table         |  •Semanal      |                 |
-|                 | <colgroup      |                 |                 |
-|                 | <col            |                 |                 |
-|                 | style=          |                 |                 |
-|                 | "width: 50%" / |                 |                 |
-|                 | <col            |                 |                 |
-|                 | style=          |                 |                 |
-|                 | "width: 50%" / |                 |                 |
-|                 | </colgroup     |                 |                 |
-|                 | <thead         |                 |                 |
-|                 | <tr             |                 |                 |
-|                 | class="header" |                 |                 |
-|                 | <               |                 |                 |
-|                 | th<blockquote |                 |                 |
-|                 | <p•Equipe      |                 |                 |
-|                 | Projeto</p     |                 |                 |
-|                 | </b             |                 |                 |
-|                 | lockquote</th |                 |                 |
-|                 | <thdo</th     |                 |                 |
-|                 | </tr           |                 |                 |
-|                 | </thead        |                 |                 |
-|                 | <tbody         |                 |                 |
-|                 | </tbody        |                 |                 |
-|                 | </table        |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  • Comunicar   |  •Equipe\      |  •Semanal      |  •Ata de       |
-|  situação do   |  •Prof/Monitor |                 |  reunião, e\   |
-|  projeto       |                 |                 |  •Relatório de |
-|                 |                 |                 |  situação do   |
-|                 |                 |                 |  projeto       |
-+-----------------+-----------------+-----------------+-----------------+
+|***Sprint*** |***Produto (Entrega)*** |***Data Início***|***Data Fim*** |***Entregável(eis)*** |***Responsáveis*** |***% conclusão***|
+|----------|--------------------------------------|-------------|------------|-----------------------------------------|--------------|-------------|
+| Sprint 1 | Definição do Produto | 28/08/2023  | 01/09/2023 |Documentação                          |Todos        | 100%        |
+| Sprint 2 | Funcionalidades do GitHub            | 01/09/2023  | 15/09/2023 | Arquivo no GitHub                      | Todos        | 100%        |
+| Sprint 3 | Configurar o ambiente                | 16/08/2023  | 29/09/2023 |                                         | Todos        | 100%        |
+| Sprint 4 | Visão do projeto/produto             | 30/10/2023  | 01/10/2023 | Documentação                           | Todos        | 100%        |
+| Sprint 5 | Slide                                | 02/10/2023  | 02/10/2023 | Slides de apresentação                 | Matheus / Caio| 100%        |
+| Sprint 6 | Desenvolvimento do protótipo 1       | 04/10/2023  | 20/11/2023 || Front-end                              |              | 100%        |
+| Sprint 7 | Desenvolvimento inicial de 4 telas   | 16/10/2023  | 12/11/2023 | Código |Front-end                       |              | 90%         |
+| Sprint 8 | Declaração de escopo do software     | 21/10/2023  | 25/10/2023 | Documentação/Arquivo no GitHub         | Todos        | 100%        |
+| Sprint 9 | Documento de arquitetura             | 26/10/2023  | 03/11/2023 | Documentação/Arquivo no GitHub         | Todos        | 100%        |
 
-Quadro: 5
+
+**2.4** **Matriz de Comunicação** 
+| ***Descrição***                                     | ***Área/Envolvidos***     | ***Periodicidade***    | ***Produtos Gerados***                              |
+|-----------------------------------------------|---------------------|------------------|-----------------------------------------------|
+| Reuniões sobre o andamento do projeto.         | Equipe do Projeto   | Semanal (Até 3 vezes) | Ata de reunião, Relatório de situação do projeto, Funcionalidades do produto |
+| Acompanhamento dos integrantes e suas devidas funções | Equipe do Projeto   | Semanal          | Comunicar situação do projeto, Ata de reunião, Relatório de situação do projeto |
+| Comunicar situação do projeto                  | Equipe, Prof/Monitor | Semanal          | Ata de reunião, Relatório de situação do projeto |
+
 
  **2.5** **Gerenciamento de Riscos**
 
  Gerenciamento de Riscos do Projeto - Quadro de Acompanhamento de
  Riscos:
 
-+-----------------+-----------------+-----------------+-----------------+
-|  ***Risco***   | **Grau de**\    | **Mitigação**   | **Plano de      |
-|                 | **Exposição**   |                 | Contingência**  |
-+=================+=================+=================+=================+
-|  Atraso na     | Alto            |  Estabelecer   |  Revisar o     |
-|  Entrega do    |                 |  comunicação   |  cronograma    |
-|  Projeto       |                 |  regular com   |  para\         |
-|                 |                 |  os            |  minimizar o   |
-|                 |                 |  participantes |  impacto do    |
-|                 |                 |  para\         |  atraso.       |
-|                 |                 |  acompanhar o  |                 |
-|                 |                 |  andamento da\ |                 |
-|                 |                 |  entrega.      |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  Mudanças nos  | Moderado        |  Realizar      |  Avaliar o     |
-|  Requisitos    |                 |  revisões      |  impacto das   |
-|                 |                 |  regulares     |  mudanças e    |
-|                 |                 |  dos\          |  priorizar os  |
-|                 |                 |  requisitos e  |  requisitos de |
-|                 |                 |  manter um     |  acordo com o  |
-|                 |                 |  processo de   |  valor para o  |
-|                 |                 |  gerenciamento |  projeto.      |
-|                 |                 |  de mudanças   |                 |
-|                 |                 |  bem definido. |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  Falta de      | Alto            |  Investir em   |  Ter acesso a  |
-|  Experiência   |                 |  treinamento e |  consultores   |
-|  da Equipe     |                 |  capacitação   |  ou\           |
-|                 |                 |  da equipe.    |  especialistas |
-|                 |                 |                 |  para orientar |
-|                 |                 |                 |  a equipe em   |
-|                 |                 |                 |  momentos de   |
-|                 |                 |                 |  dificuldade.  |
-+-----------------+-----------------+-----------------+-----------------+
-|  Problemas de  | Alto            |  Realizar      |  Identificar   |
-|  Integração de |                 |  testes de     |  possíveis     |
-|  Tecnologias   |                 |  integração    |  alternativas  |
-|                 |                 |  frequentes.   |  de tecnologia |
-|                 |                 |                 |  caso          |
-|                 |                 |                 |  problemas de  |
-|                 |                 |                 |  integração    |
-|                 |                 |                 |  persistentes  |
-|                 |                 |                 |  ocorram.      |
-+-----------------+-----------------+-----------------+-----------------+
-|  Mudanças nas\ | Moderado        |  Manter um     |  Adotar        |
-|                |                 |                |  medidas de    |
-| Regulamentações |                 |  monitoramento\ |  conformidade  |
-|                 |                 |  constante das |  em tempo      |
-|                 |                 |                |  hábil se      |
-|                 |                 | regulamentações |  ocorrerem\    |
-|                 |                 |  relevantes.   |  mudanças nas  |
-|                 |                 |                 |  r             |
-|                 |                 |                 | egulamentações. |
-+-----------------+-----------------+-----------------+-----------------+
 
-Quadro: 6
+|***Risco***| ***Grau de Exposição*** | ***Mitigação***| ***Plano de Contingência***                                     |
+|----------------------|-----------------------|-----------------------------------------------------------|--------------------------------------------------------------|
+| Atraso na Entrega do Projeto | Alto | Estabelecer comunicação regular com os participantes para acompanhar o andamento da entrega. | Revisar o cronograma para minimizar o impacto do atraso.        |
+| Mudanças nos Requisitos | Moderado            | Realizar revisões regulares dos requisitos e manter um processo de gerenciamento de mudanças bem definido. | Avaliar o impacto das mudanças e priorizar os requisitos de acordo com o valor para o projeto. |
+| Falta de Experiência da Equipe | Alto          | Investir em treinamento e capacitação da equipe. | Ter acesso a consultores ou especialistas para orientar a equipe em momentos de dificuldade. |
+| Problemas de Integração de Tecnologias | Alto    | Realizar testes de integração frequentes. | Identificar possíveis alternativas de tecnologia caso problemas de integração persistentes ocorram. |
+| Mudanças nas Regulamentações | Moderado       | Manter um monitoramento constante das regulamentações relevantes. | Adotar medidas de conformidade em tempo hábil se ocorrerem mudanças nas regulamentações. |
 
-OBS: As explicações contidas no quadro 6 foram discutidas durante
+OBS: As explicações contidas na tabela acima foram discutidas durante
 reuniões com a equipe de desenvolvedores.
 
  **2.6** **Critérios de Replanejamento**
 
- •**Riscos Críticos Realizados:** Se um risco crítico, identificado
+ **Riscos Críticos Realizados:** Se um risco crítico, identificado
  anteriormente no plano
 
  de gerenciamento de riscos, se materializar e tiver um impacto
@@ -566,19 +329,19 @@ height="2.3958333333333335in"}
 
  **Decisões:**
 
-+-----------------------------------+-----------------------------------+
+
 | •                                 |  **Adoção do Scrum:** A equipe   |
 |                                   |  optou por adotar o framework    |
 |                                   |  Scrum como uma das metodologia  |
 |                                   |  de desenvolvimento de software  |
 |                                   |  para este projeto. O Scrum é    |
 |                                   |  escolhido                       |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
 *Página 10 de 14*
 
-+-----------------------------------+-----------------------------------+
+
 | •                                 |  devido à sua abordagem ágil e   |
 |                                   |  flexível, que se adequa bem ao  |
 | •                                 |  ambiente acadêmico em constante |
@@ -608,8 +371,8 @@ height="2.3958333333333335in"}
 |                                   |  permitirá entregas regulares de |
 |                                   |  funcionalidades e ajustes com   |
 |                                   |  base no feedback.               |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
  •**Reuniões Scrum:** A equipe realizará as seguintes reuniões do
  Scrum:\
@@ -671,13 +434,13 @@ Imagem: 3
 
 *Página 12 de 14*
 
-+-----------------------------------+-----------------------------------+
+
 | **4**                             |  **Detalhamento de atividades do |
 |                                   |  projeto**                       |
 | **4.1**                           |                                  |
 |                                   |  **Atividade 1**                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
 +-----------------+-----------------+-----------------+-----------------+
 | ***Atividade*** | ***Método***    | *               | ***Entrega***   |
@@ -687,10 +450,10 @@ Imagem: 3
 |  de Sprint*    |                 |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 
-+-----------------------------------+-----------------------------------+
+
 | **4.2**                           |  **Atividade 2**                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
 +-----------------+-----------------+-----------------+-----------------+
 | ***Atividade*** | ***Método***    | *               | ***Entrega***   |
@@ -700,10 +463,10 @@ Imagem: 3
 |  Objetivos     |                 |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 
-+-----------------------------------+-----------------------------------+
+
 | **4.3**                           |  **Atividade 3**                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
 +-----------------+-----------------+-----------------+-----------------+
 | ***Atividade*** | ***Método***    | *               | ***Entrega***   |
@@ -713,10 +476,10 @@ Imagem: 3
 |  Tarefas       |                 |                 |                 |
 +-----------------+-----------------+-----------------+-----------------+
 
-+-----------------------------------+-----------------------------------+
+
 | **4.4**                           |  **Atividade 4**                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
 +-----------------+-----------------+-----------------+-----------------+
 | ***Atividade*** | ***Método***    | *               | ***Entrega***   |
@@ -738,7 +501,7 @@ Imagem: 3
 
  **6PRÓXIMOS PASSOS1**
 
-+-----------------------------------+-----------------------------------+
+
 |  •\                              |  *Iniciem a preparação do        |
 |  •\                              |  backlog do produto, redigindo   |
 |  •\                              |  requisitos funcionais e não     |
@@ -762,8 +525,8 @@ Imagem: 3
 |                                   |  tecnologias adotadas são        |
 |                                   |  suficientes para o              |
 |                                   |  desenvolvimento do produto?*    |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+
 
  **7REFERÊNCIAS BIBLIOGRÁFICAS**
 

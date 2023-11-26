@@ -1,6 +1,6 @@
 # *Sobre*
 
-### **Sistema de Gestão de Grade Acadêmica para Estudantes da FGA**
+### **GradeWeb**
 
 ### **Introdução:**   
 
@@ -36,4 +36,4 @@ Os usuários poderão monitorar sua frequência nas disciplinas.
 
 ### **Conclusão:**
 
-O Sistema de Gestão de Grade Acadêmica para Estudantes da FGA proporcionará uma experiência mais fluida e eficaz no planejamento e acompanhamento do percurso acadêmico. Ao oferecer funcionalidades intuitivas e personalizáveis, este software busca otimizar a jornada educacional dos alunos, promovendo o sucesso e a excelência acadêmica na Faculdade Unificada do Gama.
+O GradeWeb proporcionará uma experiência mais fluida e eficaz no planejamento e acompanhamento do percurso acadêmico. Ao oferecer funcionalidades intuitivas e personalizáveis, este software busca otimizar a jornada educacional dos alunos, promovendo o sucesso e a excelência acadêmica na Faculdade Unificada do Gama.

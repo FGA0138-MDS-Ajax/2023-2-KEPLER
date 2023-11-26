@@ -1,10 +1,10 @@
-# Sistema de Gestão Acadêmica: Facilitando sua Jornada Educacional
+# GradeWeb: Facilitando sua Jornada Educacional
 
-Bem-vindo à Wiki do Sistema de Gestão Acadêmica! Este espaço foi criado para centralizar e organizar os documentos essenciais relacionados ao nosso projeto inovador de Gestão Acadêmica.
+Bem-vindo à Wiki do GradeWeb! Este espaço foi criado para centralizar e organizar os documentos essenciais relacionados ao nosso projeto inovador de Gestão Acadêmica.
 
 ## Sobre o Projeto
 
-O Sistema de Gestão Acadêmica foi desenvolvido com o objetivo de proporcionar uma experiência mais eficiente e personalizada para os estudantes da Faculdade do Gama (FGA). Ele oferece funcionalidades que simplificam o planejamento e acompanhamento das disciplinas, permitindo aos alunos focar em seu desenvolvimento acadêmico.
+O GradeWeb foi desenvolvido com o objetivo de proporcionar uma experiência mais eficiente e personalizada para os estudantes da Faculdade do Gama (FGA). Ele oferece funcionalidades que simplificam o planejamento e acompanhamento das disciplinas, permitindo aos alunos focar em seu desenvolvimento acadêmico.
 
 ## Benefícios e Recursos
 
