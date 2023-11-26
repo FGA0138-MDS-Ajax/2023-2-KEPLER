@@ -105,7 +105,7 @@ mais fluida e ajudará os estudantes a alcançarem seus objetivos acadêmicos de
 
  O objetivo principal é desenvolver uma ferramenta de apoio à gestão
  acadêmica que ajude os estudantes da FGA a planejarem e acompanharem
- seu progresso acadêmico.\
+ seu progresso acadêmico.
  
  Secundários: Cadastros de projetos de extensões realizados.
 
@@ -245,6 +245,7 @@ Quadro: 2
 
 
 **2.4** **Matriz de Comunicação** 
+
 | ***Descrição***                                     | ***Área/Envolvidos***     | ***Periodicidade***    | ***Produtos Gerados***                              |
 |-----------------------------------------------|---------------------|------------------|-----------------------------------------------|
 | Reuniões sobre o andamento do projeto.         | Equipe do Projeto   | Semanal (Até 3 vezes) | Ata de reunião, Relatório de situação do projeto, Funcionalidades do produto |
@@ -310,6 +311,7 @@ reuniões com a equipe de desenvolvedores.
  replanejamento será considerado.
 
  **3 PROCESSO DE DESENVOLVIMENTO DE SOFTWARE**
+
 ![imagen2](assets\Scrum.png)
 
  **Metodologia de Desenvolvimento de Software -- Scrum e XP**
@@ -355,6 +357,7 @@ reuniões com a equipe de desenvolvedores.
  A seguir, está um diagrama de fluxo de trabalho que ilustra as
  principais etapas do processo de desenvolvimento dentro do framework
  Scrum:
+ 
 ![imagen3](assets\Diagrama.JPG)
 
  Este diagrama serve como um guia visual para as atividades e
