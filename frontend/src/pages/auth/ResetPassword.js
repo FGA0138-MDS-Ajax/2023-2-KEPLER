@@ -34,7 +34,7 @@ const ResetPassword = () => {
   return <>
     <Grid container justifyContent='center'>
       <Grid item sm={6} xs={12}>
-        <h1>Reset Password</h1>
+        <h1>Redefinir senha</h1>
         <Box component='form' noValidate sx={{ mt: 1 }} id='password-reset-form' onSubmit={handleSubmit}>
           <TextField margin='normal' required fullWidth id='password' name='password' label='New Password' type='password' />
           {server_error.password ? <Typography style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.password[0]}</Typography> : ""}
