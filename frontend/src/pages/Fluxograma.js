@@ -16,12 +16,12 @@ const Home = () => {
           
           <br />
           <hr />
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "justify", fontSize: "1.2em" }}>
             Bem-vindo à nossa seção de Fluxogramas de Cursos! Aqui, você encontrará informações detalhadas sobre a estrutura dos cursos da FGA. Os fluxogramas são mapas visuais que destacam a sequência de disciplinas e atividades ao longo do período do curso.
           </p>
-        <p style={{ textAlign: "justify"}}>
+          <p style={{ textAlign: "justify", fontSize: "1.2em" }}>
             Escolha o curso que deseja visualizar:
-        </p>
+          </p>
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
               <Button component={Link} to="/FluxogramaSoft" variant="contained" color="primary">
