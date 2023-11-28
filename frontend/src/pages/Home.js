@@ -7,7 +7,7 @@ const Home = () => {
       <Grid item sm={10}>
         <h1>GradeWEB?</h1>
        
-        <br />
+      
         <hr />
         <p style={{ textAlign: "justify" }}>
           O GradeWeb simplifica sua jornada acadêmica, proporcionando uma gestão
@@ -22,7 +22,7 @@ const Home = () => {
         
         <h1>Documentação completa do projeto</h1>
         <p> 
-          <br/>
+          
           <a href="https://fga0138-mds-ajax.github.io/2023-2-KEPLER/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>
             https://fga0138-mds-ajax.github.io/2023-2-KEPLER/
           </a>

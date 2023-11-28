@@ -65,7 +65,7 @@ const Contact = () => {
     <Grid container justifyContent="center">
       <Grid item sm={10}>
         <h1>Integrantes</h1>
-        <br />
+        
         <hr />
         <table>
           <tr>
