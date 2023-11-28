@@ -20,8 +20,6 @@ const Navbar = () => {
 
           {access_token ? <Button component={NavLink} to='/dashboard' style={({ isActive }) => { return { backgroundColor: isActive ? '#0f467e' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Perfil</Button> : <Button component={NavLink} to='/login' style={({ isActive }) => { return { backgroundColor: isActive ? '#0f467e' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Entrar/Registrar</Button>}
 
-
-
         </Toolbar>
       </AppBar>
     </Box>
