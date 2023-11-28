@@ -1,4 +1,5 @@
 import { Button } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { unSetUserToken } from '../features/authSlice';
@@ -6,9 +7,14 @@ import { getToken, removeToken } from '../services/LocalStorageService';
 import { useGetLoggedUserQuery } from '../services/userAuthApi';
 import { useEffect, useState } from 'react';
 import { setUserInfo, unsetUserInfo } from '../features/userSlice';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import React from "react";
 import principal from '../styleheets/Principal.css';
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar.js";
+
+
+
 
 function Principal(){
     const handleLogout = () => {
@@ -49,30 +55,31 @@ function Principal(){
       }, [data, isSuccess, dispatch])
     
     return(
-        <><div className="background-bottom">
+        <><Navbar />
+        <div className="background-bottom">
             <div className="main-screen">
                 <div className="left-screen">
                     <h1>UNB</h1>
-                
+
                 <div className="left-list">
                     <ul>
                         <li className="left-option">
+
                             <a href="/Perfil"style={{textDecoration:'none'}}> Perfil </a> <br></br>
-                            <a href="/Materias"style={{textDecoration:'none'}}> Materias</a><br></br>
+                            <a href="/Materias"style={{textDecoration:'none'}}> Matérias</a><br></br>
                             <a href="/Grade"style={{textDecoration:'none'}}> Grade </a>
                         </li>
                     </ul>
                     <div className="Bottom-Exit"> 
-                    <Button variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>    
-                    </div>
-            
+                    <Button variant='contained' color='primary' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Sair</Button>    
+                    </div>            
                 </div>
                 </div>
                 <div className="right-screen">
-                    <h2>Grade Web</h2>
+                    <h2>GradeWeb</h2>
                     <div className="all-courses">
                         <div className="aeroespacial">
-                            <span> Aeroespacial</span>
+                        <Link to="/FluxogramaAero" style={{textDecoration:'none'}}><span> Aeroespacial</span> </Link>
                         </div>
                         <div className="automotiva">
                             <span> Automotiva</span>

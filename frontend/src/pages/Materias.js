@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import turmasData from '../data/turmas-professores.json';
 import { Grid } from "@mui/material";
 import materia from '../styleheets/Materias.css';
-import Navbar from "../components/NavLogin.js";
+import Navbar from "../components/Navbar.js";
 
 function Materias() {
     const [error, setError] = useState(null);

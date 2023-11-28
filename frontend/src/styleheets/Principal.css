@@ -7,7 +7,6 @@
     height: 100%;
   margin: 0 auto;
   background-color: #0D1117;
-  border-radius: 30px 30px 30px 30px ;
 }
 
 /*tela principal*/
@@ -15,8 +14,8 @@
     width: 1520px;
     height: 735px;
     flex-shrink: 0;
-    background: linear-gradient(180deg, #1C294F 0%, rgba(10,14, 25, 0.80) 100%);
-    border-radius: 30px 30px 30px 30px;
+    background: linear-gradient(180deg, #000000 5%, rgba(5, 13, 88, 0.578));
+   
 
 }
 /*parte esqueda*/
@@ -25,7 +24,6 @@
     width: 347px;
     height: 735px;
     flex-shrink: 0;
-    border-radius: 30px 0px 0px 30px;
     background: #0D1117;
     
 }
@@ -49,7 +47,7 @@ justify-content: center;
     
 }
 
-.left-list{
+/*.left-list{
     color: white;
     text-align: center;
     font-family: 'fonts/Inter';
@@ -58,15 +56,17 @@ justify-content: center;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 2.64px;
+}*/
        
-}
+
 a:visited{
     color: white;
 }
-.left-option{
+/*.left-option{
     margin-top: 40%;
-    margin-left: -60%;
-}
+    margin-left: -15%;}
+    */
+
 .Bottom-Exit{
     color: #FFF;
   display: flex;
@@ -87,9 +87,13 @@ text-transform: uppercase;
     width: 120px;
     height: 30px;
     border-radius: 30px 30px 30px 30px;
+    font-family: 'fonts/Inter';
+    text-transform: none;
+
 }
 .Bottom-Exit Link{
     text-decoration: none;
+
 }
 /*Parte direita*/
 .right-screen{
@@ -109,14 +113,14 @@ text-transform: uppercase;
 }
 
 .right-screen h2{
-    color: #FFF;
+    color: #ffffff;
     text-align: left;
     font-family: 'fonts/Inter';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 12.8px;
+    letter-spacing: 9.0px;
     margin-top: 50%;
     margin-left: -69%;
 }
@@ -249,3 +253,27 @@ flex-direction: column;
     background-color: #0D1117;
     text-decoration: underline;
 }
+
+
+.left-list { width: 346px; }
+
+.left-list ul { list-style-type: none;
+     padding: 0; margin: 0;
+      margin-top: 70px;
+      font-size: 18px;
+    }
+
+.left-option a { color: white; text-decoration: none; padding: 10px 16px; display: block; } 
+
+.left-option a:hover { background-color: #4b4b4b; } 
+
+ .profile-pic { display: flex; justify-content: center; align-items: center; width: 100%; height: 200px; background-color: #3a3a3a; }
+
+.profile-pic img { width: 100px; height: 100px; border-radius: 50%; } 
+
+.profile-details { padding: 24px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.profile-details h2 { color: white; margin: 0; }
+
+.profile-details p { color: white; margin: 0; }
+
