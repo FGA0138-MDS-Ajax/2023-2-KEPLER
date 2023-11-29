@@ -67,7 +67,9 @@ const Contact = () => {
         <h1>Integrantes</h1>
         
         <hr />
-        <table>
+        <br /> 
+        
+        
           <tr>
             {profiles.map((profile, index) => (
               <AnimatedTableCell key={index}>
@@ -85,7 +87,7 @@ const Contact = () => {
               </AnimatedTableCell>
             ))}
           </tr>
-        </table>
+        
       </Grid>
     </Grid>
   );
