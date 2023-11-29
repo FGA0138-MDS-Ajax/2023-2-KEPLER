@@ -1,0 +1,28 @@
+/* Grade.css */
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: -100px;
+    margin-left: 380px;
+  }
+  
+  th, td {
+    border: 1px solid #3498db; /* Azul */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #3498db; /* Azul */
+    color: #fff; /* Branco */
+  }
+  
+  td input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #3498db; /* Azul */
+  }
+  

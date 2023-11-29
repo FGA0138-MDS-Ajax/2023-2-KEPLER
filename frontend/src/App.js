@@ -33,8 +33,11 @@ function App() {
           <Route exact path="principal" element={<Principal/>} />
           <Route exact path="fluxogramaSoft" element={<FluxogramaSoft/>} />
           <Route exact path="perfil" element={<Perfil/>} />
-          <Route exact path="Materias" element={<Materias/>} />      <Route exact path="fluxogramaAero" element={<FluxogramaAero/>} />
+          <Route exact path="Materias" element={<Materias/>} />      
+          <Route exact path="fluxogramaAero" element={<FluxogramaAero/>} />
           <Route exact path="Fluxogramas" element={<Fluxogramas/>} />
+          <Route exact path="grade" element={<Grade/>} />
+
 
 
         </Routes>
