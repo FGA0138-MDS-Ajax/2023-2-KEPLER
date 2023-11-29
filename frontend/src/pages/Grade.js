@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Grade from '../styleheets/Grade.css'; // Importe o arquivo de estilo corretamente
+import { Grid } from "@mui/material";
+import Navbar from "../components/Navbar";
+
 
 const Critérios = () => {
   const [inputValues, setInputValues] = useState([
@@ -52,7 +55,9 @@ const Critérios = () => {
   };
 
   return (
+    
     <div className="Critérios">
+       <Navbar />
       <h2>Adicione os critérios:</h2>
       {renderTable()}
     </div>
