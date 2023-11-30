@@ -262,19 +262,41 @@ select:focus + .focus {
     align-items: flex-end;
 }
 
-button {
-    background-color: #4caf50;
-    color: white;
+/* Adicione estilos para os botões */
+.button-container {
+    display: flex; /* Torna o contêiner um contêiner flexível */
+    justify-content: center; /* Centraliza os filhos horizontalmente */
+    align-items: center; /* Centraliza os filhos verticalmente */
+    width: 100%; /* Garante que o contêiner ocupa toda a largura disponível */
+  }
+  
+  button, .cancel-button {
+    margin: 0 5px; /* Adiciona margem entre os botões */
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block; /* Torna o botão um elemento de bloco */
-    margin: 0 auto; /* Centraliza horizontalmente usando margens automáticas */
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
   }
   
   button:hover {
     background-color: #45a049;
   }
+  
+  .cancel-button {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c62828;
+  }
+  
+  
+  
   

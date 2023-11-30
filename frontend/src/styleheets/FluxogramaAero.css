@@ -29,9 +29,8 @@
     width: 175px;
     height: 40px;
     position: absolute;
-    color: white;
     font-size: 25px;
-    font-family: Inter;
+    font-family: 'font/Inter';
     font-weight: 400;
     word-wrap: break-word;
   }

@@ -56,6 +56,9 @@ function Materias() {
       setSelectedMaterias([...selectedMaterias, idTurmaProfessor]);
     }
   }
+  function handleCancelarSelection(idTurmaProfessor) {
+    setSelectedMaterias(selectedMaterias.filter((id) => id !== idTurmaProfessor));
+  }
   
 
   if (error) {
@@ -159,6 +162,12 @@ function Materias() {
                       >
                         Selecionar
                       </button>
+                      <button
+                        onClick={() => handleCancelarSelection(item.idTurmaProfessor)}
+                        className="cancel-button"
+                        >
+                          Cancelar
+                     </button>
                     </div>
                   </article>
                 </div>

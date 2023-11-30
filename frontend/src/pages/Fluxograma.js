@@ -34,17 +34,17 @@ const Home = () => {
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="contained" color="primary">
+              <Button component={Link} to="/FluxogramaEle"variant="contained" color="primary">
                 Eletrônica
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="contained" color="primary">
+              <Button component={Link} to="/FluxogramaEner" variant="contained" color="primary">
                 Energia
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="contained" color="primary">
+              <Button component={Link} to="/FluxogramaAuto" variant="contained" color="primary">
                 Automotiva
               </Button>
             </Grid>
