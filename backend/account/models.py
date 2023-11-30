@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import BaseUserManager,AbstractBaseUser
 from django.utils.translation import gettext as _
-from django.core.validators import MaxValueValidator
 
 #  Custom User Manager
 class UserManager(BaseUserManager):
@@ -74,28 +73,4 @@ class User(AbstractBaseUser):
       # Simplest possible answer: All admins are staff
       return self.is_admin
 
-
-
-
-#Models Database Materias
-
-class Materia(models.Model):
-    codigo = models.CharField( ('Código'), max_length=7)
-    disciplina = models.CharField( ('Disciplinas') , max_length= 70)
-
-
-    def __str__(self):
-        return self.disciplina
-    
-#Models Database Turmas
-
-class Turma(models.Model):
-    professor = models.CharField( ('professor'), max_length=120)
-    turma = models.IntegerField( ('turma') , validators=[MaxValueValidator(2)])
-    horario = models.CharField( ('horario'), max_length=8)
-    horas = models.IntegerField( ('horas') , validators=[MaxValueValidator(2)])
-
-
-    def __str__(self):
-        return self.turma
 

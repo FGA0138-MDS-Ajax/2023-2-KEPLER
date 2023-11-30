@@ -6,6 +6,9 @@ from django.contrib.auth import authenticate
 from account.renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+import json
 
 # Generate Token Manually
 def get_tokens_for_user(user):
@@ -67,4 +70,28 @@ class UserPasswordResetView(APIView):
     serializer.is_valid(raise_exception=True)
     return Response({'msg':'Password Reset Successfully'}, status=status.HTTP_200_OK)
 
+
+
+#testando, view para gerar a grade
+@csrf_exempt
+def processar_horario(request):
+    if request.method == 'POST':
+      data = json.loads(request.body)
+      horario = data.get('horario', '')
+      # Faça o que precisar com o horário, por exemplo, salve no banco de dados
+      
+      
+      # Suponha que o arquivo JSON tenha uma chave 'horarios'
+      with open('../frontend/src/data/turmas-professores.json') as json_file:
+
+            data_json = json.load(json_file)
+
+            materia_encontrada = [obj.get('nomeMateria', '') for obj in data_json if 'horario' in obj and obj['horario'] == horario]
+
+      if materia_encontrada:
+          return JsonResponse({'status': 'success', 'materia_encontrada': materia_encontrada})
+      else:
+          return JsonResponse({'status': 'error', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
+
+    return JsonResponse({'status': 'error', 'message': 'Método não permitido'}, status=405)
 
