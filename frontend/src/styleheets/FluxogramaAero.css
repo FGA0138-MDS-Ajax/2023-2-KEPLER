@@ -4,14 +4,15 @@
     width: 2450px;
     height: 1080px;
     position: relative;
+    background: #d3d3d3;
   } 
   .course-card {
     width: 210px;
-    height: 120px;
+    height: 110px;
     background: white;
     position: absolute;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #1976d2;
+    box-shadow: 0px 0px 15px #1976d2;
   }
   
   .course-info {
@@ -19,8 +20,8 @@
     position: absolute;
     color: black;
     font-size: 14px;
-    font-family: Inter;
-    font-weight: 400;
+    font-weight: bold;
+    font-family: 'font/Inter';
     word-wrap: break-word;
   }
   

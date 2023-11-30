@@ -205,3 +205,4 @@ select:focus + .focus {
     border: 2px solid var(--text);
     border-radius: inherit;
 }
+

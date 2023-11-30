@@ -9,7 +9,7 @@
 .course-card {
   background: white;
   width: 210px;
-  height: 120px;
+  height: 110px;
   position: absolute;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #1976d2;
@@ -20,8 +20,8 @@
   position: absolute;
   color: black;
   font-size: 14px;
-  font-family: Inter;
-  font-weight: 400;
+  font-family: 'fonts/Inter';
+  font-weight: bold;
   word-wrap: break-word;
 }
 

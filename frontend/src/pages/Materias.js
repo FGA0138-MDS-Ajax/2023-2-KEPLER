@@ -66,6 +66,30 @@ function Materias() {
         <div className="wrapper">
           <div className="search-wrapper">
             <label htmlFor="search-form">
+              
+              <span className="sr-only">Search countries here</span>
+            </label>
+
+            <div className="select">
+              <select
+                onChange={(e) => {
+                  setFilterParam(e.target.value);
+                }}
+                className="custom-select"
+                aria-label="Filter Professores By Curso"
+              >
+                <option value="All">Curso</option>
+                <option value="Aeroespacial">Aeroespacial</option>
+                <option value="Automotiva">Automotiva</option>
+                <option value="Eletronica">Eletrônica</option>
+                <option value="Software">Software</option>
+                <option value="Energia">Energia</option>
+              </select>
+              <span className="focus"></span>
+            </div>
+          </div>
+          <div className="search-horario">
+            <label htmlFor="search-horas">
               <input
                 type="search"
                 name="search-form"
@@ -86,12 +110,12 @@ function Materias() {
                 className="custom-select"
                 aria-label="Filter Professores By Curso"
               >
-                <option value="All">Curso</option>
-                <option value="Aeroespacial">Aeroespacial</option>
-                <option value="Automotiva">Automotiva</option>
-                <option value="Eletronica">Eletrônica</option>
-                <option value="Software">Software</option>
-                <option value="Energia">Energia</option>
+                <option value="Temp">Horários</option>
+                <option value="PrimeiroHorario">08:00- 9:50</option>
+                <option value="SegundoHorario">10:00- 11:50</option>
+                <option value="TerceiroHorario">12:00- 13:50</option>
+                <option value="QuartoHorario">14:00- 15:50</option>
+                <option value="QuintoHorario">16:00- 17:50</option>
               </select>
               <span className="focus"></span>
             </div>
@@ -126,6 +150,7 @@ function Materias() {
               </li>
             ))}
           </ul>
+          
         </div>
       </>
     );
