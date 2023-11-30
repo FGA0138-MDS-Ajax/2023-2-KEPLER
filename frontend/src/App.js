@@ -14,6 +14,10 @@ import Materias from "./pages/Materias";
 import Grade from "./pages/Grade";
 import FluxogramaAero from "./pages/FluxogramaAero"
 import Fluxogramas from "./pages/Fluxograma" 
+import FluxogramaAuto from "./pages/FluxogramaAuto"
+import FluxogramaEle from "./pages/FluxogramaEle"
+import FluxogramaEner from "./pages/FluxogramaEner"
+
 
 function App() {
   const { access_token } = useSelector(state => state.auth)
@@ -37,6 +41,10 @@ function App() {
           <Route exact path="fluxogramaAero" element={<FluxogramaAero/>} />
           <Route exact path="Fluxogramas" element={<Fluxogramas/>} />
           <Route exact path="grade" element={<Grade/>} />
+          <Route exact path="fluxogramaAuto" element={<FluxogramaAuto/>} />
+          <Route exact path="fluxogramaEle" element={<FluxogramaEle/>} />
+          <Route exact path="fluxogramaEner" element={<FluxogramaEner/>} />
+
 
 
 

@@ -1,0 +1,36 @@
+.course-card {
+    width: 210px;
+    height: 120px;
+    position: absolute;
+    background: rgba(245, 245, 245, 0.51);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(6, 49, 220, 0.5);
+  }
+  
+  .course-info {
+    width: 196px;
+    position: absolute;
+    color: rgb(10, 9, 9);
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .semester-label {
+    width: 175px;
+    height: 40px;
+    position: absolute;
+    color: rgb(25, 18, 233);
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .semester-label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .course-info{
+    font-family: Arial, Helvetica, sans-serif;
+  }
