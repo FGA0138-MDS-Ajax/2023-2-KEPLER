@@ -6,6 +6,7 @@ import '../styleheets/Materias.css'; // Certifique-se de que o caminho do arquiv
 import { Grid } from '@mui/material';
 
 function Materias() {
+  const [selectedMaterias, setSelectedMaterias] = useState([]);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -45,7 +46,16 @@ function Materias() {
       return false;
     });
   }
-  
+  function handleMateriaSelection(idTurmaProfessor) {
+    // Verifique se a matéria já está selecionada
+    if (selectedMaterias.includes(idTurmaProfessor)) {
+      // Se estiver selecionada, remova-a da lista
+      setSelectedMaterias(selectedMaterias.filter((id) => id !== idTurmaProfessor));
+    } else {
+      // Se não estiver selecionada, adicione-a à lista
+      setSelectedMaterias([...selectedMaterias, idTurmaProfessor]);
+    }
+  }
   
 
   if (error) {
@@ -144,6 +154,11 @@ function Materias() {
                           Código Matéria: <span>{item.codMateria}</span>
                         </li>
                       </ol>
+                      <button
+                        onClick={() => handleMateriaSelection(item.idTurmaProfessor)}
+                      >
+                        Selecionar
+                      </button>
                     </div>
                   </article>
                 </div>

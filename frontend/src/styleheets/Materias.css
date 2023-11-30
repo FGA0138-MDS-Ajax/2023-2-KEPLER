@@ -80,7 +80,10 @@ body, html {
 .card-name {
 
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-block-start: 0.5em;
+    margin-block-end: 1.6em;
 
 }
     h5 {
@@ -92,7 +95,7 @@ body, html {
 }
 .card-list {
     margin-top: 16px;
-    margin-block-start: 1.67em;
+    margin-block-start: 1.00em;
     margin-block-end: 1.67em;
 
     li {
@@ -258,3 +261,20 @@ select:focus + .focus {
     justify-content: center;
     align-items: flex-end;
 }
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Torna o botão um elemento de bloco */
+    margin: 0 auto; /* Centraliza horizontalmente usando margens automáticas */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
