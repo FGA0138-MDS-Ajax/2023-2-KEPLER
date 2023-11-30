@@ -102,20 +102,20 @@ function Materias() {
               <span className="sr-only">Search countries here</span>
             </label>
 
-            <div className="select">
+            <div className="select-temp">
               <select
                 onChange={(e) => {
                   setFilterParam(e.target.value);
                 }}
-                className="custom-select"
+                className="custom-select-temp"
                 aria-label="Filter Professores By Curso"
               >
                 <option value="Temp">Horários</option>
-                <option value="PrimeiroHorario">08:00- 9:50</option>
-                <option value="SegundoHorario">10:00- 11:50</option>
-                <option value="TerceiroHorario">12:00- 13:50</option>
-                <option value="QuartoHorario">14:00- 15:50</option>
-                <option value="QuintoHorario">16:00- 17:50</option>
+                <option value="PrimeiroHorario">08:00 - 09:50</option>
+                <option value="SegundoHorario">10:00 - 11:50</option>
+                <option value="TerceiroHorario">12:00 - 13:50</option>
+                <option value="QuartoHorario">14:00 - 15:50</option>
+                <option value="QuintoHorario">16:00 - 17:50</option>
               </select>
               <span className="focus"></span>
             </div>
