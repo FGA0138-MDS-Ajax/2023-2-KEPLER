@@ -8,7 +8,7 @@ function FluxogramaSoft() {
     <>
     <div className="container" >
         {/* 1º Semestre */}
-        <div className="semester-label" style={{ left: '85px', top: '13px', color: 'White' }}>1º Semestre</div>
+        <div className="semester-label" style={{ left: '85px', top: '13px', color: '#1976d2' }}>1º Semestre</div>
         <div className="course-card" style={{ left: '46px', top: '60px' }}></div>
         <div className="course-info" style={{ left: '60px', top: '70px' }}>Cálculo 1<br /></div>
 
@@ -62,7 +62,7 @@ function FluxogramaSoft() {
           </div>
         
         {/* 2º Semestre */}
-        <div className="semester-label" style={{ left: '305px', top: '13px', color: 'White ' }}>2º Semestre</div>
+        <div className="semester-label" style={{ left: '305px', top: '13px', color: '#1976d2' }}>2º Semestre</div>
         <div><div className="course-card" style={{ left: '273px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '287px', top: '70px' }}>Cálculo 2<br /></div></div>
         <div className="course-info" style={{ left: '287px', top: '90px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
@@ -123,7 +123,7 @@ function FluxogramaSoft() {
         
 
         {/* 3º Semestre */}
-        <div className="semester-label" style={{ left: '544px', top: '13px' }}>3º semestre</div>
+        <div className="semester-label" style={{ left: '544px', top: '13px', color: '#1976d2' }}>3º semestre</div>
         <div><div className="course-card" style={{ left: '505px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '519px', top: '70px' }}>Métodos Numéricos<br />para Engenharias </div></div>
         <div className="course-info" style={{ left: '519px', top: '105px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
@@ -189,7 +189,7 @@ function FluxogramaSoft() {
           </div>
 
         {/* 4º Semestre */}
-        <div className="semester-label" style={{ left: '785px', top: '15px' }}>4º semestre</div>
+        <div className="semester-label" style={{ left: '785px', top: '15px', color: '#1976d2' }}>4º semestre</div>
         <div><div className="course-card" style={{ left: '746px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '760px', top: '70px' }}>Gestão de Produção e Qualidade<br /> </div></div>
         <div className="course-info" style={{ left: '760px', top: '105px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
@@ -246,7 +246,7 @@ function FluxogramaSoft() {
             </div>
           </div>
         {/* 5º Semestre */}
-        <div className="semester-label" style={{ left: '1023px', top: '15px' }}>5º semestre</div>
+        <div className="semester-label" style={{ left: '1023px', top: '15px', color: '#1976d2'}}>5º semestre</div>
         <div><div className="course-card" style={{ left: '984px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '994px', top: '70px' }}>Interação Humano Computador<br /> </div></div>
         <div className="course-info" style={{ left: '994px', top: '105px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
@@ -303,7 +303,7 @@ function FluxogramaSoft() {
           </div>
 
         {/* 6º Semestre */}
-        <div className="semester-label" style={{ left: '1265px', top: '15px' }}>6º semestre</div>
+        <div className="semester-label" style={{ left: '1265px', top: '15px', color: '#1976d2' }}>6º semestre</div>
 
         <div><div className="course-card" style={{ left: '1229px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '1243px', top: '70px' }}>Qualidade de Software 1<br /> </div></div>
@@ -361,7 +361,7 @@ function FluxogramaSoft() {
           </div>
 
         {/* 7º Semestre */}
-        <div className="semester-label" style={{ left: '1509px', top: '15px' }}>7º semestre</div>
+        <div className="semester-label" style={{ left: '1509px', top: '15px', color: '#1976d2' }}>7º semestre</div>
 
         <div><div className="course-card" style={{ left: '1474px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '1488px', top: '70px' }}>Técnicas de Programação em Plataformas Emergentes<br /> </div></div>
@@ -400,7 +400,7 @@ function FluxogramaSoft() {
             </div>
           </div>
         {/* 8º Semestre */}
-        <div className="semester-label" style={{ left: '1749px', top: '15px' }}>8º semestre</div>
+        <div className="semester-label" style={{ left: '1749px', top: '15px', color: '#1976d2' }}>8º semestre</div>
 
         <div><div className="course-card" style={{ left: '1714px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '1728px', top: '70px' }}>Engenharia de Produto<br />de Software </div></div>
@@ -423,7 +423,7 @@ function FluxogramaSoft() {
         <div><div className="course-card" style={{ left: '1714px', top: '330px' }}></div></div>
         <div><div className="course-info" style={{ left: '1728px', top: '345px' }}>Estagio Supervisionado<br /></div></div>
         {/* 9º Semestre */}
-        <div className="semester-label" style={{ left: '1980px', top: '15px' }}>9º semestre</div>
+        <div className="semester-label" style={{ left: '1980px', top: '15px', color: '#1976d2' }}>9º semestre</div>
 
         <div><div className="course-card" style={{ left: '1945px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '1959px', top: '70px' }}>Trabalho de Conclusão <br />de Curso 1 </div></div>
@@ -447,7 +447,7 @@ function FluxogramaSoft() {
         <div><div className="course-info" style={{ left: '1959px', top: '345px' }}>Estagio Supervisionado<br /></div></div>
        
         {/* 10º Semestre */}
-        <div className="semester-label" style={{ left: '2220px', top: '15px' }}>10º semestre</div>
+        <div className="semester-label" style={{ left: '2220px', top: '15px', color: '#1976d2' }}>10º semestre</div>
 
         <div><div className="course-card" style={{ left: '2185px', top: '60px' }}></div></div>
         <div><div className="course-info" style={{ left: '2199px', top: '70px' }}>Trabalho de Conclusão <br />de Curso 2 </div></div>
