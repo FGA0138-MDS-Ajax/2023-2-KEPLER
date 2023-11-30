@@ -1,5 +1,5 @@
 import React from 'react';
-import FluxogramaEner from '../styleheets/FluxogramaEner.css';
+import fluxogramaEner from '../styleheets/FluxogramaEner.css';
 
 function FluxogramaEner() {
   return (

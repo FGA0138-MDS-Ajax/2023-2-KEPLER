@@ -1,5 +1,5 @@
 import React from 'react';
-import FluxogramaAuto from '../styleheets/FluxogramaAuto.css';
+import fluxogramaAuto from '../styleheets/FluxogramaAuto.css';
 
 
 function FluxogramaAuto() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import FluxogramaEle from '../styleheets/FluxogramaEle.css';
+import fluxogramaEle from '../styleheets/FluxogramaEle.css';
 
 
 function FluxogramaEle() {
