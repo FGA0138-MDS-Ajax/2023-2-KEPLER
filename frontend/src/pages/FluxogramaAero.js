@@ -22,7 +22,7 @@ function FluxogramaAero() {
          </div>
 
         <div className="course-card" style={{ left: '46px', top: '195px' }}></div>
-        <div className="course-info" style={{ left: '60px', top: '210px' }}>Algoritmos e programação<br />de computadores</div>
+        <div className="course-info" style={{ left: '60px', top: '210px' }}>Algoritmos e Programação<br />de Computadores</div>
 
         <div className="course-info" style={{ left: '60px', top: '250px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -84,7 +84,7 @@ function FluxogramaAero() {
           </div>
         
         <div><div className="course-card" style={{ left: '273px', top: '330px' }}></div></div>
-        <div className="course-info" style={{ left: '287px', top: '345px' }}>Física 1 experimental<br /></div>
+        <div className="course-info" style={{ left: '287px', top: '345px' }}>Física 1 Experimental<br /></div>
        
         <div className="course-info" style={{ left: '287px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
   <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -117,7 +117,7 @@ function FluxogramaAero() {
         {/* 3º Semestre */}
         <div className="semester-label" style={{ left: '544px', top: '13px', color: '#1976d2' }}>3º semestre</div>
         <div><div className="course-card" style={{ left: '505px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '70px' }}>cálculo 3<br /> </div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '70px' }}>Cálculo 3<br /> </div></div>
         <div className="course-info" style={{ left: '519px', top: '90px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -135,7 +135,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '505px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '345px' }}>mecanica dos sólidos 1<br /></div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '345px' }}>Mecânica dos Sólidos 1<br /></div></div>
         <div className="course-info" style={{ left: '519px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -144,7 +144,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '505px', top: '465px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '480px' }}>métodos numéricos<br /></div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '480px' }}>Métodos Numéricos<br /></div></div>
         <div className="course-info" style={{ left: '519px', top: '500px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -153,7 +153,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '505px', top: '600px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '615px' }}>quimica geral experimental<br /></div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '615px' }}>Química Geral Experimental<br /></div></div>
         <div className="course-info" style={{ left: '519px', top: '635px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
   <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
     <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -163,7 +163,7 @@ function FluxogramaAero() {
 </div>
 
         <div><div className="course-card" style={{ left: '505px', top: '735px' }}></div></div>
-        <div className="course-info" style={{ left: '519px', top: '750px' }}>quimica geral teorica<br /></div>
+        <div className="course-info" style={{ left: '519px', top: '750px' }}>Química Geral Teórica<br /></div>
         <div className="course-info" style={{ left: '519px', top: '770px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -172,7 +172,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '505px', top: '870px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '885px' }}>sistemas aeroespaciais</div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '885px' }}>Sistemas Aeroespaciais</div></div>
         <div className="course-info" style={{ left: '519px', top: '905px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -184,7 +184,7 @@ function FluxogramaAero() {
         {/* 4º Semestre */}
         <div className="semester-label" style={{ left: '785px', top: '15px', color: '#1976d2' }}>4º semestre</div>
         <div><div className="course-card" style={{ left: '746px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '760px', top: '70px' }}>fenomenos de transporte<br /> </div></div>
+        <div><div className="course-info" style={{ left: '760px', top: '70px' }}>Fenômenos de Transporte<br /> </div></div>
         <div className="course-info" style={{ left: '760px', top: '90px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#998B0D', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -193,7 +193,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '746px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '760px', top: '210px' }}>sinais e sistemas <br />para engenharia 1</div></div>
+        <div><div className="course-info" style={{ left: '760px', top: '210px' }}>Sinais e Sistemas <br />para Engenharia 1</div></div>
         <div className="course-info" style={{ left: '760px', top: '245px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -203,7 +203,7 @@ function FluxogramaAero() {
          </div>
         
         <div><div className="course-card" style={{ left: '746px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '760px', top: '345px' }}> mecanica dos sólidos 2<br /></div></div>
+        <div><div className="course-info" style={{ left: '760px', top: '345px' }}> Mecânica dos Sólidos 2<br /></div></div>
         <div className="course-info" style={{ left: '760px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -233,7 +233,7 @@ function FluxogramaAero() {
         {/* 5º Semestre */}
         <div className="semester-label" style={{ left: '1023px', top: '15px', color: '#1976d2' }}>5º semestre</div>
         <div><div className="course-card" style={{ left: '984px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '994px', top: '70px' }}>termodinamica 1 <br /> </div></div>
+        <div><div className="course-info" style={{ left: '994px', top: '70px' }}>Termodinâmica 1 <br /> </div></div>
         <div className="course-info" style={{ left: '994px', top: '105px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -242,7 +242,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '984px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '998px', top: '210px' }}>laboratório de materiais<br />de construção</div></div>
+        <div><div className="course-info" style={{ left: '998px', top: '210px' }}>Laboratório de Materiais<br />de Construção</div></div>
         <div className="course-info" style={{ left: '998px', top: '245px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -251,7 +251,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '984px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '998px', top: '345px' }}>teoria de materiais de construção<br /></div></div>
+        <div><div className="course-info" style={{ left: '998px', top: '345px' }}>Teoria de Materiais de Construção<br /></div></div>
         <div className="course-info" style={{ left: '998px', top: '380px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#B14406', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -260,7 +260,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '984px', top: '465px' }}></div></div>
-        <div><div className="course-info" style={{ left: '998px', top: '480px' }}>teoria de eletricidade aplicada <br /></div></div>
+        <div><div className="course-info" style={{ left: '998px', top: '480px' }}>Teoria de Eletricidade Aplicada <br /></div></div>
         <div className="course-info" style={{ left: '998px', top: '515px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -269,7 +269,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '984px', top: '600px' }}></div></div>
-        <div><div className="course-info" style={{ left: '998px', top: '615px' }}>laboratório de eletricidade <br />aplicada</div></div>
+        <div><div className="course-info" style={{ left: '998px', top: '615px' }}>Laboratório de Eletricidade <br />Aplicada</div></div>
         <div className="course-info" style={{ left: '998px', top: '650px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -278,7 +278,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '984px', top: '735px' }}></div></div>
-        <div className="course-info" style={{ left: '998px', top: '750px' }}> prática de eletromagnetismo<br /></div>
+        <div className="course-info" style={{ left: '998px', top: '750px' }}> Prática de Eletromagnetismo<br /></div>
         <div className="course-info" style={{ left: '998px', top: '770px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -288,7 +288,7 @@ function FluxogramaAero() {
           </div>
 
           <div><div className="course-card" style={{ left: '984px', top: '870px' }}></div></div>
-        <div><div className="course-info" style={{ left: '998px', top: '885px' }}> dinâmica dos fluidos</div></div>
+        <div><div className="course-info" style={{ left: '998px', top: '885px' }}> Dinâmica dos Fluidos</div></div>
         <div className="course-info" style={{ left: '998px', top: '905px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#998B0D', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -301,7 +301,7 @@ function FluxogramaAero() {
         <div className="semester-label" style={{ left: '1265px', top: '15px', color: '#1976d2' }}>6º semestre</div>
 
         <div><div className="course-card" style={{ left: '1229px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1243px', top: '70px' }}>transferencia de calor<br /> </div></div>
+        <div><div className="course-info" style={{ left: '1243px', top: '70px' }}>Transferencia de Calor<br /> </div></div>
         <div className="course-info" style={{ left: '1243px', top: '90px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -310,7 +310,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1229px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1243px', top: '210px' }}>aerodinâmica de sistemas aeroespaciai<br /></div></div>
+        <div><div className="course-info" style={{ left: '1243px', top: '210px' }}>Aerodinâmica de Sistemas Aeroespaciais<br /></div></div>
         <div className="course-info" style={{ left: '1243px', top: '245px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#998B0D', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -319,7 +319,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1229px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1243px', top: '345px' }}>humanidades e cidadania<br /></div></div>
+        <div><div className="course-info" style={{ left: '1243px', top: '345px' }}>Humanidades e Cidadania<br /></div></div>
         <div className="course-info" style={{ left: '1243px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -328,7 +328,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1229px', top: '465px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1243px', top: '480px' }}>gestão da produção e qualidade<br /></div></div>
+        <div><div className="course-info" style={{ left: '1243px', top: '480px' }}>Gestão da Produção e Qualidade<br /></div></div>
         <div className="course-info" style={{ left: '1243px', top: '515px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -337,7 +337,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1229px', top: '600px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1243px', top: '615px' }}> sistemas de controle<br /></div></div>
+        <div><div className="course-info" style={{ left: '1243px', top: '615px' }}> Sistemas de Controle<br /></div></div>
         <div className="course-info" style={{ left: '1243px', top: '650px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -350,7 +350,7 @@ function FluxogramaAero() {
         <div className="semester-label" style={{ left: '1509px', top: '15px', color: '#1976d2'}}>7º semestre</div>
 
         <div><div className="course-card" style={{ left: '1474px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1488px', top: '70px' }}>mecânica de estruturas aeroespaciais<br /> </div></div>
+        <div><div className="course-info" style={{ left: '1488px', top: '70px' }}>Mecânica de Estruturas Aeroespaciais<br /> </div></div>
         <div className="course-info" style={{ left: '1488px', top: '105px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#998B0D', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -359,7 +359,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1474px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1488px', top: '210px' }}>dinâmica dos gases para sistemas aeroespaciais<br /></div></div>
+        <div><div className="course-info" style={{ left: '1488px', top: '210px' }}>Dinâmica dos Gases para Sistemas Aeroespaciais<br /></div></div>
         <div className="course-info" style={{ left: '1488px', top: '245px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -368,7 +368,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1474px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1488px', top: '345px' }}>mecânica do vôo<br /></div></div>
+        <div><div className="course-info" style={{ left: '1488px', top: '345px' }}>Mecânica do Vôo<br /></div></div>
         <div className="course-info" style={{ left: '1488px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -377,7 +377,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1474px', top: '465px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1488px', top: '480px' }}>engenharia de segurança do trabalho <br /></div></div> 
+        <div><div className="course-info" style={{ left: '1488px', top: '480px' }}>Engenharia de Segurança do Trabalho <br /></div></div> 
         <div className="course-info" style={{ left: '1488px', top: '515px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -389,7 +389,7 @@ function FluxogramaAero() {
         <div className="semester-label" style={{ left: '1749px', top: '15px', color: '#1976d2' }}>8º semestre</div>
 
         <div><div className="course-card" style={{ left: '1714px', top: '60px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1728px', top: '70px' }}>mecânica do voo espacial<br /></div></div>
+        <div><div className="course-info" style={{ left: '1728px', top: '70px' }}>Mecânica do Vôo Espacial<br /></div></div>
         <div className="course-info" style={{ left: '1728px', top: '90px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -398,7 +398,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1714px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1728px', top: '210px' }}>dinâmica de estruturas aeroespaciais <br /></div></div>
+        <div><div className="course-info" style={{ left: '1728px', top: '210px' }}>Dinâmica de Estruturas Aeroespaciais <br /></div></div>
         <div className="course-info" style={{ left: '1728px', top: '245px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -407,7 +407,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1714px', top: '330px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1728px', top: '345px' }}>projeto integrador de engenharia 2<br /></div></div>
+        <div><div className="course-info" style={{ left: '1728px', top: '345px' }}>Projeto Integrador de Engenharia 2<br /></div></div>
         <div className="course-info" style={{ left: '1728px', top: '380px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -429,7 +429,7 @@ function FluxogramaAero() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '1945px', top: '195px' }}></div></div>
-        <div><div className="course-info" style={{ left: '1959px', top: '210px' }}>Estagio Supervisionado<br /> </div></div>
+        <div><div className="course-info" style={{ left: '1959px', top: '210px' }}>Estágio Supervisionado<br /> </div></div>
         <div className="course-info" style={{ left: '1959px', top: '230px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'red', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>

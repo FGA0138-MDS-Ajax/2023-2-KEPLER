@@ -21,7 +21,7 @@ function FluxogramaSoft() {
          </div>
 
         <div className="course-card" style={{ left: '46px', top: '195px' }}></div>
-        <div className="course-info" style={{ left: '60px', top: '210px' }}>Algoritmos e programação<br />de computadores</div>
+        <div className="course-info" style={{ left: '60px', top: '210px' }}>Algoritmos e Programação<br />de Computadores</div>
 
         <div className="course-info" style={{ left: '60px', top: '250px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
           <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: '#183347', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -83,7 +83,7 @@ function FluxogramaSoft() {
           </div>
         
         <div><div className="course-card" style={{ left: '273px', top: '330px' }}></div></div>
-        <div className="course-info" style={{ left: '287px', top: '345px' }}>Física 1 experimental<br /></div>
+        <div className="course-info" style={{ left: '287px', top: '345px' }}>Física 1 Experimental<br /></div>
        
         <div className="course-info" style={{ left: '287px', top: '365px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
   <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(0, 128, 0)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -113,7 +113,7 @@ function FluxogramaSoft() {
           </div>
         <div><div className="course-card" style={{ left: '273px', top: '735px' }}></div></div>
         <div className="course-info" style={{ left: '287px', top: '750px' }}>Desenvolvimento de Software<br /></div>
-        <div className="course-info" style={{ left: '287px', top: '770px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
+        <div className="course-info" style={{ left: '287px', top: '782px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
                 <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>4 créditos</span>
@@ -152,7 +152,7 @@ function FluxogramaSoft() {
             </div>
           </div>
         <div><div className="course-card" style={{ left: '505px', top: '465px' }}></div></div>
-        <div><div className="course-info" style={{ left: '519px', top: '480px' }}>Teoria de Eletrônica digital 1<br /></div></div>
+        <div><div className="course-info" style={{ left: '519px', top: '480px' }}>Teoria de Eletrônica Digital 1<br /></div></div>
         <div className="course-info" style={{ left: '519px', top: '500px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
@@ -352,7 +352,7 @@ function FluxogramaSoft() {
           </div>
         <div><div className="course-card" style={{ left: '1229px', top: '735px' }}></div></div>
         <div><div className="course-info" style={{ left: '1243px', top: '750px' }}>Projeto e Análise de Algoritmos<br /></div></div>
-        <div className="course-info" style={{ left: '1243px', top: '770px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
+        <div className="course-info" style={{ left: '1243px', top: '783px', display: 'flex', flexWrap: 'wrap', gap: '4px 6px', position: 'absolute' }}>
             <div style={{ display: 'flex', alignItems: 'center', flexShrink: '0', minWidth: '0px', maxWidth: '100%', height: '18px', borderRadius: '3px', paddingLeft: '6px', paddingRight: '6px', fontSize: '12px', lineHeight: '120%', color: 'rgb(253 253 253 / 80%)', background: 'rgb(110, 54, 48)', margin: '0px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'inline-flex', alignItems: 'center', height: '18px', lineHeight: '18px' }}>
                 <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>4 créditos</span>
