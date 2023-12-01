@@ -11,9 +11,9 @@ Versão [1.1]
 
 Autores:
 
-|**Matrícula**|**Nome**|**Descrição do papel assumido na equipe** | **% de contribuição ao trabalho (\*)**|
+| **Matrícula** | **Nome** | **Descrição do papel assumido na equipe** | **% de contribuição ao trabalho (\*)** |
 | - | - | - | - |
-|**211063111**|Gustavo Alves de Souza | Documentação e Backend | 20% |
+| **211063111** | Gustavo Alves de Souza | Documentação e Backend | 20% |
 |**190110066**|Johnny da Ponte Lopes|Documentação e Banco de Dados|20%|
 |**200032364**|Vitor Gabriel Gonçalves Dias|Diagramas e Backend|20%|
 |**180132466**|Vitor Pereira Bessa|Banco de Dados|10%|
