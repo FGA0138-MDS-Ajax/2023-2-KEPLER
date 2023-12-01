@@ -10,9 +10,6 @@ Versão [1.1]
 |**30/11/2023**|1\.1|Correção na formatação do texto.|Johnny da Ponte|
 
 Autores:
-
-
-
 |**Matrícula**|**Nome**|**Descrição do papel assumido na equipe**|<p></p><p>**% de contribuição ao trabalho (\*)**[^1]</p>|
 | - | - | - | :-: |
 |**211063111**|Gustavo Alves de Souza|Documentação e Backend|20%|
@@ -213,6 +210,4 @@ O desempenho do software será monitorado para garantir a responsividade do sist
 <a name="_page14_x72.00_y718.25"></a>**3 Bibliografia**
 
 *MICKAELT. **O que é padrão MVC? Entenda arquitetura de softwares! | Le Wagon**. Disponível em: <https://blog.lewagon.com/pt-br/skills/o-que-e-padrao-mvc/#:~:text=O%20MVC%20%C3%A 9%20uma%20sigla>.*
-*Página 15 de 15**
-
-[^1]: 
+*
