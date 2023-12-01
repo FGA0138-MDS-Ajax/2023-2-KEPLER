@@ -1,5 +1,4 @@
 import React from "react";
-import Fluxograma from '../styleheets/FluxogramaSoft.css';
 
 
 function FluxogramaSoft() {

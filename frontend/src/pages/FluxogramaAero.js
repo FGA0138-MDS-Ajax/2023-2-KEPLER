@@ -1,5 +1,4 @@
 import React from 'react';
-import fluxogramaAero from '../styleheets/FluxogramaAero.css';
 
 
 
