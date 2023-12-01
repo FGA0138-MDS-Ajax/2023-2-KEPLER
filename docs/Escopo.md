@@ -116,7 +116,7 @@ Todas as evidências de execução de testes, métricas e resultados serão regi
 
 3.**Backlog do produto**
 
-|**Sistema: GradeWeb – Backlog do produto**
+**Sistema: GradeWeb – Backlog do produto**
 
 |<p>Numeração</p><p>(Cenário / requisito)</p>|Sprint|Nome do requisito|<p>Tripo de requisito</p><p>(Funcional / não funcional)</p>|Priorização do requisito Must, Should, Could|Descrição sucinta do requisito|**User histories (U.S.) associadas** Identifique as U.S. associadas ao requisito|
 | - | :- | :- | :- | :- | :- | :- |
