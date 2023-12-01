@@ -36,7 +36,7 @@ Versão [1.3]
 
 ***Resumo de tecnologias usadas:***
 
-![imagen 1](assets\Aspose.Words.1b558398-d6b4-4227-aa8e-5a676e8b9fe4.001.jpeg)
+![imagen 1](assets/Aspose.Words.1b558398-d6b4-4227-aa8e-5a676e8b9fe4.001.jpeg)
 
 
 |***Área***|***Tecnologia***|

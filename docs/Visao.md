@@ -313,7 +313,7 @@ reuniões com a equipe de desenvolvedores.
 
  **3 PROCESSO DE DESENVOLVIMENTO DE SOFTWARE**
 
-![](assets\Scrum.png)
+![](assets/Scrum.png)
 
  **Metodologia de Desenvolvimento de Software -- Scrum e XP**
 
@@ -359,7 +359,7 @@ reuniões com a equipe de desenvolvedores.
  principais etapas do processo de desenvolvimento dentro do framework
  Scrum:
 
-![](assets\Diagrama.JPG)
+![](assets/Diagrama.JPG)
 
  Este diagrama serve como um guia visual para as atividades e
  interações da equipe durante o desenvolvimento do Gerenciador
