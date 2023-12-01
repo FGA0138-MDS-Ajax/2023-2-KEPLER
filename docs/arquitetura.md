@@ -10,8 +10,8 @@ Versão [1.1]
 |**30/11/2023**|1\.1|Correção na formatação do texto.|Johnny da Ponte|
 
 Autores:
-|**Matrícula**|**Nome**|**Descrição do papel assumido na equipe**|<p></p><p>**% de contribuição ao trabalho (\*)**[^1]</p>|
-| - | - | - | :-: |
+|**Matrícula**|**Nome**|**Descrição do papel assumido na equipe** |**% de contribuição ao trabalho (\*)**
+| - | - | - | - |
 |**211063111**|Gustavo Alves de Souza|Documentação e Backend|20%|
 |**190110066**|Johnny da Ponte Lopes|Documentação e Banco de Dados|20%|
 |**200032364**|Vitor Gabriel Gonçalves Dias|Diagramas e Backend|20%|
