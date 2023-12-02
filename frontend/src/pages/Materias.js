@@ -5,6 +5,71 @@ import Navbar from '../components/Navbar.js';
 import '../styleheets/Materias.css'; // Certifique-se de que o caminho do arquivo CSS está correto
 import { Grid } from '@mui/material';
 
+
+// Função que retorna os horarios do banco, exemplo 35T23 retorna T23, 24T6 24N1 retorna T6N1
+function extrairParteDoHorario(horarioBanco) {
+  const partesDoHorario = horarioBanco.match(/[MNT]\d+|\d+[T,M,N]\d+|[T,M,N]\d+/g) || [];
+  return partesDoHorario.map((parte) => {
+    if (parte.match(/[MNT]\d+/)) {
+      return parte.replace(/^\d+/, ''); // Remover números no início
+    } else if (parte.match(/\d+[T,M,N]\d+/)) {
+      return parte.replace(/\d+/, ''); // Remover números antes de T, M ou N
+    } else {
+      return parte.replace(/\s\d+/, ''); // Remover números após espaço
+    }
+  }).join('');
+}
+
+
+//função que para retornar o mapeamento para comparar com os horarios da search
+function codigoUnbParaHorario(horarioBanco){
+  const mapeamento = {
+    'M1' : 'PrimeiroHorario',
+    'M12': 'PrimeiroHorario',
+    'M2' : 'PrimeiroHorario',
+    'M12T2': 'PrimeiroHorario',
+    'M12T4': 'PrimeiroHorario',
+    'M125M12': 'PrimeiroHorario',
+    'M5M12' : 'PrimeiroHorario',
+    'M34': 'SegundoHorario',
+    'M34M3': 'SegundoHorario',
+    'M34M4': 'SegundoHorario',
+    'M345M34': 'SegundoHorario',
+    'M5': 'TerceiroHorario',
+    'M5T1': 'TerceiroHorario',
+    'M5M12' : 'TerceiroHorario',
+    'T23T1': 'TerceiroHorario',
+    'T123T23': 'TerceiroHorario',
+    'T12345': 'TerceiroHorario',
+    'T23' : 'QuartoHorario',
+    'T234' : 'QuartoHorario',
+    'T2345' : 'QuartoHorario',
+    'T23T1': 'QuartoHorario',
+    'T23T2': 'QuartoHorario', 
+    'T123T23': 'QuartoHorario',
+    'T45T234': 'QuartoHorario',
+    'T12345': 'QuartoHorario',
+    'M12T2': 'QuartoHorario',
+    'T234' : 'QuintoHorario',
+    'T2345' : 'QuintoHorario',
+    'T4' : 'QuintoHorario',
+    'T45T4' : 'QuintoHorario',
+    'T45T234' : 'QuintoHorario',
+    'T45': 'QuintoHorario',
+    'T5' : 'QuintoHorario',
+    'T12345': 'QuintoHorario',
+    'M12T4': 'QuintoHorario',
+    'T6N1': 'SextoHorario', 
+    // Adicione outros mapeamentos conforme necessário
+  };
+
+  return mapeamento[horarioBanco] || 'Temp';
+
+}
+
+
+
+
 function Materias() {
   const [selectedMaterias, setSelectedMaterias] = useState([]);
   const [error, setError] = useState(null);
@@ -20,6 +85,7 @@ function Materias() {
     'nomeMateria'
   ]);
   const [filterParam, setFilterParam] = useState('All');
+  const [filterHorario, setFilterHorario] = useState('Temp');
 
   useEffect(() => {
     setItems(turmasData);
@@ -28,11 +94,19 @@ function Materias() {
 
   function search(items) {
     return items.filter((item) => {
+      // cria uma var para armazerar os horarios do banco
+      const horarioDoBanco = item.horario;
+
+      // usa a funcao extrairParteDoHorario para pegar os horarios de forma uniforme
+      const parteDoHorario = extrairParteDoHorario(horarioDoBanco);
+      console.log(parteDoHorario);
+      // usa a função codigoUnbParaHorario para converter os horarios uniformes no modelo do search
+      const filterHorarioConvertido = codigoUnbParaHorario(parteDoHorario);
       if (
         (item.curso === filterParam || item.curso2 === filterParam ||
          item.curso3 === filterParam || item.curso4 === filterParam ||
-         item.curso5 === filterParam) ||
-        filterParam === 'All'
+         item.curso5 === filterParam || filterParam === 'All') && 
+         ( filterHorario === 'Temp' || filterHorarioConvertido === filterHorario )
       ) {
         return searchParam.some((newItem) => {
           return (
@@ -46,6 +120,7 @@ function Materias() {
       return false;
     });
   }
+
   function handleMateriaSelection(idTurmaProfessor) {
     // Verifique se a matéria já está selecionada
     if (selectedMaterias.includes(idTurmaProfessor)) {
@@ -118,7 +193,7 @@ function Materias() {
             <div className="select-temp">
               <select
                 onChange={(e) => {
-                  setFilterParam(e.target.value);
+                  setFilterHorario(e.target.value);
                 }}
                 className="custom-select-temp"
                 aria-label="Filter Professores By Curso"
@@ -129,6 +204,7 @@ function Materias() {
                 <option value="TerceiroHorario">12:00 - 13:50</option>
                 <option value="QuartoHorario">14:00 - 15:50</option>
                 <option value="QuintoHorario">16:00 - 17:50</option>
+                <option value="SextoHorario">18:00 - 19:50</option>
               </select>
               <span className="focus"></span>
             </div>
