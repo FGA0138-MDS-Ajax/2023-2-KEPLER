@@ -3,18 +3,18 @@ from account.models import User, MateriaSelecionada
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 class UserModelAdmin(BaseUserAdmin):
-  # The fields to be used in displaying the User model.
-  # These override the definitions on the base UserModelAdmin
-  # that reference specific fields on auth.User.
+  # Campos a serem usados na exibição do modelo de Usuário.
+  # Estes substituem as definições no BaseUserAdmin
+  # que fazem referência a campos específicos em auth.User.
   list_display = ('id', 'email', 'name', 'tc', 'is_admin')
   list_filter = ('is_admin',)
   fieldsets = (
-      ('User Credentials', {'fields': ('email', 'password')}),
-      ('Personal info', {'fields': ('name', 'tc')}),
-      ('Permissions', {'fields': ('is_admin',)}),
+      ('Credenciais do Usuário', {'fields': ('email', 'password')}),
+      ('Informações Pessoais', {'fields': ('name', 'tc')}),
+      ('Permissões', {'fields': ('is_admin',)}),
   )
-  # add_fieldsets is not a standard ModelAdmin attribute. UserModelAdmin
-  # overrides get_fieldsets to use this attribute when creating a user.
+  # add_fieldsets não é um atributo padrão de ModelAdmin. UserModelAdmin
+  # substitui get_fieldsets para usar este atributo ao criar um usuário.
   add_fieldsets = (
       (None, {
           'classes': ('wide',),
@@ -25,7 +25,6 @@ class UserModelAdmin(BaseUserAdmin):
   ordering = ('email', 'id')
   filter_horizontal = ()
 
-  
-# Now register the new UserModelAdmin...
+# Agora registre o novo UserModelAdmin...
 admin.site.register(User, UserModelAdmin)
 admin.site.register(MateriaSelecionada)

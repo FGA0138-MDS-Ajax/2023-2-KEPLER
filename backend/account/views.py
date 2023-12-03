@@ -1,7 +1,15 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from account.serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer, SelecionarMateriaSerializer
+from account.serializers import (
+    SendPasswordResetEmailSerializer,
+    UserChangePasswordSerializer,
+    UserLoginSerializer,
+    UserPasswordResetSerializer,
+    UserProfileSerializer,
+    UserRegistrationSerializer,
+    SelecionarMateriaSerializer,
+)
 from django.contrib.auth import authenticate
 from account.renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -12,94 +20,100 @@ from rest_framework.decorators import api_view
 from .models import MateriaSelecionada
 import json
 
-# Generate Token Manually
+# Função auxiliar para gerar manualmente tokens de acesso e atualização
 def get_tokens_for_user(user):
-  refresh = RefreshToken.for_user(user)
-  return {
-      'refresh': str(refresh),
-      'access': str(refresh.access_token),
-  }
+    refresh = RefreshToken.for_user(user)
+    return {
+        'refresh': str(refresh),
+        'access': str(refresh.access_token),
+    }
 
+# View para o registro de usuário
 class UserRegistrationView(APIView):
-  renderer_classes = [UserRenderer]
-  def post(self, request, format=None):
-    serializer = UserRegistrationSerializer(data=request.data)
-    serializer.is_valid(raise_exception=True)
-    user = serializer.save()
-    token = get_tokens_for_user(user)
-    return Response({'token':token, 'msg':'Registration Successful'}, status=status.HTTP_201_CREATED)
+    renderer_classes = [UserRenderer]
 
+    def post(self, request, format=None):
+        serializer = UserRegistrationSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        token = get_tokens_for_user(user)
+        return Response({'token': token, 'msg': 'Cadastro bem-sucedido'}, status=status.HTTP_201_CREATED)
+
+# View para o login de usuário
 class UserLoginView(APIView):
-  renderer_classes = [UserRenderer]
-  def post(self, request, format=None):
-    serializer = UserLoginSerializer(data=request.data)
-    serializer.is_valid(raise_exception=True)
-    email = serializer.data.get('email')
-    password = serializer.data.get('password')
-    user = authenticate(email=email, password=password)
-    if user is not None:
-      token = get_tokens_for_user(user)
-      return Response({'token':token, 'msg':'Login Success'}, status=status.HTTP_200_OK)
-    else:
-      return Response({'errors':{'non_field_errors':['Email or Password is not Valid']}}, status=status.HTTP_404_NOT_FOUND)
+    renderer_classes = [UserRenderer]
 
+    def post(self, request, format=None):
+        serializer = UserLoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        email = serializer.data.get('email')
+        password = serializer.data.get('password')
+        user = authenticate(email=email, password=password)
+        if user is not None:
+            token = get_tokens_for_user(user)
+            return Response({'token': token, 'msg': 'Login bem-sucedido'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'errors': {'non_field_errors': ['E-mail ou senha inválidos']}}, status=status.HTTP_404_NOT_FOUND)
+
+# View para o perfil do usuário
 class UserProfileView(APIView):
-  renderer_classes = [UserRenderer]
-  permission_classes = [IsAuthenticated]
-  def get(self, request, format=None):
-    serializer = UserProfileSerializer(request.user)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
 
+    def get(self, request, format=None):
+        serializer = UserProfileSerializer(request.user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+# View para alteração de senha do usuário
 class UserChangePasswordView(APIView):
-  renderer_classes = [UserRenderer]
-  permission_classes = [IsAuthenticated]
-  def post(self, request, format=None):
-    serializer = UserChangePasswordSerializer(data=request.data, context={'user':request.user})
-    serializer.is_valid(raise_exception=True)
-    return Response({'msg':'Password Changed Successfully'}, status=status.HTTP_200_OK)
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
 
+    def post(self, request, format=None):
+        serializer = UserChangePasswordSerializer(data=request.data, context={'user': request.user})
+        serializer.is_valid(raise_exception=True)
+        return Response({'msg': 'Senha alterada com sucesso'}, status=status.HTTP_200_OK)
+
+# View para envio de e-mail de redefinição de senha
 class SendPasswordResetEmailView(APIView):
-  renderer_classes = [UserRenderer]
-  def post(self, request, format=None):
-    serializer = SendPasswordResetEmailSerializer(data=request.data)
-    serializer.is_valid(raise_exception=True)
-    return Response({'msg':'Password Reset link send. Please check your Email'}, status=status.HTTP_200_OK)
+    renderer_classes = [UserRenderer]
 
+    def post(self, request, format=None):
+        serializer = SendPasswordResetEmailSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        return Response({'msg': 'Link de redefinição de senha enviado. Por favor, verifique seu e-mail'}, status=status.HTTP_200_OK)
+
+# View para redefinição de senha do usuário
 class UserPasswordResetView(APIView):
-  renderer_classes = [UserRenderer]
-  def post(self, request, uid, token, format=None):
-    serializer = UserPasswordResetSerializer(data=request.data, context={'uid':uid, 'token':token})
-    serializer.is_valid(raise_exception=True)
-    return Response({'msg':'Password Reset Successfully'}, status=status.HTTP_200_OK)
+    renderer_classes = [UserRenderer]
 
+    def post(self, request, uid, token, format=None):
+        serializer = UserPasswordResetSerializer(data=request.data, context={'uid': uid, 'token': token})
+        serializer.is_valid(raise_exception=True)
+        return Response({'msg': 'Senha redefinida com sucesso'}, status=status.HTTP_200_OK)
 
-
-#testando, view para gerar a grade
+# View para processamento de horário
 @csrf_exempt
 def processar_horario(request):
     if request.method == 'POST':
-      data = json.loads(request.body)
-      horario = data.get('horario', '')
-      # Faça o que precisar com o horário, por exemplo, salve no banco de dados
-      
-      
-      # Suponha que o arquivo JSON tenha uma chave 'horarios'
-      with open('../frontend/src/data/turmas-professores.json') as json_file:
+        data = json.loads(request.body)
+        horario = data.get('horario', '')
+        
+        # Realize as operações necessárias com o horário, por exemplo, salve no banco de dados
 
+        # Suponha que o arquivo JSON tenha uma chave 'horarios'
+        with open('../frontend/src/data/turmas-professores.json') as json_file:
             data_json = json.load(json_file)
-
             materia_encontrada = [obj.get('nomeMateria', '') for obj in data_json if 'horario' in obj and obj['horario'] == horario]
 
-      if materia_encontrada:
-          return JsonResponse({'status': 'success', 'materia_encontrada': materia_encontrada})
-      else:
-          return JsonResponse({'status': 'error', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
+        if materia_encontrada:
+            return JsonResponse({'status': 'sucesso', 'materia_encontrada': materia_encontrada})
+        else:
+            return JsonResponse({'status': 'erro', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
 
-    return JsonResponse({'status': 'error', 'message': 'Método não permitido'}, status=405)
+    return JsonResponse({'status': 'erro', 'message': 'Método não permitido'}, status=405)
 
-#views pegar materia selecionada
-
-
+# View para selecionar matéria
 @api_view(['POST'])
 def selecionar_materia(request):
     serializer = SelecionarMateriaSerializer(data=request.data)
@@ -114,12 +128,12 @@ def selecionar_materia(request):
             materia_selecionada = MateriaSelecionada(**materia_json)
             materia_selecionada.save()
 
-            return Response({'status': 'Materia selecionada com sucesso!'})
+            return Response({'status': 'Matéria selecionada com sucesso!'})
         else:
-            return Response({'error': 'ID de turma professor não encontrado no JSON'}, status=404)
+            return Response({'erro': 'ID de turma professor não encontrado no JSON'}, status=404)
     return Response(serializer.errors, status=400)
 
-
+# Função auxiliar para obter dados do JSON
 def obter_dados_do_json(id_turma_professor):
     # Abra o arquivo JSON e procure pelo id_turma_professor
     with open('../frontend/src/data/turmas-professores.json') as json_file:
@@ -130,4 +144,3 @@ def obter_dados_do_json(id_turma_professor):
                 dados_filtrados = {campo.name: turma[campo.name] for campo in MateriaSelecionada._meta.get_fields() if campo.name in turma}
                 return dados_filtrados
         return None
-

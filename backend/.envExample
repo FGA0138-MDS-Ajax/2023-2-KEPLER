@@ -1,3 +1,4 @@
+#EXEMPLO
 EMAIL_USER = 'contact@geekyshows.com'
 EMAIL_PASS = '123456'
 EMAIL_FROM = 'contact@geekyshows.com'

@@ -1,9 +1,9 @@
 """
-WSGI config for djangoauthapi1 project.
+Configuração WSGI para o projeto djangoauthapi1.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+Isso expõe a função WSGI como uma variável de nível de módulo chamada ``application``.
 
-For more information on this file, see
+Para mais informações sobre este arquivo, consulte
 https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
 """
 
@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+# Define o módulo de configurações padrão do Django para o projeto WSGI
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoauthapi1.settings')
 
+# Obtém a aplicação WSGI do Django
 application = get_wsgi_application()
