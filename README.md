@@ -161,7 +161,7 @@ git clone https://github.com/FGA0138-MDS-Ajax/2023-2-KEPLER.git
 
 ESTE SOFTWARE ESTÁ SOB LICENÇA: [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
 <!-- Criador e licença -->
-FEITO POR: [IGOR JUSTINO](https://github.com/maquinaAgricula)
+
 <!-- Icons das ferramentas e linguagens utilizadas -->
 <!-- Icons das ferramentas e linguagens utilizadas -->
 <p align="left">
