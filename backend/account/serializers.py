@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from account.models import User
+from account.models import User, MateriaSelecionada
 from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -115,3 +115,11 @@ class UserPasswordResetSerializer(serializers.Serializer):
 # Serializador para 'MateriaSelecionada'
 class SelecionarMateriaSerializer(serializers.Serializer):
     idTurmaProfessor = serializers.IntegerField()
+
+
+# Serializador para 'MateriaSelecionada'
+
+class MandarMateriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MateriaSelecionada
+        fields = '__all__'

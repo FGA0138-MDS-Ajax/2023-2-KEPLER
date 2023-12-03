@@ -9,6 +9,7 @@ from account.serializers import (
     UserProfileSerializer,
     UserRegistrationSerializer,
     SelecionarMateriaSerializer,
+    MandarMateriaSerializer,
 )
 from django.contrib.auth import authenticate
 from account.renderers import UserRenderer
@@ -144,3 +145,12 @@ def obter_dados_do_json(id_turma_professor):
                 dados_filtrados = {campo.name: turma[campo.name] for campo in MateriaSelecionada._meta.get_fields() if campo.name in turma}
                 return dados_filtrados
         return None
+    
+
+#manda a materia de volta para o frontend
+class mandar_materiaView(APIView):
+    def get(self, request):
+        dados = MateriaSelecionada.objects.all()       
+        serializer = MandarMateriaSerializer(dados, many=True)
+      
+        return Response(serializer.data)

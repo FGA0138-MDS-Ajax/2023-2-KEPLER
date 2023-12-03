@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Grade from '../styleheets/Grade.css'; // Importe o arquivo de estilo corretamente
 import { Grid } from "@mui/material";
 import Navbar from "../components/Navbar";
+import axios from 'axios';
 
 
 const Critérios = () => {
@@ -12,6 +13,19 @@ const Critérios = () => {
     ['', '', '', '', ''],
     ['', '', '', '', ''],
   ]);
+
+  const [valoresBack, setValoresBack] = useState([]);
+  //pegar os dados do back
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/api/user/mandar_materias')
+      .then(response => {
+        console.log(response.data);
+        setValoresBack(response.data);
+      })
+      .catch(error => {
+        console.error('Erro ao buscar dados:', error);
+      });
+  }, []);
 
   const handleInputChange = (row, col, value) => {
     const newInputValues = [...inputValues];
@@ -54,13 +68,26 @@ const Critérios = () => {
     );
   };
 
+
+
   return (
     
     <div className="Critérios">
        <Navbar />
       <h2>Adicione os critérios:</h2>
       {renderTable()}
+      {valoresBack.length > 0 && (
+        <div>
+          <p>Horários das matérias:</p>
+          <ul>
+            {valoresBack.map((materia, index) => (
+              <li key={index}>{materia.horario}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
+
   );
 };
 
