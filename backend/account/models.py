@@ -74,3 +74,22 @@ class User(AbstractBaseUser):
       return self.is_admin
 
 
+#banco materia selecionda
+
+class MateriaSelecionada(models.Model):
+    idTurmaProfessor = models.IntegerField(primary_key=True)
+    nomeProfessor = models.CharField(max_length=255)
+    numeroTurma = models.IntegerField()
+    horario = models.CharField(max_length=10)
+    carga = models.CharField(max_length=5)
+    idmateria = models.IntegerField()
+    codMateria = models.CharField(max_length=10)
+    nomeMateria = models.CharField(max_length=255)
+    curso = models.CharField(max_length=50)
+    curso2 = models.CharField(max_length=50, blank=True)
+    curso3 = models.CharField(max_length=50, blank=True)
+    curso4 = models.CharField(max_length=50, blank=True)
+    curso5 = models.CharField(max_length=50, blank=True)
+
+    def __str__(self):
+        return f"{self.codMateria} - {self.nomeMateria} (Turma {self.numeroTurma})"

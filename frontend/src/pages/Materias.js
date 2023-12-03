@@ -99,7 +99,6 @@ function Materias() {
 
       // usa a funcao extrairParteDoHorario para pegar os horarios de forma uniforme
       const parteDoHorario = extrairParteDoHorario(horarioDoBanco);
-      console.log(parteDoHorario);
       // usa a função codigoUnbParaHorario para converter os horarios uniformes no modelo do search
       const filterHorarioConvertido = codigoUnbParaHorario(parteDoHorario);
       if (
@@ -122,15 +121,25 @@ function Materias() {
   }
 
   function handleMateriaSelection(idTurmaProfessor) {
-    // Verifique se a matéria já está selecionada
-    if (selectedMaterias.includes(idTurmaProfessor)) {
-      // Se estiver selecionada, remova-a da lista
-      setSelectedMaterias(selectedMaterias.filter((id) => id !== idTurmaProfessor));
-    } else {
-      // Se não estiver selecionada, adicione-a à lista
-      setSelectedMaterias([...selectedMaterias, idTurmaProfessor]);
-    }
-  }
+    fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ idTurmaProfessor }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Adicione lógica adicional se necessário
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        // Adicione lógica adicional para lidar com erros
+    });
+}
+
+
   function handleCancelarSelection(idTurmaProfessor) {
     setSelectedMaterias(selectedMaterias.filter((id) => id !== idTurmaProfessor));
   }
