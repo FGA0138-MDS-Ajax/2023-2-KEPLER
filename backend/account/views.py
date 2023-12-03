@@ -1,13 +1,15 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from account.serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer
+from account.serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer, SelecionarMateriaSerializer
 from django.contrib.auth import authenticate
 from account.renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
+from .models import MateriaSelecionada
 import json
 
 # Generate Token Manually
@@ -94,4 +96,38 @@ def processar_horario(request):
           return JsonResponse({'status': 'error', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
 
     return JsonResponse({'status': 'error', 'message': 'Método não permitido'}, status=405)
+
+#views pegar materia selecionada
+
+
+@api_view(['POST'])
+def selecionar_materia(request):
+    serializer = SelecionarMateriaSerializer(data=request.data)
+    if serializer.is_valid():
+        id_turma_professor = serializer.validated_data['idTurmaProfessor']
+
+        # Busque os dados correspondentes no arquivo JSON
+        materia_json = obter_dados_do_json(id_turma_professor)
+
+        if materia_json:
+            # Crie uma instância do modelo e salve no banco de dados
+            materia_selecionada = MateriaSelecionada(**materia_json)
+            materia_selecionada.save()
+
+            return Response({'status': 'Materia selecionada com sucesso!'})
+        else:
+            return Response({'error': 'ID de turma professor não encontrado no JSON'}, status=404)
+    return Response(serializer.errors, status=400)
+
+
+def obter_dados_do_json(id_turma_professor):
+    # Abra o arquivo JSON e procure pelo id_turma_professor
+    with open('../frontend/src/data/turmas-professores.json') as json_file:
+        turmas_json = json.load(json_file)
+        for turma in turmas_json:
+            if turma['idTurmaProfessor'] == id_turma_professor:
+                # Filtra as chaves que correspondem aos campos do modelo
+                dados_filtrados = {campo.name: turma[campo.name] for campo in MateriaSelecionada._meta.get_fields() if campo.name in turma}
+                return dados_filtrados
+        return None
 
