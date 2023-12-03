@@ -121,29 +121,29 @@ function Materias() {
   }
 
   function handleMateriaSelection(idTurmaProfessor) {
-    fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
+
+    const confirmacao = window.confirm("Tem certeza que deseja selecionar esta matéria?");
+    if(confirmacao){
+      fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ idTurmaProfessor }),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        // Adicione lógica adicional se necessário
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        // Adicione lógica adicional para lidar com erros
-    });
+      })
+      .then(response => response.json())
+      .then(data => {
+          console.log('Success:', data);
+          // Adicione lógica adicional se necessário
+      })
+      .catch((error) => {
+          console.error('Error:', error);
+          // Adicione lógica adicional para lidar com erros
+      });
+    }
+    
 }
 
-
-  function handleCancelarSelection(idTurmaProfessor) {
-    setSelectedMaterias(selectedMaterias.filter((id) => id !== idTurmaProfessor));
-  }
-  
 
   if (error) {
     return (
@@ -243,16 +243,10 @@ function Materias() {
                         </li>
                       </ol>
                       <button
-                        onClick={() => handleMateriaSelection(item.idTurmaProfessor)}
-                      >
+                        className = "select-button"
+                        onClick={() => handleMateriaSelection(item.idTurmaProfessor)}>
                         Selecionar
                       </button>
-                      <button
-                        onClick={() => handleCancelarSelection(item.idTurmaProfessor)}
-                        className="cancel-button"
-                        >
-                          Cancelar
-                     </button>
                     </div>
                   </article>
                 </div>
