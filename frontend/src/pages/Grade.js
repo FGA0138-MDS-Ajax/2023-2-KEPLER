@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from "../components/Navbar";
+import Grade from '../styleheets/Grade.css'
 
-const myObjectCinco = [
-  "35T23", "46M34", "24M34", "35T23", "35M12", "46T23", "46M34", "35M34", "46M12", "24M34",
-  "35T23", "46M34", "35M34", "46M34", "35M34", "35T45", "35T23", "35M34", "35M12", "24M12",
-  "35M12", "24M34", "46M12", "46T23", "35M34", "24M12", "35M34", "26T45", "26M34", "46T23",
-  "24M12", "24T45", "46M12", "35T23", "35T45", "35T45", "24M34", "25T23", "26T23", "35M34",
-  "35T23", "46M12", "26M34", "24M34", "24T23", "46M12", "35M12", "46M12", "26M34", "35M12",
-  "24T45", "35M34", "35M34", "46T45", "35M34", "35T23", "35T23", "35T23", "26M12", "35T45",
-  "35T23", "46M34", "24T23", "46M34", "24M34", "46T45", "35M34", "35T23", "35M34", "24T45",
-  "24T45", "24T45", "24T45", "24T45", "35T23", "35M12", "35M34", "46T23", "46T23", "35M34",
-  "46T23", "46M34", "24T23", "46T23", "24T45", "46T45", "24M12", "35M34", "46M12", "24T45",
-  "46T23", "35T23", "35T45", "35T23", "46M34", "46M12", "26M12", "35M34", "35M34", "35M12",
-  "24M34", "35M12", "35T45", "35T23", "35M34", "35T23", "35T45", "35T45", "35T23", "46T23",
-  "35M34", "35T23", "26M12", "26M34", "24T45", "35M34", "46M12", "35T45", "35M34", "35M34",
-  "24M12", "24T45", "35M12", "24M34", "35T45", "35T23", "35T45", "35T45", "24T45", "24T23",
-  "35M34", "46T23", "35M12", "35M12", "35T23", "35T45", "24M34", "24T23", "24T23", "46T23",
-  "35M34", "46T45", "24M34", "46M34", "46T23", "24M34", "35M12", "24T45", "35T45", "46M12"
+const myObjectCinco = [ 
+  "35T23", "46M34", "24M34","35M12","46T23","35M34","46M12","35T45", 
+  "24M12","26T45", "26M34","24T45","25T23", "26T23", "24T23","46T45", 
+  "26M12","35M12",  
 ];
 
         
@@ -144,15 +134,15 @@ const MyTableComponent = () => {
   
       valoresBack.forEach(item => {
         const horario = item.horario;
-        console.log(`horario: ${horario}`);
+
 
         const matchingKey = keys.find(key => key.includes(horario));
 
-        console.log(`matchingKey: ${matchingKey}`);
+     
 
         if (matchingKey) {
           const materiaIds = myObject[matchingKey].map(obj => obj.id);
-          console.log(`materiaIds: ${materiaIds}`);
+         
           // Atualize as células da tabela com base nos ids da matéria
           materiaIds.forEach(id => {
 
@@ -174,16 +164,21 @@ const MyTableComponent = () => {
   useEffect(() => {
     valoresBack.forEach(item => {
       const horarioDoBanco = item.horario;
+      console.log(`horarioDoBanco: ${horarioDoBanco}`);
       if (myObjectCinco.includes(horarioDoBanco)) {
         const { var1, var2, var3, var4 } = cincoChar(horarioDoBanco);
         const idsToCompare = [var1, var2, var3, var4];
+        console.log(`idsToCompare: ${idsToCompare}`);
+        
 
 
         idsToCompare.forEach(idToCompare => {
           // Construa o identificador da célula correspondente
           const cellIdToCompare = `${idToCompare}`;
+          console.log(`cellIdToCompare: ${cellIdToCompare}`);
           // Obtenha a célula correspondente da tabela
           const cellToCompare = document.getElementById(cellIdToCompare);
+          console.log(`cellToCompare: ${cellToCompare}`);
 
           if (cellToCompare) {
             cellToCompare.innerHTML = item.nomeMateria;
@@ -195,7 +190,8 @@ const MyTableComponent = () => {
 
   return (
     <div>
-      <h2>TH elements define table headers</h2>
+      <Navbar />
+      <h2>Minha Grade Horária</h2>
       <table style={{ width: '100%' }}>
         <thead>
           <tr>
@@ -211,116 +207,116 @@ const MyTableComponent = () => {
         <tbody>
           <tr>
             <td >08:00 - 08:50</td>
-            <td id="2M1">8</td>
-            <td id="3M1">8</td>
-            <td id="4M1">8</td>
-            <td id="5M1">8</td>
-            <td id="6M1">8</td>
-            <td id="7M1">8</td>
+            <td id="2M1"></td>
+            <td id="3M1"></td>
+            <td id="4M1"></td>
+            <td id="5M1"></td>
+            <td id="6M1"></td>
+            <td id="7M1"></td>
           </tr>
           <tr>
             <td >09:00 - 09:50</td>
-            <td id="2M2">9</td>
-            <td id="3M2">9</td>
-            <td id="4M2">9</td>
-            <td id="5M2">9</td>
-            <td id="6M2">9</td>
-            <td id="7M2">9</td>
+            <td id="2M2"></td>
+            <td id="3M2"></td>
+            <td id="5M2"></td>
+            <td id="6M2"></td>
+            <td id="4M2"></td>
+            <td id="7M2"></td>
           </tr>
           <tr>
             <td >10:00 - 10:50</td>
-            <td id="2M3">10</td>
-            <td id="3M3">10</td>
-            <td id="4M3">10</td>
-            <td id="5M3">10</td>
-            <td id="6M3">10</td>
-            <td id="7M3">10</td>
+            <td id="2M3"></td>
+            <td id="3M3"></td>
+            <td id="4M3"></td>
+            <td id="5M3"></td>
+            <td id="6M3"></td>
+            <td id="7M3"></td>
           </tr>
           <tr>
             <td >11:00 - 11:50</td>
-            <td id="2M4">11</td>
-            <td id="3M4">11</td>
-            <td id="4M4">11</td>
-            <td id="5M4">11</td>
-            <td id="6M4">11</td>
-            <td id="7M4">11</td>
+            <td id="2M4"></td>
+            <td id="3M4"></td>
+            <td id="4M4"></td>
+            <td id="5M4"></td>
+            <td id="6M4"></td>
+            <td id="7M4"></td>
           </tr>
           <tr>
             <td >12:00 - 12:50</td>
-            <td id="2M5">12</td>
-            <td id="3M5">12</td>
-            <td id="4M5">12</td>
-            <td id="5M5">12</td>
-            <td id="6M5">12</td>
-            <td id="7M5">12</td>
+            <td id="2M5"></td>
+            <td id="3M5"></td>
+            <td id="4M5"></td>
+            <td id="5M5"></td>
+            <td id="6M5"></td>
+            <td id="7M5"></td>
           </tr>
           <tr>
             <td >13:00 - 13:50</td>
-            <td id="2T1">13</td>
-            <td id="3T1">13</td>
-            <td id="4T1">13</td>
-            <td id="5T1">13</td>
-            <td id="6T1">13</td>
-            <td id="7T1">13</td>
+            <td id="2T1"></td>
+            <td id="3T1"></td>
+            <td id="4T1"></td>
+            <td id="5T1"></td>
+            <td id="6T1"></td>
+            <td id="7T1"></td>
           </tr>
           <tr>
             <td >14:00 - 14:50</td>
-            <td id="2T2">14</td>
-            <td id="3T2">14</td>
-            <td id="4T2">14</td>
-            <td id="5T2">14</td>
-            <td id="6T2">14</td>
-            <td id="7T2">14</td>
+            <td id="2T2"></td>
+            <td id="3T2"></td>
+            <td id="4T2"></td>
+            <td id="5T2"></td>
+            <td id="6T2"></td>
+            <td id="7T2"></td>
           </tr>
           <tr>
             <td >15:00 - 15:50</td>
-            <td id="2T3">15</td>
-            <td id="3T3">15</td>
-            <td id="4T3">15</td>
-            <td id="5T3">15</td>
-            <td id="6T3">15</td>
-            <td id="7T3">15</td>
+            <td id="2T3"></td>
+            <td id="3T3"></td>
+            <td id="4T3"></td>
+            <td id="5T3"></td>
+            <td id="6T3"></td>
+            <td id="7T3"></td>
           </tr>
           <tr>
             <td >16:00 - 16:50</td>
-            <td id="2T4">16</td>
-            <td id="3T4">16</td>
-            <td id="4T4">16</td>
-            <td id="5T4">16</td>
-            <td id="6T4">16</td>
-            <td id="7T4">16</td>
+            <td id="2T4"></td>
+            <td id="3T4"></td>
+            <td id="4T4"></td>
+            <td id="5T4"></td>
+            <td id="6T4"></td>
+            <td id="7T4"></td>
           </tr>
           <tr>
             <td >17:00 - 17:50</td>
-            <td id="2T5">17</td>
-            <td id="3T5">17</td>
-            <td id="4T5">17</td>
-            <td id="5T5">17</td>
-            <td id="6T5">17</td>
-            <td id="7T5">17</td>
+            <td id="2T5"></td>
+            <td id="3T5"></td>
+            <td id="4T5"></td>
+            <td id="5T5"></td>
+            <td id="6T5"></td>
+            <td id="7T5"></td>
           </tr>
           <tr>
             <td >18:00 - 18:50</td>
-            <td id="2T6">18</td>
-            <td id="3T6">18</td>
-            <td id="4T6">18</td>
-            <td id="5T6">18</td>
-            <td id="6T6">18</td>
-            <td id="7T6">18</td>
+            <td id="2T6"></td>
+            <td id="3T6"></td>
+            <td id="4T6"></td>
+            <td id="5T6"></td>
+            <td id="6T6"></td>
+            <td id="7T6"></td>
           </tr>
           <tr>
             <td >19:00 - 19:50</td>
-            <td id="2N1">19</td>
-            <td id="3N1">19</td>
-            <td id="4N1">19</td>
-            <td id="5N1">19</td>
-            <td id="6N1">19</td>
-            <td id="7N1">19</td>
+            <td id="2N1"></td>
+            <td id="3N1"></td>
+            <td id="4N1"></td>
+            <td id="5N1"></td>
+            <td id="6N1"></td>
+            <td id="7N1"></td>
           </tr>
           {/* Add the rest of your rows here */}
         </tbody>
       </table>
-      <p>To understand the example better, we have added borders to the table.</p>
+      
     </div>
   );
 }

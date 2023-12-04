@@ -1,28 +1,37 @@
-/* Grade.css */
-
+/* Estilo para a tabela */
 table {
-    width: 60%;
-    border-collapse: collapse;
-    margin-top: 130px;
-    margin-left: 300px;
-  }
-  
-  th, td {
-    border: 1px solid #3498db; /* Azul */
-    padding: 10px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #3498db; /* Azul */
-    color: #fff; /* Branco */
-  }
-  
-  td input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px;
-    margin: 0;
-    border: 1px solid #3498db; /* Azul */
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Estilo para as células do cabeçalho */
+th {
+  background-color: #3498db; /* Azul */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #3498db;
+}
+
+/* Estilo para as células dos dados */
+td {
+  background-color: #ecf0f1; /* Branco */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #bdc3c7; /* Azul claro */
+}
+
+/* Estilo para as células de horário */
+td:first-child {
+  background-color: #3498db; /* Azul */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #3498db;
+}
+
+/* Adicione estilos para células específicas se necessário */
+/* Exemplo para célula com id "2M1" */
+
+/* Adicione estilos para outras células conforme necessário */
