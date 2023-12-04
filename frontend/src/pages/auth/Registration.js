@@ -47,7 +47,7 @@ const Registration = () => {
       {server_error.password ? <Typography style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.password[0]}</Typography> : ""}
       <TextField margin='normal' required fullWidth id='password2' name='password2' label='Confirmar Senha' type='password' />
       {server_error.password2 ? <Typography style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.password2[0]}</Typography> : ""}
-      <FormControlLabel control={<Checkbox value={true} color="primary" name="tc" id="tc" />} label="Eu Aceito os Temos e Condições." />
+      <FormControlLabel control={<Checkbox value={true} color="primary" name="tc" id="tc" />} label="Confirmar Cadastro." />
       {server_error.tc ? <span style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.tc[0]}</span> : ""}
       <Box textAlign='center'>
         <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }}>Entrar</Button>

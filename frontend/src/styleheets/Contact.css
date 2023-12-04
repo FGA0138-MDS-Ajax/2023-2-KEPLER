@@ -1,0 +1,27 @@
+.animated-table-cell {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-table-cell:hover {
+  transform: scale(1.1);
+}
+
+.animated-table-cell > a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.animated-table-cell > a img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.animated-table-cell > a sub {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}

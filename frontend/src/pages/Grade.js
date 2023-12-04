@@ -191,7 +191,7 @@ const MyTableComponent = () => {
   return (
     <div>
       <Navbar />
-      <h2>Minha Grade Horária</h2>
+    
       <table style={{ width: '100%' }}>
         <thead>
           <tr>

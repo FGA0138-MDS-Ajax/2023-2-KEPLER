@@ -24,14 +24,9 @@ td {
 }
 
 /* Estilo para as células de horário */
-td:first-child {
+td:second-child {
   background-color: #3498db; /* Azul */
   color: white;
   font-weight: bold;
   border: 1px solid #3498db;
 }
-
-/* Adicione estilos para células específicas se necessário */
-/* Exemplo para célula com id "2M1" */
-
-/* Adicione estilos para outras células conforme necessário */

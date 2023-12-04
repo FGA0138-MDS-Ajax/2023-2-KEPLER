@@ -51,9 +51,7 @@ const UserLogin = () => {
           {isLoading ? <CircularProgress /> : <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }}>Login</Button>}
         </Box>
         <Typography sx={{ textAlign: 'center', mt: 2 }}>
-          <Link component={NavLink} to='/sendpasswordresetemail' underline='hover' style={{ color: 'blue' }}>
-            Esqueceu a Senha?
-          </Link>
+          
         </Typography>
         {server_error.non_field_errors ? <Alert severity='error'>{server_error.non_field_errors[0]}</Alert> : ''}
       </Box>
