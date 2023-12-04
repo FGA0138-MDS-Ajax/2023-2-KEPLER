@@ -5,8 +5,6 @@ import Navbar from '../components/Navbar.js';
 import '../styleheets/Materias.css'; // Certifique-se de que o caminho do arquivo CSS está correto
 import { Grid } from '@mui/material';
 
-
-// Função que retorna os horarios do banco, exemplo 35T23 retorna T23, 24T6 24N1 retorna T6N1
 function extrairParteDoHorario(horarioBanco) {
   const partesDoHorario = horarioBanco.match(/[MNT]\d+|\d+[T,M,N]\d+|[T,M,N]\d+/g) || [];
   return partesDoHorario.map((parte) => {
@@ -20,55 +18,48 @@ function extrairParteDoHorario(horarioBanco) {
   }).join('');
 }
 
-
-//função que para retornar o mapeamento para comparar com os horarios da search
-function codigoUnbParaHorario(horarioBanco){
+function codigoUnbParaHorario(horarioBanco) {
   const mapeamento = {
-    'M1' : 'PrimeiroHorario',
+    'M1': 'PrimeiroHorario',
     'M12': 'PrimeiroHorario',
-    'M2' : 'PrimeiroHorario',
+    'M2': 'PrimeiroHorario',
     'M12T2': 'PrimeiroHorario',
     'M12T4': 'PrimeiroHorario',
     'M125M12': 'PrimeiroHorario',
-    'M5M12' : 'PrimeiroHorario',
+    'M5M12': 'PrimeiroHorario',
     'M34': 'SegundoHorario',
     'M34M3': 'SegundoHorario',
     'M34M4': 'SegundoHorario',
     'M345M34': 'SegundoHorario',
     'M5': 'TerceiroHorario',
     'M5T1': 'TerceiroHorario',
-    'M5M12' : 'TerceiroHorario',
+    'M5M12': 'TerceiroHorario',
     'T23T1': 'TerceiroHorario',
     'T123T23': 'TerceiroHorario',
     'T12345': 'TerceiroHorario',
-    'T23' : 'QuartoHorario',
-    'T234' : 'QuartoHorario',
-    'T2345' : 'QuartoHorario',
+    'T23': 'QuartoHorario',
+    'T234': 'QuartoHorario',
+    'T2345': 'QuartoHorario',
     'T23T1': 'QuartoHorario',
-    'T23T2': 'QuartoHorario', 
+    'T23T2': 'QuartoHorario',
     'T123T23': 'QuartoHorario',
     'T45T234': 'QuartoHorario',
     'T12345': 'QuartoHorario',
     'M12T2': 'QuartoHorario',
-    'T234' : 'QuintoHorario',
-    'T2345' : 'QuintoHorario',
-    'T4' : 'QuintoHorario',
-    'T45T4' : 'QuintoHorario',
-    'T45T234' : 'QuintoHorario',
+    'T234': 'QuintoHorario',
+    'T2345': 'QuintoHorario',
+    'T4': 'QuintoHorario',
+    'T45T4': 'QuintoHorario',
+    'T45T234': 'QuintoHorario',
     'T45': 'QuintoHorario',
-    'T5' : 'QuintoHorario',
+    'T5': 'QuintoHorario',
     'T12345': 'QuintoHorario',
     'M12T4': 'QuintoHorario',
-    'T6N1': 'SextoHorario', 
+    'T6N1': 'SextoHorario',
     // Adicione outros mapeamentos conforme necessário
   };
-
   return mapeamento[horarioBanco] || 'Temp';
-
 }
-
-
-
 
 function Materias() {
   const [selectedMaterias, setSelectedMaterias] = useState([]);
@@ -94,18 +85,14 @@ function Materias() {
 
   function search(items) {
     return items.filter((item) => {
-      // cria uma var para armazerar os horarios do banco
       const horarioDoBanco = item.horario;
-
-      // usa a funcao extrairParteDoHorario para pegar os horarios de forma uniforme
       const parteDoHorario = extrairParteDoHorario(horarioDoBanco);
-      // usa a função codigoUnbParaHorario para converter os horarios uniformes no modelo do search
       const filterHorarioConvertido = codigoUnbParaHorario(parteDoHorario);
       if (
         (item.curso === filterParam || item.curso2 === filterParam ||
-         item.curso3 === filterParam || item.curso4 === filterParam ||
-         item.curso5 === filterParam || filterParam === 'All') && 
-         ( filterHorario === 'Temp' || filterHorarioConvertido === filterHorario )
+          item.curso3 === filterParam || item.curso4 === filterParam ||
+          item.curso5 === filterParam || filterParam === 'All') &&
+        (filterHorario === 'Temp' || filterHorarioConvertido === filterHorario)
       ) {
         return searchParam.some((newItem) => {
           return (
@@ -121,29 +108,34 @@ function Materias() {
   }
 
   function handleMateriaSelection(idTurmaProfessor) {
-
     const confirmacao = window.confirm("Tem certeza que deseja selecionar esta matéria?");
-    if(confirmacao){
+    if (confirmacao) {
       fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ idTurmaProfessor }),
       })
-      .then(response => response.json())
-      .then(data => {
+        .then(response => response.json())
+        .then(data => {
           console.log('Success:', data);
-          // Adicione lógica adicional se necessário
-      })
-      .catch((error) => {
+          const selectedMateriaItem = items.find(item => item.idTurmaProfessor === idTurmaProfessor);
+          setSelectedMaterias(prevSelected => [...prevSelected, selectedMateriaItem]);
+        })
+        .catch((error) => {
           console.error('Error:', error);
           // Adicione lógica adicional para lidar com erros
-      });
+        });
     }
-    
-}
+  }
 
+  function handleCancelarSelection(idTurmaProfessor) {
+    const confirmacao = window.confirm("Tem certeza que deseja cancelar a seleção desta matéria?");
+    if (confirmacao) {
+      setSelectedMaterias(prevSelected => prevSelected.filter((item) => item.idTurmaProfessor !== idTurmaProfessor));
+    }
+  }
 
   if (error) {
     return (
@@ -161,12 +153,29 @@ function Materias() {
       <>
         <Navbar />
         <div className="wrapper">
+          {selectedMaterias.length > 0 && (
+            <div className="selected-materias">
+              <h2>Matérias Selecionadas</h2>
+              <ul>
+                {selectedMaterias.map((selectedMateria) => (
+                  <li key={selectedMateria.idTurmaProfessor}>
+                    {selectedMateria.nomeMateria} - {selectedMateria.nomeProfessor}
+                    <button
+                      onClick={() => handleCancelarSelection(selectedMateria.idTurmaProfessor)}
+                      className="cancel-button"
+                    >
+                      Cancelar
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div className="search-wrapper">
             <label htmlFor="search-form">
-              
               <span className="sr-only">Search countries here</span>
             </label>
-
             <div className="select">
               <select
                 onChange={(e) => {
@@ -198,7 +207,6 @@ function Materias() {
               />
               <span className="sr-only">Search countries here</span>
             </label>
-
             <div className="select-temp">
               <select
                 onChange={(e) => {
@@ -243,7 +251,7 @@ function Materias() {
                         </li>
                       </ol>
                       <button
-                        className = "select-button"
+                        className="select-button"
                         onClick={() => handleMateriaSelection(item.idTurmaProfessor)}>
                         Selecionar
                       </button>
@@ -253,7 +261,6 @@ function Materias() {
               </li>
             ))}
           </ul>
-          
         </div>
       </>
     );
