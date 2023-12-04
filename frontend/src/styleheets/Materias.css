@@ -1,4 +1,3 @@
-
 .sr-only {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -271,7 +270,7 @@ select:focus + .focus {
   }
   
   button, .cancel-button {
-    margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
+    margin: 0px auto; /* Adiciona margem automática para centralizar horizontalmente */
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -291,5 +290,10 @@ select:focus + .focus {
   }
 
   
-  
-  
+    .bloco {
+        height: 86px;
+        border: 5px solid blue;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 5px
+       }
