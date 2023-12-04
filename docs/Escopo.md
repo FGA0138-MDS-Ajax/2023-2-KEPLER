@@ -1,6 +1,6 @@
 **Declaração de Escopo do Produto**
 
-Versão [1.4]
+Versão [1.5]
 
 **Histórico de Revisão**
 
@@ -11,6 +11,7 @@ Versão [1.4]
 |**22/11/2023**|1\.2|Correção nas sprints previstas e tecnologias usadas.|Johnny da Ponte|
 |**30/11/2023**|1\.3|Correção no diagrama de caso de uso.|Johnny da Ponte|
 |**03/12/2023**|1.4|Correção nas tecnologias usadas.|Johnny da Ponte|
+|**03/12/2023**|1.5|Correção no MVP.|Johnny da Ponte|
 
 <a name="_page3_x72.00_y89.50"></a>**1 Problema / Sistema de software**
 
@@ -226,10 +227,7 @@ Sem Defeitos Conhecidos: Não deve haver defeitos conhecidos relacionados à use
 O GradeWeb é uma aplicação web cujo principal objetivo é fornecer uma grade personalizada para os alunos da FGA, considerando critérios estabelecidos por cada usuário. Este software abrange funcionalidades cruciais que permitem aos estudantes realizar o seguinte:
 
 - **Cadastro e Autenticação**: Os alunos podem se cadastrar e fazer login de forma segura, garantindo a proteção de suas informações pessoais.
-- **Atualização do Status das Disciplinas:** Os alunos podem atualizar o status de suas disciplinas, indicando se já as concluíram com êxito, se estão atualmente matriculados ou se ainda não cursaram a disciplina.
-- **Acompanhamento do Progresso Acadêmico:** Os alunos têm à disposição uma ferramenta que lhes permite acompanhar seu progresso acadêmico, visualizando as disciplinas já finalizadas e aquelas que ainda precisam ser cursadas.
 - **Gerador de Grades:** O sistema inclui um gerador de grades que com base em informações fornecidas pelo aluno, como sua disponibilidade de horários e as disciplinas já concluídas, irá gerar uma grade com opções de disciplinas disponíveis para o aluno realizar a matrícula.
-- **Gerenciador de faltas:** Os alunos poderão realizar o acompanhamento e atualização de suas faltas nas disciplinas que estejam cursando.
 
 Este Gerenciador Acadêmico é uma ferramenta valiosa que permite aos estudantes da FGA planejar e gerenciar seus horários de forma eficiente, levando em consideração suas preferências e necessidades individuais.
 
