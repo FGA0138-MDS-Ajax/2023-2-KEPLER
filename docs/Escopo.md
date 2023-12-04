@@ -1,6 +1,6 @@
 **Declaração de Escopo do Produto**
 
-Versão [1.3]
+Versão [1.4]
 
 **Histórico de Revisão**
 
@@ -10,6 +10,7 @@ Versão [1.3]
 |**10/11/2023**|1\.1|Correção do documento Declaração de escopo do produto de acordo com recomendações do professor.|Equipe Kepler|
 |**22/11/2023**|1\.2|Correção nas sprints previstas e tecnologias usadas.|Johnny da Ponte|
 |**30/11/2023**|1\.3|Correção no diagrama de caso de uso.|Johnny da Ponte|
+|**03/12/2023**|1.4|Correção nas tecnologias usadas.|Johnny da Ponte|
 
 <a name="_page3_x72.00_y89.50"></a>**1 Problema / Sistema de software**
 
@@ -17,9 +18,9 @@ Versão [1.3]
 
 |**Papel**|**Responsável**|
 | - | - |
-|Front-end|Gabriel Fenelon Igor de Souza|
-|Back-end|Gustavo Alves Vitor Gabriel|
-|Banco de dados|Johnny da ponte Vitor Bessa|
+|Front-end|Gabriel Fenelon, Igor de Souza|
+|Back-end|Gustavo Alves, Vitor Gabriel|
+|Banco de dados|Johnny da ponte, Vitor Bessa|
 
 
 ➔ **Resumo do problema:** O problema central identificado é a falta de uma ferramenta de gerenciamento acadêmico que personalize e gere uma grade para os estudantes da FGA. Atualmente, os estudantes precisam lidar manualmente com o processo de matrícula em disciplinas e o acompanhamento de seu progresso acadêmico. Isso resulta em:
@@ -36,14 +37,14 @@ Versão [1.3]
 
 ***Resumo de tecnologias usadas:***
 
-![imagen 1](assets/Aspose.Words.1b558398-d6b4-4227-aa8e-5a676e8b9fe4.001.jpeg)
+![imagen 1](assets/ferramentas.png)
 
 
 |***Área***|***Tecnologia***|
 | - | - |
 |Front-end|React|
 |Back-end|Django|
-|Banco de dados|PostgreSQL|
+|Banco de dados|SQLite|
 |Controle de versão|Github|
 |Comunicação|Microsoft Teams|
 |Gestão|Trello|
@@ -53,7 +54,7 @@ Versão [1.3]
 
     React: Rápido, flexível e fácil de usar e aprender.
     Django: Rápido, Conteúdo diverso e familiaridade da equipe. 
-    PostgreSQL: Fácil integração.
+    SQLite: Fácil integração.
     GitHub: Conteúdo diverso, Armazenamento e proteção de dados. 
     Teams: Comunicação e familiaridade da equipe
     Trello: Tarefas e organizações semanais.

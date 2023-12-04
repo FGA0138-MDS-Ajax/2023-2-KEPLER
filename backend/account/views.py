@@ -137,7 +137,7 @@ def selecionar_materia(request):
 # Função auxiliar para obter dados do JSON
 def obter_dados_do_json(id_turma_professor):
     # Abra o arquivo JSON e procure pelo id_turma_professor
-    with open('../frontend/src/data/turmas-professores.json') as json_file:
+    with open('../frontend/src/data/turmas-professores.json', 'r', encoding='utf-8') as json_file:
         turmas_json = json.load(json_file)
         for turma in turmas_json:
             if turma['idTurmaProfessor'] == id_turma_professor:

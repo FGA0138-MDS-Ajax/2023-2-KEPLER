@@ -1,7 +1,7 @@
 
  **VISÃO DO PRODUTO E DO PROJETO**
  
- Versão [1.1]
+ Versão [1.2]
 
  **Histórico de Revisão**
 
@@ -9,6 +9,7 @@
 | ---------- | ---------- | --------------- | ----------- |
 |    **02/10/2023**   | 1.0 |  Criação do Documento  |  Equipe Kepler |
 |  **10/11/2023**     |  1.1 | Correção do documento de acorod com orientações do professor   | Equipe Kepler |
+|**03/12/2023**|1.2|Correção em tecnologias a serem usadas.|Johnny da Ponte|
 
 
 **VISÃO DO PRODUTO E PROJETO**
@@ -117,7 +118,7 @@ mais fluida e ajudará os estudantes a alcançarem seus objetivos acadêmicos de
 |-|-|
 |  Front-end                       |  React                           |
 |  Back-end                        |  Django                          |
-|  Banco de dados                  |  PostgreSQL                      |
+|  Banco de dados                  |  SQLite                      |
 |  Controle de versão              |  Github                          |
 |  Comunicação                     |  Microsoft Teams                 |
 |  Gestão                          |  Trello                          |
@@ -207,9 +208,10 @@ Quadro: 2
  de versão.
 
  - Objetivos: Aumentar a produtividade da equipe e garantir a
- confiabilidade do sistema. •Solução Proposta: Uso de ferramentas como
+ confiabilidade do sistema. 
+ - Solução Proposta: Uso de ferramentas como
  IDEs (Ambiente de Desenvolvimento Integrado), bancos de dados
- PostgreSQL, Git para controle de versão e Trello para gerenciamento de
+ SQLite, Git para controle de versão e Trello para gerenciamento de
  tarefas.
 
  - Justificação: Essas ferramentas facilitam o desenvolvimento, o teste
