@@ -271,12 +271,14 @@ select:focus + .focus {
   }
   
   button, .cancel-button {
-    margin: 0 5px; /* Adiciona margem entre os botões */
+    margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex; /* Adiciona display flex para centralizar verticalmente */
+    align-items: center; /* Centraliza verticalmente */
   }
   
   button {
@@ -286,15 +288,6 @@ select:focus + .focus {
   
   button:hover {
     background-color: #45a049;
-  }
-  
-  .cancel-button {
-    background-color: #e53935;
-    color: white;
-  }
-  
-  .cancel-button:hover {
-    background-color: #c62828;
   }
   
   
