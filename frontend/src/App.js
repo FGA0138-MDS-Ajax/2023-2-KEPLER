@@ -9,7 +9,6 @@ import Layout from "./pages/Layout";
 import { useSelector } from "react-redux";
 import Principal from "./pages/Principal";
 import FluxogramaSoft from "./pages/FluxogramaSoft"; 
-import Perfil from "./pages/Perfil";
 import Materias from "./pages/Materias";
 import Grade from "./pages/Grade";
 import FluxogramaAero from "./pages/FluxogramaAero"
@@ -37,7 +36,6 @@ function App() {
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
           <Route exact path="principal" element={<Principal/>} />
           <Route exact path="fluxogramaSoft" element={<FluxogramaSoft/>} />
-          <Route exact path="perfil" element={<Perfil/>} />
           <Route exact path="Materias" element={<Materias/>} />      
           <Route exact path="fluxogramaAero" element={<FluxogramaAero/>} />
           <Route exact path="Fluxogramas" element={<Fluxogramas/>} />
