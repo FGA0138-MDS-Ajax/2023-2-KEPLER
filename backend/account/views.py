@@ -134,6 +134,19 @@ def selecionar_materia(request):
             return Response({'erro': 'ID de turma professor não encontrado no JSON'}, status=404)
     return Response(serializer.errors, status=400)
 
+def remover_materia(request):
+    materia_id = request.data.get('materia_id', None)
+
+    if materia_id is not None:
+        try:
+            materia = MateriaSelecionada.objects.get(idTurmaProfessor=materia_id)
+            materia.delete()
+            return Response({'status': 'Matéria removida com sucesso!'})
+        except MateriaSelecionada.DoesNotExist:
+            return Response({'status': 'erro', 'message': 'Matéria não encontrada'}, status=404)
+
+    return Response({'status': 'erro', 'message': 'ID da matéria não fornecido'}, status=400)
+
 # Função auxiliar para obter dados do JSON
 def obter_dados_do_json(id_turma_professor):
     # Abra o arquivo JSON e procure pelo id_turma_professor
