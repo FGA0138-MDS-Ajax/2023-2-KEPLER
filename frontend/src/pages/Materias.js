@@ -60,7 +60,6 @@ function codigoUnbParaHorario(horarioBanco) {
   };
   return mapeamento[horarioBanco] || 'Temp';
 }
-
 function Materias() {
   const [selectedMaterias, setSelectedMaterias] = useState([]);
   const [error, setError] = useState(null);
@@ -107,26 +106,46 @@ function Materias() {
     });
   }
 
-  function handleMateriaSelection(idTurmaProfessor) {
+function handleMateriaSelection(idTurmaProfessor) {
     const confirmacao = window.confirm("Tem certeza que deseja selecionar esta matéria?");
     if (confirmacao) {
-      fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ idTurmaProfessor }),
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-          const selectedMateriaItem = items.find(item => item.idTurmaProfessor === idTurmaProfessor);
-          setSelectedMaterias(prevSelected => [...prevSelected, selectedMateriaItem]);
+      // Verificar se a matéria já está selecionada
+      const isMateriaSelected = selectedMaterias.some(selectedMateria => selectedMateria.idTurmaProfessor === idTurmaProfessor);
+      
+      // Verificar se há conflito de horário
+      const selectedMateriaItem = items.find(item => item.idTurmaProfessor === idTurmaProfessor);
+      const hasHorarioConflict = selectedMaterias.some(selectedMateria => selectedMateria.horario === selectedMateriaItem.horario);
+      
+      // Verificar se há conflito de nome
+      const hasNameConflict = selectedMaterias.some(selectedMateria => selectedMateria.nomeMateria === selectedMateriaItem.nomeMateria);
+      
+      if (!isMateriaSelected && !hasHorarioConflict && !hasNameConflict) {
+        fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ idTurmaProfessor }),
         })
-        .catch((error) => {
-          console.error('Error:', error);
-          // Adicione lógica adicional para lidar com erros
-        });
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+            setSelectedMaterias(prevSelected => [...prevSelected, selectedMateriaItem]);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+            // Adicione lógica adicional para lidar com erros
+          });
+      } else {
+        // Exibir avisos ao usuário
+        if (isMateriaSelected) {
+          alert("Esta matéria já foi selecionada.");
+        } else if (hasHorarioConflict) {
+          alert("Há conflito de horário com outra matéria selecionada.");
+        } else if (hasNameConflict) {
+          alert("Você não pode selecionar matérias com o mesmo nome.");
+        }
+      }
     }
   }
 
@@ -147,7 +166,7 @@ function Materias() {
       </p>
     );
   } else if (!isLoaded) {
-    return <>loading...</>;
+    return <>carregando...</>;
   } else {
     return (
       <>
@@ -171,7 +190,6 @@ function Materias() {
               </ul>
             </div>
           )}
-
           <div className="search-wrapper">
             <label htmlFor="search-form">
               <span className="sr-only">Search countries here</span>
@@ -227,40 +245,44 @@ function Materias() {
             </div>
           </div>
           <ul className="card-grid">
-            {search(items).map((item) => (
-              <li key={item.idTurmaProfessor}>
-                <div className="card-wrapper">
-                  <article className="card">
-                    <div className="card-content">
-                      <h5 className="card-name">{item.nomeMateria}</h5>
-                      <ol className="card-list">
-                        <li>
-                          Professor: <span>{item.nomeProfessor}</span>
-                        </li>
-                        <li>
-                          Nº Turma: <span>{item.numeroTurma}</span>
-                        </li>
-                        <li>
-                          Horário: <span>{item.horario}</span>
-                        </li>
-                        <li>
-                          Carga horária: <span>{item.carga}</span>
-                        </li>
-                        <li>
-                          Código Matéria: <span>{item.codMateria}</span>
-                        </li>
-                      </ol>
-                      <button
-                        className="select-button"
-                        onClick={() => handleMateriaSelection(item.idTurmaProfessor)}>
-                        Selecionar
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </li>
-            ))}
-          </ul>
+          {search(items).map((item) => (
+            <li
+              key={item.idTurmaProfessor}
+              className={selectedMaterias.some((selected) => selected.idTurmaProfessor === item.idTurmaProfessor) ? 'selected-card' : ''}
+            >
+              <div className="card-wrapper">
+                <article className="card">
+                  <div className="card-content">
+                    <h5 className="card-name">{item.nomeMateria}</h5>
+                    <ol className="card-list">
+                      <li>
+                        Professor: <span>{item.nomeProfessor}</span>
+                      </li>
+                      <li>
+                        Nº Turma: <span>{item.numeroTurma}</span>
+                      </li>
+                      <li>
+                        Horário: <span>{item.horario}</span>
+                      </li>
+                      <li>
+                        Carga horária: <span>{item.carga}</span>
+                      </li>
+                      <li>
+                        Código Matéria: <span>{item.codMateria}</span>
+                      </li>
+                    </ol>
+                    <button
+                      className="select-button"
+                      onClick={() => handleMateriaSelection(item.idTurmaProfessor)}
+                    >
+                      Selecionar
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </li>
+          ))}
+        </ul>
         </div>
       </>
     );
