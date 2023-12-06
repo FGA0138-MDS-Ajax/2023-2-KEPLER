@@ -13,14 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 import os
-from os.path import join, dirname
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
-
-
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
 
 # Constrói caminhos dentro do projeto como: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Veja https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # AVISO DE SEGURANÇA: mantenha a chave secreta usada em produção em segredo!
-SECRET_KEY = os.environ.get("django-insecure-_zk=9yl=ul!po@_z-)wq&x4=&!(ons2(pogyu52+f7f37v3j$y")
+SECRET_KEY = 'django-insecure-_zk=9yl=ul!po@_z-)wq&x4=&!(ons2(pogyu52+f7f37v3j$y'
+
 # AVISO DE SEGURANÇA: não execute com debug ativado em produção!
 DEBUG = True
 
@@ -167,5 +160,7 @@ PASSWORD_RESET_TIMEOUT = 900  # 900 Seg = 15 Min
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+
+
 
 ]
