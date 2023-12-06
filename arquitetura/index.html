@@ -1,0 +1,733 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Escopo/">
+      
+      
+        <link rel="next" href="../VisaoProdutoeProjeto.pdf">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>Documento de Arquitetura - Documentação GradeWeb</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação GradeWeb" class="md-header__button md-logo" aria-label="Documentação GradeWeb" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação GradeWeb
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documento de Arquitetura
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação GradeWeb" class="md-nav__button md-logo" aria-label="Documentação GradeWeb" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentação GradeWeb
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrantes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrantes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Visao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do produto e do projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Escopo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declaração de escopo do produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação em PDF
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação em PDF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoeProjeto.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do produto e do projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Declara%C3%A7%C3%A3o%20de%20Escopo%20do%20produto-Kepler.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declaração de escopo do produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Documento%20de%20Arquitetura.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Documento de Arquitetura</h1>
+
+<p><strong>Documento de Arquitetura</strong></p>
+<p>Versão [1.1]</p>
+<p><strong>Histórico de Revisão</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Versão</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>01/11/2023</strong></td>
+<td>1.0</td>
+<td>Criação do Documento de arquitetura.</td>
+<td>Grupo Kepler</td>
+</tr>
+<tr>
+<td><strong>30/11/2023</strong></td>
+<td>1.1</td>
+<td>Correção na formatação do texto.</td>
+<td>Johnny da Ponte</td>
+</tr>
+</tbody>
+</table>
+<p>Autores:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Matrícula</strong></th>
+<th><strong>Nome</strong></th>
+<th><strong>Descrição do papel assumido na equipe</strong></th>
+<th><strong>% de contribuição ao trabalho (*)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>211063111</strong></td>
+<td>Gustavo Alves de Souza</td>
+<td>Documentação e Backend</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>190110066</strong></td>
+<td>Johnny da Ponte Lopes</td>
+<td>Documentação e Banco de Dados</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>200032364</strong></td>
+<td>Vitor Gabriel Gonçalves Dias</td>
+<td>Diagramas e Backend</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>180132466</strong></td>
+<td>Vitor Pereira Bessa</td>
+<td>Banco de Dados</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>211061743</strong></td>
+<td>GABRIEL FENELON ROCHA GONCALVES</td>
+<td>Documentação e Frontend</td>
+<td>15%</td>
+</tr>
+<tr>
+<td><strong>211061897</strong></td>
+<td>IGOR DE SOUSA JUSTINO</td>
+<td>Diagramas e Frontend</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<p><a name="_page4_x72.00_y72.00"></a><strong>1 Introdução</strong></p>
+<p>1.1<strong>Propósito</strong></p>
+<p><a name="_page4_x72.00_y97.98"></a>Este documento descreve a arquitetura do sistema sendo desenvolvido pelo grupo kleper, na disciplina de MDS – Métodos de Desenvolvimento de Software – edição do segundo semestre de 2023, Gerenciador acadêmico, a fim de fornecer uma visão abrangente do sistema para desenvolvedores, testadores e demais interessados.</p>
+<p>1.2 <strong>Escopo</strong></p>
+<p><a name="_page4_x72.00_y176.75"></a>O detalhamento do escopo se encontra no documento Declaração de Escopo do Produto Kepler. Porém, em linhas gerais o escopo do produto compreende em um software que realizará :</p>
+<ul>
+<li>Cadastro e Autenticação: Os alunos podem se cadastrar e fazer login de forma segura, garantindo a proteção de suas informações pessoais.</li>
+<li>Atualização do Status das Disciplinas: Os alunos podem atualizar o status de suas disciplinas, indicando se já as concluíram com êxito, se estão atualmente matriculados ou se ainda não cursaram a disciplina.</li>
+<li>Acompanhamento do Progresso Acadêmico: Os alunos têm à disposição uma ferramenta que lhes permite acompanhar seu progresso acadêmico visualizando as disciplinas já finalizadas e aquelas que ainda precisam ser cursadas.</li>
+<li>Gerador de Grades: O sistema inclui um gerador de grades que com base em informações fornecidas pelo aluno, como sua disponibilidade de horários e as disciplinas já concluídas, irá gerar uma grade com opções de disciplinas disponíveis para o aluno realizar a matrícula.</li>
+<li>Gerenciador de faltas: Os alunos poderão realizar o acompanhamento e atualização de suas faltas nas disciplinas que estejam cursando.</li>
+</ul>
+<p>O desenvolvimento é guiado pelo pela metodologia ágil e orientado por scrum </p>
+<p><strong>2 Representação Arquitetural</strong></p>
+<p>2.1 <strong>Definições</strong></p>
+<p><a name="_page4_x72.00_y587.63"></a>O sistema seguirá uma arquitetura Model-View-Controller (MVC).</p>
+<p>1.2 <strong>Justifique<a name="_page4_x72.00_y627.30"></a> sua escolha.</strong></p>
+<p>A escolha da arquitetura Model-View-Controller (MVC) para o projeto é justificada pela sua eficácia comprovada na organização e separação de preocupações em sistemas complexos. O Django, o framework em uso, é projetado para facilitar a implementação do padrão MVT (uma variação do MVC), o que torna a adoção dessa arquitetura uma escolha natural.</p>
+<p>Ao seguir a abordagem MVC, a equipe poderá manter uma clara distinção entre a representação dos dados (Model), a lógica de apresentação e interação com o usuário (View), e a lógica de controle e manipulação de dados (Controller). Essa separação permitirá uma manutenção mais eficiente, facilitando a implementação de novos recursos, a correção de bugs e a escalabilidade do sistema.</p>
+<p>Além disso, a abordagem MVC se alinha com os princípios de boas práticas de desenvolvimento de software, promovendo a reutilização de código, a modularidade e a testabilidade. Isso contribui para um código mais limpo, organizado e de fácil compreensão, o que é essencial para o sucesso e a longevidade do projeto.</p>
+<p>2.3 <strong>Detalhamento</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.001.png" /><a name="_page5_x72.00_y196.19"></a><em>.</em></p>
+<p>2.4 <strong>Metas<a name="_page5_x72.00_y590.15"></a> e restrições arquiteturais</strong></p>
+<p><strong>O sistema deve responder a 95% das consultas em até 2 segundos:</strong></p>
+<p><strong>Explicação:</strong> Estabelecer um tempo de resposta de 95% das consultas em até 2 segundos é crucial para oferecer uma experiência ágil e responsiva aos usuários. Isso se traduz em fornecer informações de forma rápida e eficiente, mantendo os usuários engajados e satisfeitos com a usabilidade do sistema. Uma resposta rápida é fundamental para a eficácia e funcionalidade do sistema, pois os usuários dependem da agilidade na navegação e interação com o aplicativo.</p>
+<p><strong>Conformidade com padrões de segurança:</strong></p>
+<p><strong>Explicação:</strong> É super importante garantir que implementemos boas práticas de segurança de forma eficaz. Isso ajuda a proteger os dados e a manter a confiança dos usuários no nosso sistema. Ao focarmos na segurança dos dados, mostramos que levamos a sério a proteção das informações. Além disso, ao ficarmos por dentro das últimas novidades em segurança, garantimos que nosso sistema esteja sempre bem protegido contra possíveis ameaças e problemas.</p>
+<p><strong>Usabilidade:</strong></p>
+<p><strong>Explicação:</strong> Nosso objetivo é projetar uma interface que seja fácil de usar e agradável para os usuários. Queremos garantir que a experiência de navegação seja intuitiva, permitindo que os usuários se familiarizem rapidamente com o sistema. Ao focarmos na usabilidade, estamos priorizando a comodidade do usuário e buscando proporcionar uma experiência de uso fluida e positiva. Isso significa que cada elemento da interface será cuidadosamente pensado para tornar a interação o mais intuitiva e amigável possível, visando facilitar a realização das tarefas e promover a satisfação dos usuários com o nosso sistema.</p>
+<p><strong>Restrição de Matrícula UnB:</strong></p>
+<p><strong>Explicação:</strong> A restrição para matrículas correspondentes à UnB, contendo 9 dígitos, é essencial para garantir a validade e a conformidade dos registros dos estudantes. Ao impor essa restrição, asseguramos que apenas matrículas da Universidade de Brasília (UnB) sejam inseridas no sistema, evitando a inclusão de informações incorretas ou inválidas.</p>
+<p><strong>Restrição de Seleção de Grade Única:</strong></p>
+<p><strong>Explicação:</strong> A restrição para que o usuário possa prosseguir com apenas uma grade selecionada é estabelecida visando manter a clareza e a coerência na definição dos horários e disciplinas cursadas pelo estudante. Essa limitação garante que cada usuário mantenha uma grade específica, o que simplifica a organização e a gestão de disciplinas.</p>
+<p><strong>Restrição de Horários de Disponibilidade do Estudante:</strong></p>
+<p><strong>Explicação:</strong> Esta restrição delimita os horários em que o estudante pode definir sua disponibilidade para realizar disciplinas. Ao restringir os horários disponíveis para a seleção de matérias, garante-se que o sistema sugira disciplinas que se encaixem nos intervalos de tempo escolhidos pelo aluno. Isso assegura uma sugestão de disciplinas que sejam realmente viáveis para o estudante, considerando sua agenda. Essa restrição tem a finalidade de proporcionar ao aluno recomendações mais precisas e alinhadas às suas necessidades, evitando sugestões fora de seus horários disponíveis para estudo.</p>
+<p>2.5 <strong>Visão<a name="_page6_x72.00_y652.76"></a> de Casos de uso (escopo do produto)</strong></p>
+<p>O software possibilitará aos usuários realizar o processo de cadastro e login. Após o login, os usuários poderão selecionar o curso oferecido pela Faculdade do Gama (FGA) que estão atualmente cursando, bem como registrar as matérias que já concluíram. Com base nesses dados, o sistema permitirá que os estudantes montem uma grade horária personalizada. Para esse fim, o sistema solicitará informações sobre os horários disponíveis para cada estudante e, em seguida, gerará uma grade com opções de disciplinas, levando em consideração as matérias já concluídas e a disponibilidade de horários dos alunos.</p>
+<p>Adicionalmente, os alunos terão a capacidade de visualizar seu perfil no sistema, onde encontrarão informações sobre as disciplinas e seu progresso acadêmico.</p>
+<p>2.6 <strong>Visão<a name="_page7_x72.00_y152.49"></a> lógica</strong></p>
+<p><strong>Diagrama de estados da aplicação</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.002.jpeg" /></p>
+<p>Estados: Cada retângulo com bordas arredondadas representa um estado, que pode ou não conter ações e atividades internas a serem executadas quando o objeto se encontra no estado em questão. Por exemplo, o estado da 'Tela de Login'.</p>
+<p>Eventos: Representam cada ação que provoca uma alteração no estado em questão. Por exemplo, com base na ação executada pelo usuário na ‘Tela de Login’, isso pode resultar na transição do estado ‘Tela de Login’ para ‘Tela de Cadastro’ ou acionar uma verificação de login.</p>
+<p>Transição: É a troca de estado. Exemplo: A troca de estado ‘Tela de Login’ à ‘Tela de Cadastro’.</p>
+<p>Decisão: Diamantes são usados para representar decisões. Por exemplo, caso o usuário não faça o login corretamente, voltará para a tela de Login, caso consiga com sucesso, irá para a ‘Tela de Inicial’.</p>
+<p><strong>Diagrama de atividades da aplicação</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.003.jpeg" /></p>
+<p>Atividades: Cada etapa do processo é representada por um retângulo com bordas arredondadas. Por exemplo, "Fazer login" e "Selecionar disciplinas" são atividades. Decisões: Diamantes são usados para representar decisões. Por exemplo, após a autenticação, pode haver uma decisão sobre para onde o usuário será redirecionado com base em seu perfil.</p>
+<p>Fluxos de Controle: Linhas direcionais conectam as atividades, mostrando a sequência de execução. Por exemplo, após a autenticação bem-sucedida, o fluxo segue para o Dashboard do Aluno.</p>
+<p><strong>Diagrama de classes:</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.004.jpeg" /></p>
+<p>2.7 <strong>Visão<a name="_page10_x72.00_y140.99"></a> de Implementação</strong></p>
+<p><strong>Wireframe - Prototipagem de Baixa Fidelidade:</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.005.jpeg" /></p>
+<p><strong>Diagrama de pacotes:</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.bfb405d7-8e9c-46b5-9baa-3454f0c9b97b.006.jpeg" /></p>
+<p><strong>Lógica de Negócios:</strong></p>
+<p><strong>Matrícula eficiente:</strong> Este sistema se baseia em uma lógica para orientar os estudantes na escolha de disciplinas com base em seu curso, disponibilidade de horários e exigências curriculares. A lógica de matrícula garante que as sugestões de disciplinas sejam feitas de maneira inteligente e eficiente.</p>
+<p><strong>Sugestão de disciplinas:</strong> A lógica estabelece a forma como o sistema sugere disciplinas que se encaixam nos horários disponíveis do estudante, evitando conflitos e garantindo uma seleção que atenda às preferências e disponibilidades individuais.</p>
+<p><strong>Acompanhamento de progresso acadêmico:</strong> Define como o sistema exibirá as disciplinas já concluídas, os créditos obtidos e a frequência do estudante. Essa lógica ajuda na visualização do progresso acadêmico do usuário.</p>
+<p><strong>Regras de Negócios:</strong></p>
+<p><strong>Restrição de matrícula UnB:</strong> Esta regra garante que apenas matrículas correspondentes à Universidade de Brasília (UnB), identificadas por um formato específico de 9 dígitos, sejam aceitas no sistema. Isso assegura a validade e a conformidade dos registros dos estudantes.</p>
+<p><strong>Restrição de seleção de grade única:</strong> Limitada o usuário a manter apenas uma grade selecionada, assegurando uma organização clara e coerente na definição dos horários e disciplinas cursadas. Isso simplifica a gestão das disciplinas e evita duplicidades ou conflitos de dados.</p>
+<p><strong>Comunicação com o banco de dados:</strong></p>
+<p><strong>Recuperar Dados:</strong> A aplicação precisará buscar informações do banco de dados, como detalhes das disciplinas, horários, professores, matrículas dos alunos e outras informações acadêmicas relevantes.</p>
+<p><strong>Salvar Dados:</strong> Deve ser capaz de enviar dados para o banco de dados, como novas matrículas, alterações nas grades, informações de novos projetos de extensão e atualizações de progresso acadêmico.</p>
+<p><strong>Atualizar Dados:</strong> É necessário poder modificar ou atualizar informações existentes, como alterar o status de uma disciplina, registrar o progresso do aluno ou atualizar as informações do usuário.</p>
+<p><strong>Excluir Dados:</strong> A aplicação também pode exigir a capacidade de remover ou desativar informações antigas ou desnecessárias, por exemplo, remover um projeto de extensão.</p>
+<p>A maneira como essa comunicação é realizada é geralmente via consultas ou instruções específicas à linguagem de consulta do banco de dados, como SQL. Normalmente, uma camada de acesso a dados é usada para interagir com o banco de dados, permitindo que o software se comunique de forma eficiente e segura.</p>
+<p>Esta comunicação deve ser segura, confiável, eficiente e capaz de lidar com possíveis erros, como falhas na conexão ou consultas mal formadas. Além disso, deve ser capaz de tratar adequadamente questões de segurança, como prevenção de injeção de SQL e proteção de dados confidenciais dos estudantes.</p>
+<p>2.8 <strong>Visão<a name="_page13_x72.00_y132.67"></a> de Implantação</strong></p>
+<p><strong>Infraestrutura de Hardware para a Implantação:</strong></p>
+<p>O software será implantado em uma infraestrutura baseada em nuvem, utilizando serviços de hospedagem oferecidos por provedores confiáveis, como AWS (Amazon Web Services), Google Cloud ou Azure da Microsoft. Esta escolha é justificada pela escalabilidade oferecida por esses provedores, permitindo ajustar os recursos conforme a demanda do software aumenta.</p>
+<p>A arquitetura será distribuída em servidores de aplicativos e servidores de banco de dados. A distribuição desses servidores permitirá um desempenho escalável e estável para o software de gerenciamento acadêmico, garantindo também tolerância a falhas e segurança dos dados dos alunos.</p>
+<p><strong>Tecnologias de Implementação:</strong></p>
+<p>O front-end do sistema será desenvolvido com React, uma biblioteca JavaScript amplamente usada para criar interfaces de usuário eficientes. No back-end, a aplicação será baseada em Django, um framework robusto e altamente seguro para a construção de aplicativos web.</p>
+<p><strong>Banco de Dados:</strong></p>
+<p>Para o banco de dados, optamos pelo MySQL devido à sua confiabilidade e desempenho, sendo uma escolha sólida para sistemas que exigem robustez e escalabilidade. O MySQL oferece recursos de segurança avançados, garantindo a integridade e a confidencialidade dos dados dos alunos.</p>
+<p>A justificativa para essa escolha é baseada na ampla aceitação e suporte da comunidade, bem como na familiaridade da equipe de desenvolvimento com essa tecnologia. A capacidade do MySQL de lidar com grande volume de dados e a sua escalabilidade vertical e horizontal são fatores determinantes para a escolha como o banco de dados para o sistema de gerenciamento acadêmico.</p>
+<p>2.9 <strong>Restrições<a name="_page13_x72.00_y613.90"></a> adicionais</strong></p>
+<p><strong>Restrições adicionais ao software:</strong></p>
+<ol>
+<li><strong>Acesso Restrito via Login:</strong></li>
+</ol>
+<p>O software será acessível via Internet, porém, para garantir a segurança e a confidencialidade dos dados dos estudantes, exigirá a autenticação do usuário através de login. Isso é essencial para controlar o acesso e garantir que apenas usuários autorizados possam interagir com o sistema. A autenticação fornecerá uma camada adicional de segurança, protegendo as informações sensíveis dos alunos.</p>
+<ol>
+<li><strong>Capacidade de Usuários Concomitantes:</strong></li>
+</ol>
+<p>O software será projetado para atender a uma capacidade de, por exemplo, mil usuários logados simultaneamente. Isso é necessário para garantir que, mesmo em horários de alta demanda, como épocas de matrículas, o sistema seja capaz de lidar com um grande número de usuários sem afetar o desempenho ou a disponibilidade. A escalabilidade é crucial para manter a usabilidade e a eficiência do sistema.</p>
+<p><strong>Características de Qualidade Relevantes para o Software:</strong></p>
+<ol>
+<li><strong>Usabilidade:</strong></li>
+</ol>
+<p>A interface do usuário será projetada levando em consideração a usabilidade e a experiência do usuário (UX). Isso implica em um design intuitivo, fácil de usar e navegar. Essa abordagem focada no usuário é essencial para garantir que os estudantes possam interagir com o sistema de forma eficiente e sem dificuldades.</p>
+<ol>
+<li><strong>Confiabilidade:</strong></li>
+</ol>
+<p>A confiabilidade do software é fundamental. Isso implica na garantia de que o sistema funcione sem falhas ou erros significativos. A confiabilidade é essencial para manter a integridade dos dados e fornecer um serviço consistente aos estudantes.</p>
+<ol>
+<li><strong>Segurança:</strong></li>
+</ol>
+<p>A segurança dos dados dos alunos é uma prioridade. O software adotará práticas de segurança robustas, como criptografia de dados, controles de acesso e conformidade com regulamentações de proteção de dados para garantir a segurança das informações armazenadas no sistema.</p>
+<ol>
+<li><strong>Portabilidade:</strong></li>
+</ol>
+<p>O sistema será projetado para ser altamente portável, permitindo que os usuários acessem o software em vários dispositivos, como computadores, tablets e smartphones. Isso é essencial para garantir a acessibilidade e a conveniência para os estudantes, independentemente do dispositivo que estão utilizando.</p>
+<ol>
+<li><strong>Desempenho:</strong></li>
+</ol>
+<p>O desempenho do software será monitorado para garantir a responsividade do sistema. Isso inclui a otimização de consultas ao banco de dados, minimização do tempo de resposta e carregamento rápido das páginas. A manutenção de um desempenho ágil é crucial para a satisfação dos usuários.</p>
+<p><a name="_page14_x72.00_y718.25"></a><strong>3 Bibliografia</strong></p>
+<p><em>MICKAELT. </em><em>O que é padrão MVC? Entenda arquitetura de softwares! | Le Wagon</em><em>. Disponível em: <a href="https://blog.lewagon.com/pt-br/skills/o-que-e-padrao-mvc/#:~:text=O%20MVC%20%C3%A 9%20uma%20sigla">https://blog.lewagon.com/pt-br/skills/o-que-e-padrao-mvc/#:~:text=O%20MVC%20%C3%A 9%20uma%20sigla</a>.</em>
+*</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1000 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Visao/">
+      
+      
+        <link rel="next" href="../arquitetura/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>Declaração de escopo do produto - Documentação GradeWeb</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação GradeWeb" class="md-header__button md-logo" aria-label="Documentação GradeWeb" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação GradeWeb
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Declaração de escopo do produto
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação GradeWeb" class="md-nav__button md-logo" aria-label="Documentação GradeWeb" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentação GradeWeb
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrantes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrantes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Visao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do produto e do projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Declaração de escopo do produto
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentação em PDF
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação em PDF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisaoProdutoeProjeto.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do produto e do projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Declara%C3%A7%C3%A3o%20de%20Escopo%20do%20produto-Kepler.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declaração de escopo do produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Documento%20de%20Arquitetura.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Declaração de escopo do produto</h1>
+
+<p><strong>Declaração de Escopo do Produto</strong></p>
+<p>Versão [1.5]</p>
+<p><strong>Histórico de Revisão</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Versão</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>23/10/2023</strong></td>
+<td>1.0</td>
+<td>Criação do documento Declaração de escopo do produto.</td>
+<td>Equipe Kepler</td>
+</tr>
+<tr>
+<td><strong>10/11/2023</strong></td>
+<td>1.1</td>
+<td>Correção do documento Declaração de escopo do produto de acordo com recomendações do professor.</td>
+<td>Equipe Kepler</td>
+</tr>
+<tr>
+<td><strong>22/11/2023</strong></td>
+<td>1.2</td>
+<td>Correção nas sprints previstas e tecnologias usadas.</td>
+<td>Johnny da Ponte</td>
+</tr>
+<tr>
+<td><strong>30/11/2023</strong></td>
+<td>1.3</td>
+<td>Correção no diagrama de caso de uso.</td>
+<td>Johnny da Ponte</td>
+</tr>
+<tr>
+<td><strong>03/12/2023</strong></td>
+<td>1.4</td>
+<td>Correção nas tecnologias usadas.</td>
+<td>Johnny da Ponte</td>
+</tr>
+<tr>
+<td><strong>03/12/2023</strong></td>
+<td>1.5</td>
+<td>Correção no MVP.</td>
+<td>Johnny da Ponte</td>
+</tr>
+</tbody>
+</table>
+<p><a name="_page3_x72.00_y89.50"></a><strong>1 Problema / Sistema de software</strong></p>
+<p>➔ <em><strong>Definição da equipe</strong>:</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Papel</strong></th>
+<th><strong>Responsável</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front-end</td>
+<td>Gabriel Fenelon, Igor de Souza</td>
+</tr>
+<tr>
+<td>Back-end</td>
+<td>Gustavo Alves, Vitor Gabriel</td>
+</tr>
+<tr>
+<td>Banco de dados</td>
+<td>Johnny da ponte, Vitor Bessa</td>
+</tr>
+</tbody>
+</table>
+<p>➔ <strong>Resumo do problema:</strong> O problema central identificado é a falta de uma ferramenta de gerenciamento acadêmico que personalize e gere uma grade para os estudantes da FGA. Atualmente, os estudantes precisam lidar manualmente com o processo de matrícula em disciplinas e o acompanhamento de seu progresso acadêmico. Isso resulta em:
+- Ineficiência na Matrícula: Os estudantes muitas vezes têm dificuldade em encontrar disciplinas compatíveis com seus horários e suas necessidades curriculares.</p>
+<ul>
+<li>Desconhecimento do Progresso: O acompanhamento do progresso acadêmico,incluindo disciplinas concluídas e horas concluídas, é desafiador e propenso a erros.</li>
+</ul>
+<p>➔ <strong>Sistema de Software.</strong> Para abordar esse problema, propomos o desenvolvimento de um Sistema de Gerenciamento Acadêmico específico para a FGA. Essa solução de software será uma plataforma completa que oferecerá as seguintes funcionalidades:</p>
+<ul>
+<li>Gerador de grade: O sistema fornecerá sugestões de disciplinas com base no curso escolhido pelo estudante, evitando conflitos de horários e garantindo uma grade mais eficiente.</li>
+<li>Progresso de grade: Os estudantes poderão acompanhar facilmente seu progresso acadêmico, visualizando as disciplinas concluídas</li>
+<li>Gerenciador de Falta: Os estudantes poderão acompanhar a frequência das faltas de forma manual.</li>
+</ul>
+<p><strong><em>Resumo de tecnologias usadas:</em></strong></p>
+<p><img alt="imagen 1" src="../assets/ferramentas.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong><em>Área</em></strong></th>
+<th><strong><em>Tecnologia</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front-end</td>
+<td>React</td>
+</tr>
+<tr>
+<td>Back-end</td>
+<td>Django</td>
+</tr>
+<tr>
+<td>Banco de dados</td>
+<td>SQLite</td>
+</tr>
+<tr>
+<td>Controle de versão</td>
+<td>Github</td>
+</tr>
+<tr>
+<td>Comunicação</td>
+<td>Microsoft Teams</td>
+</tr>
+<tr>
+<td>Gestão</td>
+<td>Trello</td>
+</tr>
+</tbody>
+</table>
+<p>➔ <strong>Motivos das tecnologias usadas:</strong></p>
+<pre><code>React: Rápido, flexível e fácil de usar e aprender.
+Django: Rápido, Conteúdo diverso e familiaridade da equipe. 
+SQLite: Fácil integração.
+GitHub: Conteúdo diverso, Armazenamento e proteção de dados. 
+Teams: Comunicação e familiaridade da equipe
+Trello: Tarefas e organizações semanais.
+</code></pre>
+<p>➔ <strong>Resumo da metodologia de desenvolvimento usada:</strong> A metodologia Ágil, com foco em Scrum e o uso da metodologia XP foram adotadas para permitir uma resposta ágil às mudanças nas necessidades acadêmicas e aos feedbacks dos estudantes e para ter uma melhora na performance da equipe ao utilizar das práticas do XP.</p>
+<p>➔ <strong>Outras informações sobre o ciclo de vida:</strong>
+- <strong>Métodos, técnicas:</strong>
+- - Scrum Master: Um membro da equipe Scrum que atua como facilitador e ajuda a equipe a seguir as práticas do Scrum.</p>
+<ul>
+<li>
+<ul>
+<li>Programação em Pares: Dois desenvolvedores trabalham juntos em uma única tarefa. Promove a revisão contínua do código, resolução de problemas e compartilhamento de conhecimento.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Sprints: O desenvolvimento é dividido em iterações de curta duração, geralmente de 1 semana cada . As Sprint tem um objetivo claro e um incremento entregável e isso ajuda na gestão do projeto e adaptação às mudanças</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Product Backlog: Uma lista priorizada de todos os requisitos do projeto.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Integração Contínua: As alterações no código são integradas continuamente ao repositório principal, permitindo a detecção precoce de conflitos e a manutenção de um código sempre funcional.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Programação em Pares: Os desenvolvedores trabalham em pares, onde um escreve o código enquanto o outro revisa. Isso promove a colaboração, compartilhamento de conhecimento e melhoria da qualidade do código.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Padronização do código: Ao adotar práticas de padronização de código, a equipe na XP fortalece sua coesão, favorece a eficiência colaborativa e sustenta a manutenção de um código fonte que é coeso e claro, mesmo quando produzido por diversos membros da equipe.</li>
+</ul>
+</li>
+<li>
+<p><strong>Métricas usadas no desenvolvimento</strong>: </p>
+</li>
+</ul>
+<p>As métricas de teste incluem:
+1. Cobertura de Código: Mede a porcentagem de código testado.
+1. Taxa de Falhas por Sprint: Registra o número de falhas encontradas em cada Sprint.
+- <strong>Testes de software:</strong></p>
+<p>A abordagem de testes adotada é baseada na metodologia ágil. Os níveis de teste incluem:</p>
+<ol>
+<li>Testes Unitários: Realizados pelos desenvolvedores para garantir que partes individuais do código funcionem conforme o esperado.</li>
+<li>Testes de Integração: Testam a integração entre diferentes módulos ou componentes.</li>
+</ol>
+<p>Todas as evidências de execução de testes, métricas e resultados serão registradas e atualizadas no repositório do projeto no Github, garantindo a transparência e rastreabilidade.</p>
+<p><a name="_page6_x72.00_y491.59"></a><strong>2 Backlog do produto</strong></p>
+<p>2.1 <strong>Perfis</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Nome do perfil</th>
+<th>Características do perfil</th>
+<th>Permissões de acesso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Aluno</td>
+<td>Estudante da instituição com acesso a informações acadêmicas. Pode visualizar faltas, horários de aula e informações sobre cursos e disciplinas.</td>
+<td><p>- Visualizar faltas. -</p><p>Acessar informações sobre cursos e disciplinas. - Verificar horários de aula. - Acessar informações pessoais.</p></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Cenários</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Sistema: GradeWeb – Cenários funcionais</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Numeração do cenário</td>
+<td style="text-align: left;">Nome do cenário</td>
+<td style="text-align: left;">Sprints</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: left;">Cadastro de Usuários</td>
+<td style="text-align: left;">Sprint 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">Autenticação de Usuários</td>
+<td style="text-align: left;">Sprint 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">Gerenciamento de Cursos</td>
+<td style="text-align: left;">Sprint 3</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">Inscrição em Disciplinas</td>
+<td style="text-align: left;">Sprint 4</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">Visualização de Faltas</td>
+<td style="text-align: left;">Sprint 5</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">Acesso a Informações de Cursos</td>
+<td style="text-align: left;">Sprint 6</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">Configurações do Perfil do Administrador</td>
+<td style="text-align: left;">Sprint 7</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">Atualização de Informações Pessoais (Aluno)</td>
+<td style="text-align: left;">Sprint 8</td>
+</tr>
+</tbody>
+</table>
+<p>3.<strong>Backlog do produto</strong></p>
+<p><strong>Sistema: GradeWeb – Backlog do produto</strong></p>
+<table>
+<thead>
+<tr>
+<th><p>Numeração</p><p>(Cenário / requisito)</p></th>
+<th style="text-align: left;">Sprint</th>
+<th style="text-align: left;">Nome do requisito</th>
+<th style="text-align: left;"><p>Tripo de requisito</p><p>(Funcional / não funcional)</p></th>
+<th style="text-align: left;">Priorização do requisito Must, Should, Could</th>
+<th style="text-align: left;">Descrição sucinta do requisito</th>
+<th style="text-align: left;"><strong>User histories (U.S.) associadas</strong> Identifique as U.S. associadas ao requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cadastro de usuário</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite o cadastro de novos usuários no sistema.</td>
+<td style="text-align: left;">US-001, US-002</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Autenticação de Usuários</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite que os usuários autentiquem-se no sistema.</td>
+<td style="text-align: left;">US-003, US-004</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Gerenciamento de curso</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite a escolha de curso.</td>
+<td style="text-align: left;">US-005, US-006</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Alterar status da Disciplinas</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite que os alunos alterem o status das disciplinas.</td>
+<td style="text-align: left;">US-007, US-008</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Visualização de Faltas</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;"><p>Permite aos alunos visualizarem e atualizarem</p><p>as faltas.</p></td>
+<td style="text-align: left;">US-009</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Acesso a Informações de Cursos</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite acessar informações de cursos e disciplinas.</td>
+<td style="text-align: left;">US-010</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Configurações do Perfil do Administrador</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Should</td>
+<td style="text-align: left;"><p>Permite ao administrador configurar perfis de</p><p>usuários.</p></td>
+<td style="text-align: left;">US-011, US-012</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Atualização de Informações Pessoais (Aluno)</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Permite aos alunos atualizarem informações pessoais.</td>
+<td style="text-align: left;">US-013, US-014</td>
+</tr>
+</tbody>
+</table>
+<p>4.<strong>Sprints previstas</strong></p>
+<p>Sistema: GradeWeb – Sprints previstas</p>
+<table>
+<thead>
+<tr>
+<th># Sprint</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Objetivos</th>
+<th style="text-align: left;">Composição de itens do backlog (Lista conforme tabela Backlog do produto)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: left;"><p>A primeira sprint visa implementar o registro de novos usuários, um passo crucial para assegurar a funcionalidade básica do sistema, possibilitando que novos estudantes se cadastrem e utilizem a plataforma.</p></td>
+<td style="text-align: left;">Implementação do procedimento de registro de novos usuários no sistema.</td>
+<td style="text-align: left;">Cadastro de usuário</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">A segunda sprint implementa a verificação de credenciais de acesso para garantir a segurança do sistema e a autenticação confiável dos usuários.</td>
+<td style="text-align: left;">Implementar a verificação de credenciais de acesso.</td>
+<td style="text-align: left;">Autenticação de Usuários</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">A terceira sprint visa capacitar os estudantes a escolher o curso conforme suas preferências, promovendo a autonomia dos usuários na personalização de sua grade curricular de acordo com seu curso..</td>
+<td style="text-align: left;">Habilitar a seleção do curso pelos estudantes.</td>
+<td style="text-align: left;">Gerenciamento de Curso</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">A quarta sprint visa implementar a funcionalidade que permite aos estudantes marcar as disciplinas já concluídas. Isso oferecerá aos usuários uma visão organizada de seu progresso acadêmico.</td>
+<td style="text-align: left;">Implementar a marcação de disciplinas já realizadas.</td>
+<td style="text-align: left;">Inscrição em Disciplinas</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">A quinta sprint concentra-se no desenvolvimento da funcionalidade que permite aos estudantes visualizar detalhes das disciplinas, com ênfase nas faltas registradas. Isso oferecerá aos usuários uma visão atualizada e clara de sua frequência acadêmica.</td>
+<td style="text-align: left;">Desenvolver a funcionalidade de visualização de faltas nas disciplinas.</td>
+<td style="text-align: left;">Visualização de Faltas</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">A sexta sprint visa implementar a funcionalidade que permite aos usuários acessar detalhes sobre os cursos e disciplinas oferecidos. Isso proporcionará aos estudantes uma visão completa das opções disponíveis, auxiliando na tomada de decisões sobre a grade curricular.</td>
+<td style="text-align: left;">Permite acessar informações de cursos e disciplinas.</td>
+<td style="text-align: left;">Acesso a Informações de Cursos</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">A sétima sprint foca no desenvolvimento de configurações exclusivas para administradores, proporcionando a eles controle avançado sobre funcionalidades e permissões do sistema. Isso amplia a capacidade dos administradores de personalizar o sistema de acordo com as necessidades específicas.</td>
+<td style="text-align: left;">Desenvolver configurações específicas para administradores do sistema</td>
+<td style="text-align: left;">Configurações do Perfil do Administrador</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">A oitava sprint foca na implementação da funcionalidade que permite aos alunos atualizarem suas informações pessoais de forma independente. Isso dá aos usuários a capacidade de manter seus dados atualizados de maneira autônoma.</td>
+<td style="text-align: left;">Implementar a capacidade dos alunos atualizarem suas informações</td>
+<td style="text-align: left;">Atualização de Informações Pessoais (Aluno)</td>
+</tr>
+</tbody>
+</table>
+<p><a name="_page12_x72.00_y157.37"></a><strong>3 Definição de Ready /Done Definição de Ready (DoR):</strong></p>
+<p>Descrição Completa: A user story deve ter uma descrição clara e completa que descreve o que precisa ser feito e o motivo.</p>
+<p>Critérios de Aceitação Claros: Todos os critérios de aceitação devem estar especificados e compreensíveis.</p>
+<p>Priorização de Requisitos: O requisito deve estar devidamente priorizado como Must, Should ou Could.</p>
+<p>Estimativa de Complexidade: A user story deve ter uma estimativa de complexidade, como pontos de história ou outra unidade de medida de esforço.</p>
+<p>Dependências Identificadas: Todas as dependências devem ser identificadas, e se possível, tratadas antes do início da sprint.</p>
+<p><strong>Definição de Done (DoD):</strong></p>
+<p>Critérios de Aceitação Satisfeitos: Todos os critérios de aceitação da user story devem ser atendidos.</p>
+<p>Testes de Aceitação Passados: Todas as funcionalidades relacionadas à user story devem passar nos testes de aceitação.</p>
+<p>Code Review Concluído: O código relacionado à user story deve ter passado por uma revisão de código.</p>
+<p>Documentação Atualizada: Toda a documentação relevante deve estar atualizada, incluindo documentação técnica, se aplicável.</p>
+<p>Integração Contínua/Entrega Contínua (CI/CD): A user stories deve ser integrada ao sistema de forma contínua e pronta para entrega.</p>
+<p>Sem Defeitos Conhecidos: Não deve haver defeitos conhecidos relacionados à user story. </p>
+<p><a name="_page12_x72.00_y606.82"></a><strong>4 US – User Histories</strong></p>
+<p><strong>Requisito 1: Cadastro de Usuário</strong></p>
+<p><strong>US-001:</strong> Como um novo usuário, eu quero poder preencher um formulário com meu nome, e-mail, senha e curso para criar uma conta no sistema.</p>
+<p><strong>US-002:</strong> Como um novo usuário, eu quero receber uma confirmação de que minha conta foi criada com sucesso e está automaticamente logado no sistema após o cadastro.</p>
+<p><strong>Requisito 2: Autenticação de Usuários</strong></p>
+<p><strong>US-003:</strong> Como um usuário registrado, eu quero ser capaz de inserir meu nome de usuário (e-mail) e senha na tela de login para ter acesso ao sistema.</p>
+<p><strong>US-004:</strong> Como um usuário registrado, eu quero receber uma mensagem de erro se inserir credenciais inválidas durante o processo de autenticação.</p>
+<p><strong>Requisito 3: Gerenciamento de Disciplinas</strong></p>
+<p><strong>US-005:</strong> Como administrador, eu quero ter a capacidade de adicionar, editar e excluir disciplinas, para manter a lista de cursos atualizada.</p>
+<p><strong>US-006:</strong> Como um administrador, eu quero ser notificado sobre qualquer ação de edição ou exclusão de um curso, para garantir a precisão das informações.</p>
+<p><strong>Requisito 4: Inscrição em Disciplinas</strong></p>
+<p><strong>US-007:</strong> Como aluno, eu quero ser capaz de visualizar uma lista de disciplinas disponíveis para matrícula com base nas informações fornecidas.</p>
+<p><strong>US-008:</strong> Como um aluno, eu quero receber uma confirmação de que qualquer alteração no status de uma disciplina foi bem-sucedida.</p>
+<p><strong>Requisito 5: Visualização de Faltas</strong></p>
+<p><strong>US-009:</strong> Como aluno, eu quero ser capaz de visualizar e atualizar faltas para cada disciplina em que está com o status “Cursando”.</p>
+<p><strong>Requisito 6: Acesso a Informações de Cursos</strong></p>
+<p><strong>US-010:</strong> Como aluno, eu quero ser capaz de acessar informações detalhadas sobre os cursos oferecidos e as disciplinas incluídas em cada curso.</p>
+<p><strong>Requisito 7: Configurações do Perfil do Administrador</strong></p>
+<p><strong>US-011:</strong> Como um administrador, eu quero poder configurar diferentes tipos de perfis de usuários, como Administrador diferentes níveis de acesso e permissões.</p>
+<p><strong>US-012:</strong> Como um administrador, eu quero poder editar as configurações de perfil dos usuários, se necessário.</p>
+<p><strong>Requisito 8: Atualização de Informações Pessoais</strong></p>
+<p><strong>US-013:</strong> Como um aluno, eu quero poder atualizar minhas informações pessoais, como endereço, número de telefone, etc.</p>
+<p><strong>US-014:</strong> Como um aluno, eu quero receber uma confirmação de que minhas informações pessoais foram atualizadas com sucesso.</p>
+<p><strong>5 Diagrama de casos de uso</strong></p>
+<p><img alt="" src="../assets/Aspose.Words.1b558398-d6b4-4227-aa8e-5a676e8b9fe4.002.jpeg" /></p>
+<p><a name="_page14_x72.00_y648.19"></a><strong>6 MVP</strong></p>
+<p>O GradeWeb é uma aplicação web cujo principal objetivo é fornecer uma grade personalizada para os alunos da FGA, considerando critérios estabelecidos por cada usuário. Este software abrange funcionalidades cruciais que permitem aos estudantes realizar o seguinte:</p>
+<ul>
+<li><strong>Cadastro e Autenticação</strong>: Os alunos podem se cadastrar e fazer login de forma segura, garantindo a proteção de suas informações pessoais.</li>
+<li><strong>Gerador de Grades:</strong> O sistema inclui um gerador de grades que com base em informações fornecidas pelo aluno, como sua disponibilidade de horários e as disciplinas já concluídas, irá gerar uma grade com opções de disciplinas disponíveis para o aluno realizar a matrícula.</li>
+</ul>
+<p>Este Gerenciador Acadêmico é uma ferramenta valiosa que permite aos estudantes da FGA planejar e gerenciar seus horários de forma eficiente, levando em consideração suas preferências e necessidades individuais.</p>
+<p><a name="_page15_x72.00_y320.48"></a><strong>7 Referências</strong></p>
+<p>BOOCH, G. et al. <strong>UML guia do usuario</strong>. [s.l.] Rio De Janeiro Elsevier Campus, 2006. SCRUM.ORG. <strong>Home</strong>. Disponível em: <a href="https://www.scrum.org/">https://www.scrum.org/</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
