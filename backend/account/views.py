@@ -117,23 +117,24 @@ def processar_horario(request):
 # View para selecionar matéria
 @api_view(['POST'])
 def selecionar_materia(request):
-    serializer = SelecionarMateriaSerializer(data=request.data)
-    if serializer.is_valid():
-        id_turma_professor = serializer.validated_data['idTurmaProfessor']
+    if request.method == 'POST':
+        data = request.data
+        id_turmas_professor = data.get('idTurmaProfessor', [])
 
-        # Busque os dados correspondentes no arquivo JSON
-        materia_json = obter_dados_do_json(id_turma_professor)
+        for id_turma_professor in id_turmas_professor:
+            # Sua lógica para obter dados correspondentes no arquivo JSON
+            materia_json = obter_dados_do_json(id_turma_professor)
 
-        if materia_json:
-            # Crie uma instância do modelo e salve no banco de dados
-            materia_selecionada = MateriaSelecionada(**materia_json)
-            materia_selecionada.save()
+            if materia_json:
+                # Sua lógica para criar uma instância do modelo e salvar no banco de dados
+                materia_selecionada = MateriaSelecionada(**materia_json)
+                materia_selecionada.save()
 
-            return Response({'status': 'Matéria selecionada com sucesso!'})
-        else:
-            return Response({'erro': 'ID de turma professor não encontrado no JSON'}, status=404)
-    return Response(serializer.errors, status=400)
+        return Response({'status': 'Matérias selecionadas com sucesso!'})
+    return Response({'status': 'erro', 'message': 'Método não permitido'}, status=405)
 
+
+#remove as amterias da grade 
 def remover_materia(request):
     materia_id = request.data.get('materia_id', None)
 
@@ -146,6 +147,7 @@ def remover_materia(request):
             return Response({'status': 'erro', 'message': 'Matéria não encontrada'}, status=404)
 
     return Response({'status': 'erro', 'message': 'ID da matéria não fornecido'}, status=400)
+
 
 # Função auxiliar para obter dados do JSON
 def obter_dados_do_json(id_turma_professor):
@@ -167,3 +169,21 @@ class mandar_materiaView(APIView):
         serializer = MandarMateriaSerializer(dados, many=True)
       
         return Response(serializer.data)
+    
+#remove a materia selecionada 
+@api_view(['POST'])
+def remover_materias(request):
+    ids_turma_professor = request.data.get('idsTurmaProfessor', [])
+
+    try:
+        # Adicione essas linhas para depuração
+        print(f'Tentando remover matérias com IDs: {ids_turma_professor}')
+
+        # Remova as matérias do banco de dados
+        MateriaSelecionada.objects.filter(idTurmaProfessor__in=ids_turma_professor).delete()
+        return Response({'message': 'Matérias removidas com sucesso'}, status=status.HTTP_200_OK)
+    except Exception as e:
+        # Adicione essas linhas para depuração
+        print(f'Erro ao remover matérias: {str(e)}')
+
+        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

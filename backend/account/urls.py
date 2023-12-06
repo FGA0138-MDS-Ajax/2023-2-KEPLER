@@ -9,6 +9,7 @@ from account.views import (
     processar_horario,
     selecionar_materia,
     mandar_materiaView,
+    remover_materias,
     remover_materia,
 )
 
@@ -24,6 +25,6 @@ urlpatterns = [
     path('selecionar_materia/', selecionar_materia, name='selecionar_materia'),  # Rota para seleção de matéria
     path('mandar_materias/', mandar_materiaView.as_view(), name='mandar_materia'),
     path('remover_materia/', remover_materia, name='remover_materia'),
-    
+    path('remover_materias/', remover_materias, name='remover_materias'),
 
 ]

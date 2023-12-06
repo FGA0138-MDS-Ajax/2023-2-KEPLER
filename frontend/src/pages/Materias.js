@@ -62,6 +62,9 @@ function codigoUnbParaHorario(horarioBanco) {
 }
 function Materias() {
   const [selectedMaterias, setSelectedMaterias] = useState([]);
+  const [tempSelectedMaterias, setTempSelectedMaterias] = useState([]);
+  const [horarioConflitante, setHorarioConflitante] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -106,55 +109,89 @@ function Materias() {
     });
   }
 
-function handleMateriaSelection(idTurmaProfessor) {
+  function handleMateriaSelection(idTurmaProfessor) {
     const confirmacao = window.confirm("Tem certeza que deseja selecionar esta matéria?");
     if (confirmacao) {
-      // Verificar se a matéria já está selecionada
-      const isMateriaSelected = selectedMaterias.some(selectedMateria => selectedMateria.idTurmaProfessor === idTurmaProfessor);
       
-      // Verificar se há conflito de horário
-      const selectedMateriaItem = items.find(item => item.idTurmaProfessor === idTurmaProfessor);
-      const hasHorarioConflict = selectedMaterias.some(selectedMateria => selectedMateria.horario === selectedMateriaItem.horario);
-      
-      // Verificar se há conflito de nome
-      const hasNameConflict = selectedMaterias.some(selectedMateria => selectedMateria.nomeMateria === selectedMateriaItem.nomeMateria);
-      
+      const selectedMateriaItem = items.find(
+        (item) => item.idTurmaProfessor === idTurmaProfessor
+      );
+
+      const isMateriaSelected = tempSelectedMaterias.some(
+        (tempSelectedMateria) => tempSelectedMateria.idTurmaProfessor === idTurmaProfessor
+      );
+  
+      const hasHorarioConflict = tempSelectedMaterias.some(
+        (tempSelectedMateria) => tempSelectedMateria.horario === selectedMateriaItem.horario
+      );
+  
+      const hasNameConflict = tempSelectedMaterias.some(
+        (tempSelectedMateria) => tempSelectedMateria.nomeMateria === selectedMateriaItem.nomeMateria
+      );
+
       if (!isMateriaSelected && !hasHorarioConflict && !hasNameConflict) {
-        fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ idTurmaProfessor }),
-        })
-          .then(response => response.json())
-          .then(data => {
-            console.log('Success:', data);
-            setSelectedMaterias(prevSelected => [...prevSelected, selectedMateriaItem]);
-          })
-          .catch((error) => {
-            console.error('Error:', error);
-            // Adicione lógica adicional para lidar com erros
-          });
+        setTempSelectedMaterias((prevTempSelected) => [
+          ...prevTempSelected,
+          selectedMateriaItem,
+        ]);
+
       } else {
-        // Exibir avisos ao usuário
         if (isMateriaSelected) {
-          alert("Esta matéria já foi selecionada.");
+          alert('Esta matéria já foi selecionada.');
         } else if (hasHorarioConflict) {
-          alert("Há conflito de horário com outra matéria selecionada.");
+          alert('Há conflito de horário com outra matéria selecionada.');
         } else if (hasNameConflict) {
-          alert("Você não pode selecionar matérias com o mesmo nome.");
+          alert('Você não pode selecionar matérias com o mesmo nome.');
         }
       }
+
     }
   }
 
-  function handleCancelarSelection(idTurmaProfessor) {
-    const confirmacao = window.confirm("Tem certeza que deseja cancelar a seleção desta matéria?");
-    if (confirmacao) {
-      setSelectedMaterias(prevSelected => prevSelected.filter((item) => item.idTurmaProfessor !== idTurmaProfessor));
-    }
+  function handleCancelSelection(idTurmaProfessor) {
+    setTempSelectedMaterias((prevTempSelected) =>
+      prevTempSelected.filter(
+        (item) => item.idTurmaProfessor !== idTurmaProfessor
+      )
+    );
   }
+
+
+  function handleConfirmSelection() {
+    const selectedIds = tempSelectedMaterias.map((item) => item.idTurmaProfessor);
+  
+    // Enviar dados para a view Django
+    fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ idTurmaProfessor: selectedIds }),  // Ajuste aqui para enviar apenas os IDs
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data);
+        // Limpar as matérias temporariamente selecionadas após o sucesso
+        setTempSelectedMaterias([]);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Adicione lógica adicional para lidar com erros
+      })
+      .finally(() => {
+        // Atualizar o estado para indicar que o envio foi concluído
+        setIsSubmitting(false);
+      });
+
+      setHorarioConflitante(false); // Limpar o estado de conflito de horário
+  }
+
+
+  function handleCancelSelectionTemp() {
+    // Limpar tempSelectedMaterias
+    setTempSelectedMaterias([]);
+  }
+
 
   if (error) {
     return (
@@ -172,15 +209,24 @@ function handleMateriaSelection(idTurmaProfessor) {
       <>
         <Navbar />
         <div className="wrapper">
-          {selectedMaterias.length > 0 && (
-            <div className="selected-materias">
-              <h2>Matérias Selecionadas</h2>
+
+        {horarioConflitante && (
+          <div className="error-message">
+            <p>Conflito de horário! Não é possível selecionar matérias com horários iguais.</p>
+            <button onClick={() => setHorarioConflitante(false)}>Fechar</button>
+          </div>
+        )}
+
+
+        {tempSelectedMaterias.length > 0 && (
+            <div className="temp-selected-materias">
+              <h2>Matérias Temporariamente Selecionadas</h2>
               <ul>
-                {selectedMaterias.map((selectedMateria) => (
-                  <li className="bloco" key={selectedMateria.idTurmaProfessor}>
-                    {selectedMateria.nomeMateria} - {selectedMateria.nomeProfessor}
+                {tempSelectedMaterias.map((tempSelectedMateria) => (
+                  <li className="bloco" key={tempSelectedMateria.idTurmaProfessor}>
+                    {tempSelectedMateria.nomeMateria} - {tempSelectedMateria.nomeProfessor}
                     <button
-                      onClick={() => handleCancelarSelection(selectedMateria.idTurmaProfessor)}
+                      onClick={() => handleCancelSelection(tempSelectedMateria.idTurmaProfessor)}
                       className="cancel-button"
                     >
                       Cancelar
@@ -188,8 +234,19 @@ function handleMateriaSelection(idTurmaProfessor) {
                   </li>
                 ))}
               </ul>
+              <button
+                onClick={handleConfirmSelection}
+                className="confirm-button"
+                disabled={isSubmitting || tempSelectedMaterias.length === 0}
+              >
+                {isSubmitting ? 'Enviando...' : 'Confirmar Seleção'}
+              </button>
+              <button onClick={handleCancelSelectionTemp} className="cancel-button">
+                Cancelar Seleção
+              </button>
             </div>
           )}
+          
           <div className="search-wrapper">
             <label htmlFor="search-form">
               <span className="sr-only">Search countries here</span>
@@ -245,44 +302,44 @@ function handleMateriaSelection(idTurmaProfessor) {
             </div>
           </div>
           <ul className="card-grid">
-          {search(items).map((item) => (
-            <li
-              key={item.idTurmaProfessor}
-              className={selectedMaterias.some((selected) => selected.idTurmaProfessor === item.idTurmaProfessor) ? 'selected-card' : ''}
-            >
-              <div className="card-wrapper">
-                <article className="card">
-                  <div className="card-content">
-                    <h5 className="card-name">{item.nomeMateria}</h5>
-                    <ol className="card-list">
-                      <li>
-                        Professor: <span>{item.nomeProfessor}</span>
-                      </li>
-                      <li>
-                        Nº Turma: <span>{item.numeroTurma}</span>
-                      </li>
-                      <li>
-                        Horário: <span>{item.horario}</span>
-                      </li>
-                      <li>
-                        Carga horária: <span>{item.carga}</span>
-                      </li>
-                      <li>
-                        Código Matéria: <span>{item.codMateria}</span>
-                      </li>
-                    </ol>
-                    <button
-                      className="select-button"
-                      onClick={() => handleMateriaSelection(item.idTurmaProfessor)}
-                    >
-                      Selecionar
-                    </button>
-                  </div>
-                </article>
-              </div>
-            </li>
-          ))}
-        </ul>
+            {search(items).map((item) => (
+              <li
+                key={item.idTurmaProfessor}
+                className={selectedMaterias.some((selected) => selected.idTurmaProfessor === item.idTurmaProfessor) ? 'selected-card' : ''}
+              >
+                <div className="card-wrapper">
+                  <article className="card">
+                    <div className="card-content">
+                      <h5 className="card-name">{item.nomeMateria}</h5>
+                      <ol className="card-list">
+                        <li>
+                          Professor: <span>{item.nomeProfessor}</span>
+                        </li>
+                        <li>
+                          Nº Turma: <span>{item.numeroTurma}</span>
+                        </li>
+                        <li>
+                          Horário: <span>{item.horario}</span>
+                        </li>
+                        <li>
+                          Carga horária: <span>{item.carga}</span>
+                        </li>
+                        <li>
+                          Código Matéria: <span>{item.codMateria}</span>
+                        </li>
+                      </ol>
+                      <button
+                        className="select-button"
+                        onClick={() => handleMateriaSelection(item.idTurmaProfessor)}
+                      >
+                        Selecionar
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </>
     );
