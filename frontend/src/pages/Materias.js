@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import turmasData from '../data/turmas-professores.json';
 import Navbar from '../components/Navbar.js';
 import '../styleheets/Materias.css'; // Certifique-se de que o caminho do arquivo CSS está correto
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';  // Importe o BrowserRouter
+
 import { Grid } from '@mui/material';
 
 function extrairParteDoHorario(horarioBanco) {
@@ -66,6 +69,7 @@ function Materias() {
   const [horarioConflitante, setHorarioConflitante] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [q, setQ] = useState('');
@@ -172,6 +176,7 @@ function Materias() {
           console.log('Success:', data);
           // Limpar as matérias temporariamente selecionadas após o sucesso
           setTempSelectedMaterias([]);
+          navigate('/Grade');
         })
         .catch((error) => {
           console.error('Error:', error);
@@ -346,6 +351,11 @@ function Materias() {
   }
 }
 
-ReactDOM.render(<Materias />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <Materias />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
 export default Materias;
