@@ -61,7 +61,7 @@ function codigoUnbParaHorario(horarioBanco) {
   return mapeamento[horarioBanco] || 'Temp';
 }
 function Materias() {
-  const [selectedMaterias, setSelectedMaterias] = useState([]);
+  const [selectedMaterias] = useState([]);
   const [tempSelectedMaterias, setTempSelectedMaterias] = useState([]);
   const [horarioConflitante, setHorarioConflitante] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -110,41 +110,38 @@ function Materias() {
   }
 
   function handleMateriaSelection(idTurmaProfessor) {
-    const confirmacao = window.confirm("Tem certeza que deseja selecionar esta matéria?");
-    if (confirmacao) {
-      
-      const selectedMateriaItem = items.find(
-        (item) => item.idTurmaProfessor === idTurmaProfessor
-      );
+    const selectedMateriaItem = items.find(
+      (item) => item.idTurmaProfessor === idTurmaProfessor
+    );
 
-      const isMateriaSelected = tempSelectedMaterias.some(
-        (tempSelectedMateria) => tempSelectedMateria.idTurmaProfessor === idTurmaProfessor
-      );
-  
-      const hasHorarioConflict = tempSelectedMaterias.some(
-        (tempSelectedMateria) => tempSelectedMateria.horario === selectedMateriaItem.horario
-      );
-  
-      const hasNameConflict = tempSelectedMaterias.some(
-        (tempSelectedMateria) => tempSelectedMateria.nomeMateria === selectedMateriaItem.nomeMateria
-      );
+    const isMateriaSelected = tempSelectedMaterias.some(
+      (tempSelectedMateria) => tempSelectedMateria.idTurmaProfessor === idTurmaProfessor
+    );
 
-      if (!isMateriaSelected && !hasHorarioConflict && !hasNameConflict) {
+    const hasHorarioConflict = tempSelectedMaterias.some(
+      (tempSelectedMateria) => tempSelectedMateria.horario === selectedMateriaItem.horario
+    );
+
+    const hasNameConflict = tempSelectedMaterias.some(
+      (tempSelectedMateria) => tempSelectedMateria.nomeMateria === selectedMateriaItem.nomeMateria
+    );
+
+    if (!isMateriaSelected && !hasHorarioConflict && !hasNameConflict) {
         setTempSelectedMaterias((prevTempSelected) => [
           ...prevTempSelected,
           selectedMateriaItem,
         ]);
 
-      } else {
-        if (isMateriaSelected) {
-          alert('Esta matéria já foi selecionada.');
-        } else if (hasHorarioConflict) {
-          alert('Há conflito de horário com outra matéria selecionada.');
-        } else if (hasNameConflict) {
-          alert('Você não pode selecionar matérias com o mesmo nome.');
-        }
+        // Exibe a mensagem de confirmação após a adição à lista tempSelectedMaterias
+        alert("Matéria adicionada à lista temporária com sucesso!");
+    } else {
+      if (isMateriaSelected) {
+        alert('Esta matéria já foi selecionada.');
+      } else if (hasHorarioConflict) {
+        alert('Há conflito de horário com outra matéria selecionada.');
+      } else if (hasNameConflict) {
+        alert('Você não pode selecionar matérias com o mesmo nome.');
       }
-
     }
   }
 
@@ -158,32 +155,35 @@ function Materias() {
 
 
   function handleConfirmSelection() {
-    const selectedIds = tempSelectedMaterias.map((item) => item.idTurmaProfessor);
-  
-    // Enviar dados para a view Django
-    fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ idTurmaProfessor: selectedIds }),  // Ajuste aqui para enviar apenas os IDs
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-        // Limpar as matérias temporariamente selecionadas após o sucesso
-        setTempSelectedMaterias([]);
+    const confirmacao = window.confirm("Tem certeza que deseja confirmar a seleção de todas as matérias?");
+    if (confirmacao) {
+      const selectedIds = tempSelectedMaterias.map((item) => item.idTurmaProfessor);
+    
+      // Enviar dados para a view Django
+      fetch('http://127.0.0.1:8000/api/user/selecionar_materia/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ idTurmaProfessor: selectedIds }),  // Ajuste aqui para enviar apenas os IDs
       })
-      .catch((error) => {
-        console.error('Error:', error);
-        // Adicione lógica adicional para lidar com erros
-      })
-      .finally(() => {
-        // Atualizar o estado para indicar que o envio foi concluído
-        setIsSubmitting(false);
-      });
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+          // Limpar as matérias temporariamente selecionadas após o sucesso
+          setTempSelectedMaterias([]);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          // Adicione lógica adicional para lidar com erros
+        })
+        .finally(() => {
+          // Atualizar o estado para indicar que o envio foi concluído
+          setIsSubmitting(false);
+        });
 
-      setHorarioConflitante(false); // Limpar o estado de conflito de horário
+        setHorarioConflitante(false); // Limpar o estado de conflito de horário
+    }
   }
 
 
@@ -218,9 +218,9 @@ function Materias() {
         )}
 
 
-        {tempSelectedMaterias.length > 0 && (
+          {tempSelectedMaterias.length > 0 && (
             <div className="temp-selected-materias">
-              <h2>Matérias Temporariamente Selecionadas</h2>
+              <h2>Matérias Selecionadas</h2>
               <ul>
                 {tempSelectedMaterias.map((tempSelectedMateria) => (
                   <li className="bloco" key={tempSelectedMateria.idTurmaProfessor}>
@@ -241,7 +241,7 @@ function Materias() {
               >
                 {isSubmitting ? 'Enviando...' : 'Confirmar Seleção'}
               </button>
-              <button onClick={handleCancelSelectionTemp} className="cancel-button2">
+              <button onClick={handleCancelSelectionTemp} className="cancel-button">
                 Cancelar Seleção
               </button>
             </div>
