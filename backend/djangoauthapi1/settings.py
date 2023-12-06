@@ -160,7 +160,5 @@ PASSWORD_RESET_TIMEOUT = 900  # 900 Seg = 15 Min
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://vercel.com/vitor-gabriels-projects-ac951d48/2023-2-kepler/A5sJuK4mBabtGRs4rXMDuBEf3mBm",
-
 
 ]

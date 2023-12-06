@@ -241,7 +241,7 @@ function Materias() {
               >
                 {isSubmitting ? 'Enviando...' : 'Confirmar Seleção'}
               </button>
-              <button onClick={handleCancelSelectionTemp} className="cancel-button">
+              <button onClick={handleCancelSelectionTemp} className="cancel-button2">
                 Cancelar Seleção
               </button>
             </div>

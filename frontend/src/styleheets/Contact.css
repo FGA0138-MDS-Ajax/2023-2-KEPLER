@@ -8,7 +8,7 @@
 }
 
 .animated-table-cell > a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
   display: block;
