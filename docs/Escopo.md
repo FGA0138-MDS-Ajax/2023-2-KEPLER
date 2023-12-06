@@ -137,8 +137,8 @@ Sistema: GradeWeb – Sprints previstas
 
 |# Sprint|Descrição|Objetivos|Composição de itens do backlog (Lista conforme tabela Backlog do produto)|
 | - | :- | :- | :- |
-|1|<p>Aprimeira sprint visa implementar o registro de novos usuários, um passo crucial para assegurar a funcionalidade básica do sistema, possibilitando que novos estudantes se cadastrem e utilizem a plataforma.</p>|Implementação do procedimento de registro de novos usuários no sistema.|Cadastro de usuário|
-|2|Asegunda sprint implementa a verificação de credenciais de acesso para garantir a segurança do sistema e a autenticação confiável dos usuários.|Implementar a verificação de credenciais de acesso.|Autenticação de Usuários|
+|1|<p>A primeira sprint visa implementar o registro de novos usuários, um passo crucial para assegurar a funcionalidade básica do sistema, possibilitando que novos estudantes se cadastrem e utilizem a plataforma.</p>|Implementação do procedimento de registro de novos usuários no sistema.|Cadastro de usuário|
+|2|A segunda sprint implementa a verificação de credenciais de acesso para garantir a segurança do sistema e a autenticação confiável dos usuários.|Implementar a verificação de credenciais de acesso.|Autenticação de Usuários|
 |3|A terceira sprint visa capacitar os estudantes a escolher o curso conforme suas preferências, promovendo a autonomia dos usuários na personalização de sua grade curricular de acordo com seu curso..|Habilitar a seleção do curso pelos estudantes.|Gerenciamento de Curso|
 |4|A quarta sprint visa implementar a funcionalidade que permite aos estudantes marcar as disciplinas já concluídas. Isso oferecerá aos usuários uma visão organizada de seu progresso acadêmico.|Implementar a marcação de disciplinas já realizadas.|Inscrição em Disciplinas|
 |5|A quinta sprint concentra-se no desenvolvimento da funcionalidade que permite aos estudantes visualizar detalhes das disciplinas, com ênfase nas faltas registradas. Isso oferecerá aos usuários uma visão atualizada e clara de sua frequência acadêmica.|Desenvolver a funcionalidade de visualização de faltas nas disciplinas.|Visualização de Faltas|
