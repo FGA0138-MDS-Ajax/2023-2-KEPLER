@@ -3,15 +3,6 @@ import axios from 'axios';
 import Navbar from "../components/Navbar";
 import Grade from '../styleheets/Grade.css'
 
-// const myObjectCinco = [ 
-//   "35T23", "46M34", "24M34",
-//   "35M12","46T23","35M34",
-//   "46M12","35T45", 
-//   "24M12","26T45", "26M34"
-//   ,"24T45","25T23", "26T23",
-//    "24T23","46T45", "26M12",  
-// ];
-
         
 const myObject = {
   "35T23": [{"id": "3T2"}, {"id": "3T3"}, {"id": "5T2"}, {"id": "5T3"}],
@@ -146,7 +137,7 @@ const MyTableComponent = () => {
     axios
       .post('http://127.0.0.1:8000/api/user/remover_materias/', { idsTurmaProfessor })
       .then((response) => {
-        console.log('Matérias removidas com sucesso do banco de dados:', response.data);
+        // console.log('Matérias removidas com sucesso do banco de dados:', response.data);
         // Limpe a lista de matérias selecionadas após a remoção bem-sucedida
         setMateriasSelecionadas([]);
         // Atualize a página automaticamente

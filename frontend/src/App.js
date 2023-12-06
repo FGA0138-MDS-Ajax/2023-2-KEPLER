@@ -16,7 +16,6 @@ import Fluxogramas from "./pages/Fluxograma"
 import FluxogramaAuto from "./pages/FluxogramaAuto"
 import FluxogramaEle from "./pages/FluxogramaEle"
 import FluxogramaEner from "./pages/FluxogramaEner"
-import Teste from "./pages/Teste"
 
 
 function App() {
@@ -43,8 +42,6 @@ function App() {
           <Route exact path="fluxogramaAuto" element={<FluxogramaAuto/>} />
           <Route exact path="fluxogramaEle" element={<FluxogramaEle/>} />
           <Route exact path="fluxogramaEner" element={<FluxogramaEner/>} />
-          <Route exact path="testando" element={<Teste/>} />
-
 
         </Routes>
       </BrowserRouter>

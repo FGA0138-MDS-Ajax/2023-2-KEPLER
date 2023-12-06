@@ -173,13 +173,13 @@ function Materias() {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log('Success:', data);
+          // console.log('Success:', data);
           // Limpar as matérias temporariamente selecionadas após o sucesso
           setTempSelectedMaterias([]);
           navigate('/Grade');
         })
         .catch((error) => {
-          console.error('Error:', error);
+          // console.error('Error:', error);
           // Adicione lógica adicional para lidar com erros
         })
         .finally(() => {

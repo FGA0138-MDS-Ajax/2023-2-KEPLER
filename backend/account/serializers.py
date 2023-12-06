@@ -112,12 +112,12 @@ class UserPasswordResetSerializer(serializers.Serializer):
             PasswordResetTokenGenerator().check_token(user, token)
             raise serializers.ValidationError('Token não é válido ou expirou')
 
-# Serializador para 'MateriaSelecionada'
+# Serializador para selecionar materia
 class SelecionarMateriaSerializer(serializers.Serializer):
     idTurmaProfessor = serializers.IntegerField()
 
 
-# Serializador para 'MateriaSelecionada'
+# Serializador para mandar materia
 
 class MandarMateriaSerializer(serializers.ModelSerializer):
     class Meta:

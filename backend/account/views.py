@@ -94,25 +94,25 @@ class UserPasswordResetView(APIView):
         return Response({'msg': 'Senha redefinida com sucesso'}, status=status.HTTP_200_OK)
 
 # View para processamento de horário
-@csrf_exempt
-def processar_horario(request):
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        horario = data.get('horario', '')
+# @csrf_exempt
+# def processar_horario(request):
+#     if request.method == 'POST':
+#         data = json.loads(request.body)
+#         horario = data.get('horario', '')
         
-        # Realize as operações necessárias com o horário, por exemplo, salve no banco de dados
+#         # Realize as operações necessárias com o horário, por exemplo, salve no banco de dados
 
-        # Suponha que o arquivo JSON tenha uma chave 'horarios'
-        with open('../frontend/src/data/turmas-professores.json') as json_file:
-            data_json = json.load(json_file)
-            materia_encontrada = [obj.get('nomeMateria', '') for obj in data_json if 'horario' in obj and obj['horario'] == horario]
+#         # Suponha que o arquivo JSON tenha uma chave 'horarios'
+#         with open('../frontend/src/data/turmas-professores.json') as json_file:
+#             data_json = json.load(json_file)
+#             materia_encontrada = [obj.get('nomeMateria', '') for obj in data_json if 'horario' in obj and obj['horario'] == horario]
 
-        if materia_encontrada:
-            return JsonResponse({'status': 'sucesso', 'materia_encontrada': materia_encontrada})
-        else:
-            return JsonResponse({'status': 'erro', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
+#         if materia_encontrada:
+#             return JsonResponse({'status': 'sucesso', 'materia_encontrada': materia_encontrada})
+#         else:
+#             return JsonResponse({'status': 'erro', 'message': 'Nenhuma matéria encontrada para o horário informado.'}, status=404)
 
-    return JsonResponse({'status': 'erro', 'message': 'Método não permitido'}, status=405)
+#     return JsonResponse({'status': 'erro', 'message': 'Método não permitido'}, status=405)
 
 # View para selecionar matéria
 @api_view(['POST'])
@@ -132,21 +132,6 @@ def selecionar_materia(request):
 
         return Response({'status': 'Matérias selecionadas com sucesso!'})
     return Response({'status': 'erro', 'message': 'Método não permitido'}, status=405)
-
-
-#remove as amterias da grade 
-def remover_materia(request):
-    materia_id = request.data.get('materia_id', None)
-
-    if materia_id is not None:
-        try:
-            materia = MateriaSelecionada.objects.get(idTurmaProfessor=materia_id)
-            materia.delete()
-            return Response({'status': 'Matéria removida com sucesso!'})
-        except MateriaSelecionada.DoesNotExist:
-            return Response({'status': 'erro', 'message': 'Matéria não encontrada'}, status=404)
-
-    return Response({'status': 'erro', 'message': 'ID da matéria não fornecido'}, status=400)
 
 
 # Função auxiliar para obter dados do JSON
@@ -169,7 +154,9 @@ class mandar_materiaView(APIView):
         serializer = MandarMateriaSerializer(dados, many=True)
       
         return Response(serializer.data)
-    
+
+
+
 #remove a materia selecionada 
 @api_view(['POST'])
 def remover_materias(request):
